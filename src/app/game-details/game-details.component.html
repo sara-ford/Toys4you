@@ -1,0 +1,13 @@
+<p>game-details works!</p>
+
+<div *ngIf="selectedProduct">
+    <h2>{{ selectedProduct.name }}</h2>
+    <img [src]="selectedProduct.picture || 'assets/images/bike.png'" alt="{{ selectedProduct.name }}" />
+    <p><strong>Description:</strong> {{ selectedProduct.description }}</p>
+    <p><strong>Price:</strong> {{ selectedProduct.price }}&#x20AA;</p>
+    <p><strong>Age:</strong> {{ selectedProduct.age }}</p>
+    <p><strong>Category ID:</strong> {{ selectedProduct.categoryId }}</p>
+    <p><strong>Company ID:</strong> {{ selectedProduct.companyId }}</p>
+    <p><strong>Date Last Update:</strong> {{ selectedProduct.dateLastUpdate | date: 'dd-MM-yyyy' }}</p>
+  </div>
+  

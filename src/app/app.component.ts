@@ -1,12 +1,13 @@
 import { Component } from '@angular/core';
-import { RouterOutlet } from '@angular/router';
+import { RouterLink, RouterLinkActive, RouterOutlet } from '@angular/router';  // הוספת רכיבי ניתוב
+import { CommonModule } from '@angular/common';  // הוספת CommonModule
 
 @Component({
   selector: 'app-root',
-  standalone: true,
-  imports: [RouterOutlet],
+  standalone: true,  // קומפוננטה עצמאית
+  imports: [CommonModule, RouterOutlet, RouterLink, RouterLinkActive],  // הוספת כל המודולים הדרושים
   templateUrl: './app.component.html',
-  styleUrl: './app.component.css'
+  styleUrls: ['./app.component.css']
 })
 export class AppComponent {
   title = 'toys4you';

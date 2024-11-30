@@ -1,0 +1,31 @@
+<p>products works!</p>
+<!-- כפתור מיון -->
+<select [(ngModel)]="selected" (ngModelChange)="onChangeofOptionsofSort($event)">
+    <option value="byPrice">byPrice</option>
+    <option value="byAge">byAge</option>
+    <option value="byCategory">byCategory</option>
+</select>
+
+<!-- כפתור סינון -->
+<select [(ngModel)]="selected" (ngModelChange)="onChangeofOptionsofFilter($event)" aria-placeholder="filter" >
+  <option value="forKids">For Kids</option>
+  <option value="forTeens">For Teens</option>
+  <option value="forAdults">For Adults</option>
+</select>
+
+<div class="product-container">
+  <div *ngFor="let product of productList" class="product-card" (click)="onProductClick(product)">
+    <img class="product-image" [src]="product.picture || 'assets/images/bike.png'" alt="{{ product.name }}" />
+    <h3>{{ product.name }}</h3>
+    <p>Description: {{ product.description }}</p>
+    <p class="price">Price: {{ product.price }}&#x20AA;</p>
+    <p>Age: {{ product.age }}</p>
+    <p>id: {{product.id}}</p>
+    <p>categoryId: {{product.categoryId}}</p>
+    <p>companyId: {{product.companyId}}</p>
+    <p>Date Last Update: {{ product.dateLastUpdate | date:'dd-MM-yyyy' }}</p>
+  </div>
+</div>
+
+  
+ 
