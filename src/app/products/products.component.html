@@ -1,5 +1,5 @@
-<p>products works!</p>
 <!-- כפתור מיון -->
+ <h3>sort</h3>
 <select [(ngModel)]="selected" (ngModelChange)="onChangeofOptionsofSort($event)">
     <option value="byPrice">byPrice</option>
     <option value="byAge">byAge</option>
@@ -7,6 +7,7 @@
 </select>
 
 <!-- כפתור סינון -->
+<h3>filter</h3>
 <select [(ngModel)]="selected" (ngModelChange)="onChangeofOptionsofFilter($event)" aria-placeholder="filter" >
   <option value="forKids">For Kids</option>
   <option value="forTeens">For Teens</option>
@@ -15,7 +16,7 @@
 
 <div class="product-container">
   <div *ngFor="let product of productList" class="product-card" (click)="onProductClick(product)">
-    <img class="product-image" [src]="product.picture || 'assets/images/bike.png'" alt="{{ product.name }}" />
+    <img class="product-image" [src]="product.picture" alt="{{ product.name }}" />
     <h3>{{ product.name }}</h3>
     <p>Description: {{ product.description }}</p>
     <p class="price">Price: {{ product.price }}&#x20AA;</p>

@@ -1,55 +1,75 @@
+.styled-select {
+  width: 200px;
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  background-color: #f9f9f9;
+  margin-bottom: 20px;
+  transition: all 0.3s ease;
+}
+
+.styled-select:hover {
+  border-color: #007bff;
+}
+
+.styled-select:focus {
+  outline: none;
+  box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+}
+
+h3 {
+  color: #333;
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
 .product-container {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    padding: 20px;
-    gap: 20px;
-  }
-  .product-image {
-    max-height: auto;
-    height: auto;
-  }
-  
-  .product-card {
-    border: 1px solid #e1e1e1;
-    border-radius: 8px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-    width: 250px;
-    padding: 16px;
-    text-align: center;
-    background-color: #fff;
-    transition: transform 0.3s ease-in-out;
-  }
-  
-  .product-card:hover {
-    transform: scale(1.05);
-  }
-  
-  .product-image {
-    width: 100%;  /* Keep the image width at 100% of the card */
-    height: auto;  /* Allow height to adjust according to aspect ratio */
-    max-height: 120px;  /* Set a smaller max-height to control size */
-    object-fit: contain;  /* Ensure the image fits without distortion */
-    border-bottom: 1px solid #e1e1e1;
-    margin-bottom: 16px;
-    border-radius: 8px 8px 0 0;
-  }
-  
-  .product-details h3 {
-    font-size: 20px;
-    margin: 8px 0;
-    color: #333;
-  }
-  
-  .product-details p {
-    font-size: 14px;
-    margin: 4px 0;
-    color: #777;
-  }
-  
-  .product-details .price {
-    font-size: 16px;
-    font-weight: bold;
-    color: #e74c3c;
-  }
-  
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  padding: 20px;
+  gap: 20px;
+}
+
+.product-card {
+  border: 1px solid #e1e1e1;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  width: 300px;
+  padding: 16px;
+  text-align: center;
+  background-color: #fff;
+  transition: transform 0.3s ease-in-out;
+}
+
+.product-card:hover {
+  transform: scale(1.05);
+}
+
+.product-image {
+  width: 100%;
+  height: auto;
+  max-height: 250px;
+  object-fit: cover;
+  margin-bottom: 16px;
+  border-radius: 8px 8px 0 0;
+}
+
+.product-details h3 {
+  font-size: 20px;
+  margin: 8px 0;
+  color: #333;
+}
+
+.product-details p {
+  font-size: 14px;
+  margin: 4px 0;
+  color: #777;
+}
+
+.product-details .price {
+  font-size: 16px;
+  font-weight: bold;
+  color: #e74c3c;
+}

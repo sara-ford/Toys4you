@@ -22,7 +22,7 @@ export class ProductsComponent implements OnInit {
   ) {}
 
   ngOnInit(): void {
-    this.toysService.getProductList().then((products) => {
+      this.toysService.getProductList().then((products) => {
       this.productList = products;
     });
   }
@@ -60,6 +60,7 @@ export class ProductsComponent implements OnInit {
       (product) => product.age <= 8 && product.age >= 5
     );
   }
+  
   onProductClick(product: any): void {
     this.toysService.setSelectedProduct(product); 
     this.router.navigate(['/game-details']); 

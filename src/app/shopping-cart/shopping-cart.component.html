@@ -1,1 +1,9 @@
 <p>shopping-cart works!</p>
+<form>
+    <div *ngIf="selectedProduct" class="product-details-container">
+        <h2>{{ selectedProduct.name }}</h2>
+        <img [src]="selectedProduct.picture" alt="{{ selectedProduct.name }}" class="product-image" />
+        <p class="price"><strong>Price:</strong> {{ selectedProduct.price }}&#x20AA;</p>
+        <p><strong>Company ID:</strong> {{ selectedProduct.companyId }}</p>
+    </div>
+</form>

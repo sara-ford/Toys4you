@@ -1,13 +1,17 @@
 <p>game-details works!</p>
 
-<div *ngIf="selectedProduct">
+
+<button [routerLink]="'/products'" routerLinkActive="active" class="back-button">⬅️</button>
+
+<div *ngIf="selectedProduct" class="product-details-container">
     <h2>{{ selectedProduct.name }}</h2>
-    <img [src]="selectedProduct.picture || 'assets/images/bike.png'" alt="{{ selectedProduct.name }}" />
+    <img [src]="selectedProduct.picture" alt="{{ selectedProduct.name }}" class="product-image" />
     <p><strong>Description:</strong> {{ selectedProduct.description }}</p>
-    <p><strong>Price:</strong> {{ selectedProduct.price }}&#x20AA;</p>
+    <p class="price"><strong>Price:</strong> {{ selectedProduct.price }}&#x20AA;</p>
     <p><strong>Age:</strong> {{ selectedProduct.age }}</p>
     <p><strong>Category ID:</strong> {{ selectedProduct.categoryId }}</p>
     <p><strong>Company ID:</strong> {{ selectedProduct.companyId }}</p>
     <p><strong>Date Last Update:</strong> {{ selectedProduct.dateLastUpdate | date: 'dd-MM-yyyy' }}</p>
-  </div>
-  
+</div>
+
+<button [routerLink]="'/cart'" routerLinkActive="active" class="addToCart">🛒</button>
