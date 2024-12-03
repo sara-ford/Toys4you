@@ -30,7 +30,7 @@ export class ToysServiceService {
   getSelectedProduct(): ModelProduct | null {
     return this.selectedProduct;  
   }
-  cartlist: ModelProduct[] = [c
+  cartlist: ModelProduct[] = [
   ]
 }  
 
