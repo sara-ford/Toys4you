@@ -8,6 +8,7 @@ export class ModelProduct {
     picture: string
     dateLastUpdate: Date
     age:number
+    amount:number
 
 
     constructor(id: number, name: string, categoryId: number, companyId: number
@@ -15,7 +16,7 @@ export class ModelProduct {
         , price: number
         , picture: string
         , dateLastUpdate: Date,
-        age:number) 
+        age:number, amount:number) 
         {
          this.id = id,
          this.name = name
@@ -26,5 +27,6 @@ export class ModelProduct {
          this.price=price
          this.picture=picture
          this.age=age
+         this.amount=amount
     }
 }

@@ -1,9 +1,21 @@
 <p>shopping-cart works!</p>
-<form>
-    <div *ngIf="selectedProduct" class="product-details-container">
-        <h2>{{ selectedProduct.name }}</h2>
-        <img [src]="selectedProduct.picture" alt="{{ selectedProduct.name }}" class="product-image" />
-        <p class="price"><strong>Price:</strong> {{ selectedProduct.price }}&#x20AA;</p>
-        <p><strong>Company ID:</strong> {{ selectedProduct.companyId }}</p>
+<div class="cart-container">
+  <div *ngFor="let product of cartlist" class="cart-item">
+    <img class="product-image" [src]="product.product.picture" alt="{{ product.product.name }}" />
+    <div class="product-details">
+      <h3>{{ product.product.name }}</h3>
+      <p>Description: {{ product.product.description }}</p>
+      <p class="price">Price: {{ product.product.price }}&#x20AA;</p>
+      <p>Age: {{ product.product.age }}</p>
+      <p>id: {{ product.product.id }}</p>
+      <p>Total Price: {{ product.totalPrice }}&#x20AA;</p>
+      <p>Amount: 
+        <button (click)="decreaseAmount(product)">-</button>
+        {{ product.amount }}
+        <button (click)="increaseAmount(product)">+</button>
+      </p>
+      <p>Date Last Update: {{ product.product.dateLastUpdate | date:'dd-MM-yyyy' }}</p>
     </div>
-</form>
+    <button class="delete-btn" (click)="removeProduct(product)">🗑️</button>
+  </div>
+</div>

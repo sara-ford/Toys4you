@@ -1,5 +1,5 @@
 <!-- כפתור מיון -->
- <h3>sort</h3>
+<h3>sort</h3>
 <select [(ngModel)]="selected" (ngModelChange)="onChangeofOptionsofSort($event)">
     <option value="byPrice">byPrice</option>
     <option value="byAge">byAge</option>
@@ -15,7 +15,7 @@
 </select>
 
 <div class="product-container">
-  <div *ngFor="let product of productList" class="product-card" (click)="onProductClick(product)">
+  <div *ngFor="let product of products" class="product-card" (click)="onProductClick(product)">
     <img class="product-image" [src]="product.picture" alt="{{ product.name }}" />
     <h3>{{ product.name }}</h3>
     <p>Description: {{ product.description }}</p>
@@ -24,9 +24,10 @@
     <p>id: {{product.id}}</p>
     <p>categoryId: {{product.categoryId}}</p>
     <p>companyId: {{product.companyId}}</p>
-    <p>Date Last Update: {{ product.dateLastUpdate | date:'dd-MM-yyyy' }}</p>
   </div>
 </div>
+
+
 
   
  

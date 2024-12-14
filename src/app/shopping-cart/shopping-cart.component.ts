@@ -1,25 +1,45 @@
 import { Component, OnInit } from '@angular/core';
 import { ToysServiceService } from '../toys-service.service';
-import { FormsModule} from '@angular/forms';
-import { ModelProduct } from '../models/model-product';
-
 import { CommonModule } from '@angular/common'; 
+import { FormsModule } from '@angular/forms';
+import { RouterLink, RouterLinkActive, RouterOutlet } from '@angular/router';
+import { CartProducts } from '../models/cart-products';
+
 @Component({
   selector: 'app-shopping-cart',
   standalone: true,
-  imports: [CommonModule,FormsModule],
+  imports: [CommonModule, FormsModule, RouterLink, RouterLinkActive, RouterOutlet],
   templateUrl: './shopping-cart.component.html',
-  styleUrl: './shopping-cart.component.css'
+  styleUrls: ['./shopping-cart.component.css']
 })
 export class ShoppingCartComponent implements OnInit {
-  selectedProduct: ModelProduct | null = null;
+  cartlist: CartProducts[] = [];  
 
-  constructor(
-    private toysService: ToysServiceService
-) {}
+  constructor(private toysService: ToysServiceService) {}
 
-  ngOnInit() {
-    this.selectedProduct = this.toysService.getSelectedProduct();
-    //  this.toysService.cartlist.push(new );
+  ngOnInit(): void {
+    const selectedProduct = this.toysService.getSelectedProduct();
+    console.log(selectedProduct);
+      this.toysService.addToCart(selectedProduct);
+    this.cartlist = this.toysService.cartlist; 
+  }
+  
+  increaseAmount(product: CartProducts): void {
+    product.amount++
+    product.totalPrice = product.amount * product.product.price
+  }
+  
+  decreaseAmount(product: CartProducts): void {
+    if (product.amount > 1) { 
+      product.amount--
+      product.totalPrice = product.amount * product.product.price
+    }
+  }
+  
+  removeProduct(product: CartProducts): void {
+    const index = this.cartlist.indexOf(product);
+    if (index !== -1) {
+      this.cartlist.splice(index, 1)
+    }
   }
 }

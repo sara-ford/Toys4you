@@ -5,6 +5,7 @@ import { ProductsComponent } from './products/products.component';
 import { ShoppingCartComponent } from './shopping-cart/shopping-cart.component';
 import { NotFoundComponent } from './not-found/not-found.component';
 import { GameDetailsComponent } from './game-details/game-details.component';
+import { SingInComponent } from './sing-in/sing-in.component';
 
 
 export const routes: Routes = [
@@ -13,6 +14,7 @@ export const routes: Routes = [
   { path: 'cart', component: ShoppingCartComponent },
   { path: 'home', component: HomePageComponent },
   { path: 'game-details', component: GameDetailsComponent },
+  { path: 'signIn', component: SingInComponent},
   { path: '**', component: NotFoundComponent }
 ];
 

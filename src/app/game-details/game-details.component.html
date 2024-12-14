@@ -1,6 +1,3 @@
-<p>game-details works!</p>
-
-
 <button [routerLink]="'/products'" routerLinkActive="active" class="back-button">⬅️</button>
 
 <div *ngIf="selectedProduct" class="product-details-container">
@@ -9,9 +6,9 @@
     <p><strong>Description:</strong> {{ selectedProduct.description }}</p>
     <p class="price"><strong>Price:</strong> {{ selectedProduct.price }}&#x20AA;</p>
     <p><strong>Age:</strong> {{ selectedProduct.age }}</p>
-    <p><strong>Category ID:</strong> {{ selectedProduct.categoryId }}</p>
-    <p><strong>Company ID:</strong> {{ selectedProduct.companyId }}</p>
+    <p><strong>Category</strong> {{ selectedProduct.categoryId }}</p>
+    <p><strong>Company</strong> {{ selectedProduct.companyId }}</p>
     <p><strong>Date Last Update:</strong> {{ selectedProduct.dateLastUpdate | date: 'dd-MM-yyyy' }}</p>
+    <button [routerLink]="'/cart'" routerLinkActive="active" class="addToCart">🛒</button>
 </div>
 
-<button [routerLink]="'/cart'" routerLinkActive="active" class="addToCart">🛒</button>

@@ -20,4 +20,4 @@ export class GameDetailsComponent implements OnInit {
     this.selectedProduct = this.toysService.getSelectedProduct();
     console.log(this.selectedProduct);
   }
-}
+  }
