@@ -6,6 +6,7 @@ import { InputTextModule } from 'primeng/inputtext';
 import {FloatLabel} from 'primeng/floatlabel';
 import { ButtonModule } from 'primeng/button';
 import {DatePicker} from 'primeng/datepicker';
+import { ToysServiceService } from '../toys-service.service';
 
 @Component({
   selector: 'app-sing-in',
@@ -14,7 +15,12 @@ import {DatePicker} from 'primeng/datepicker';
   templateUrl:'./sing-in.component.html',
   styleUrl: './sing-in.component.css'
 })
+
 export class SingInComponent {
+   constructor(
+      private toysService: ToysServiceService,
+    ) { }
+  
   isSignIn: boolean = true; 
   Name: string;
   Phone: string;
@@ -25,9 +31,32 @@ export class SingInComponent {
   toggleForm() {
     this.isSignIn = !this.isSignIn; 
   }
-  signIn(){
+  message: string = '';  
 
+  signIn() {
+    this.toysService.getCustomerByPassword(this.value, this.Name).subscribe(
+      (customer) => {
+        if (customer) {
+          console.log(`שלום ${customer.name}, ברוך הבא!`);
+          this.message = `שלום ${customer.name}, ברוך הבא!`;
+        }
+      },
+      (error) => {
+        this.handleSignInError(error);
+      }
+    );
   }
+  
+  private handleSignInError(error: any) {
+    console.log("Error occurred:", error);
+    if (error.status === 404) {
+      const errorMessage = error.error?.message || "אין לך חשבון, אנא פתח חשבון."; 
+      this.message = errorMessage;  
+    } else {
+      this.message = "שגיאה כלשהי קרתה."; 
+    }
+  }
+  
   logIn(){
 
   }

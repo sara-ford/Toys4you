@@ -2,7 +2,10 @@ import { Injectable } from '@angular/core';
 import { ModelProduct } from './models/model-product';
 import { CartProducts } from './models/cart-products';
 import { HttpClient } from '@angular/common/http';
-import { Observable } from 'rxjs';
+import { Observable,throwError} from 'rxjs';
+import { ModelCustomer } from './models/model-customer';
+import { catchError } from 'rxjs/operators'; 
+
 
 @Injectable({
   providedIn: 'root'
@@ -13,6 +16,12 @@ export class ToysServiceService {
   getProductList(): Observable<ModelProduct[]> {
     return this.http.get<ModelProduct[]>('http://localhost:5252/api/Product');
   }
+getCustomerByPassword(password: string, name: string): Observable<ModelCustomer> {
+    return this.http.post<ModelCustomer>(
+      `http://localhost:5252/api/Product/${password}?name=${encodeURIComponent(name)}`,
+      {}
+    );
+}
 
   private selectedProduct: ModelProduct; 
 

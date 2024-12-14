@@ -3,7 +3,7 @@
     <br>
     <br>
     <p-floatlabel>
-      <input pInputText id="over_label" [(ngModel)]="Name" autocomplete="off" />
+      <input pInputText id="over_label" [(ngModel)]="Name" autocomplete="off"  (click)="signIn()"/>
       <label for="over_label">Name</label>
     </p-floatlabel>
     <p>password</p>
@@ -14,7 +14,6 @@
     <br>
     <p>new here? create an account</p>
     <p-button label="create account" severity="success" (click)="toggleForm()" />
-
   </div>
   
   <br><br><br><br>
@@ -46,4 +45,4 @@
     <br>
     <p-button label="signIn" severity="info" (click)="toggleForm()" />
   </div>
-  
+  <div *ngIf="message">{{ message }}</div>
