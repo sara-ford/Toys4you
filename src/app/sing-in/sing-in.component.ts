@@ -35,10 +35,10 @@ export class SingInComponent {
 
   signIn() {
     this.toysService.getCustomerByPassword(this.value, this.Name).subscribe(
-      (customer) => {
-        if (customer) {
-          console.log(`שלום ${customer.name}, ברוך הבא!`);
-          this.message = `שלום ${customer.name}, ברוך הבא!`;
+      (response) => {
+        if (response?.message) {
+          this.message = response.message;
+          console.log(response.message);
         }
       },
       (error) => {

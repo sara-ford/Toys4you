@@ -16,12 +16,13 @@ export class ToysServiceService {
   getProductList(): Observable<ModelProduct[]> {
     return this.http.get<ModelProduct[]>('http://localhost:5252/api/Product');
   }
-getCustomerByPassword(password: string, name: string): Observable<ModelCustomer> {
-    return this.http.post<ModelCustomer>(
+  getCustomerByPassword(password: string, name: string): Observable<any> {
+    return this.http.post<any>(
       `http://localhost:5252/api/Product/${password}?name=${encodeURIComponent(name)}`,
       {}
     );
-}
+  }
+  
 
   private selectedProduct: ModelProduct; 
 
