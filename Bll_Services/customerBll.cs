@@ -17,7 +17,7 @@ namespace Bll_Services
         {
             Dal_Repository.customerDal c = new Dal_Repository.customerDal();
             var a = 8;
-             c.InsertCustomer(customer);
+            c.InsertCustomer(customer);
         }
     }
 }
