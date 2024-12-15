@@ -17,7 +17,7 @@ export class ToysServiceService {
     return this.http.get<ModelProduct[]>('http://localhost:5252/api/Product');
   }
   getCustomerByPassword(password: string, name: string): Observable<any> {
-    return this.http.post<any>(
+    return this.http.get<any>(
       `http://localhost:5252/api/Product/api/Product/${password}?name=${name}`,
       {}      
     );

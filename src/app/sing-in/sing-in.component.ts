@@ -40,7 +40,6 @@ export class SingInComponent {
       (response) => {
         if (response?.message) {
           this.message = response.message;
-          console.log(response.message);
         }
       },
       (error) => {
@@ -48,12 +47,12 @@ export class SingInComponent {
         this.message = errorMessage;  
         //העברה לדף הlog in
         setTimeout(() => {this.toggleForm()
-        }, 500);
+        }, 1000);
       }
     );
   }
   logIn(){
-    console.log("זה עובדדדדדדדדדדדדדדדבכעיעכעידדדדדכדדדד");
+    console.log("זה עובדדדדדדדדדדדדדדדבכעיעכעידדדדדדדדד");
     
   }
 }
