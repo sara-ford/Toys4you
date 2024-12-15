@@ -45,15 +45,15 @@ export class SingInComponent {
       (error) => {
         const errorMessage = error.error?.message; 
         this.message = errorMessage;  
-        //העברה לדף הlog in
         setTimeout(() => {this.toggleForm()
         }, 500);
       }
     );
   }
   logIn(){
-    console.log("dfghjkhgfd");
-    
+    console.log(
+      "sdfghjksasdfghjkl"
+    );
   }
 }
 
