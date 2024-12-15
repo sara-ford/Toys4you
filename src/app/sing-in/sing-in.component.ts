@@ -52,7 +52,8 @@ export class SingInComponent {
     );
   }
   logIn(){
-
+    console.log("dfghjkhgfd");
+    
   }
 }
 
