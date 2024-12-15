@@ -1,9 +1,11 @@
 <nav class="navbar">
-    <ul>
-      <li><a routerLink="/signIn" routerLinkActive="active">Log in/Sign in</a></li>
-      <li><a routerLink="/home" routerLinkActive="active">Home Page</a></li>
-      <li><a routerLink="/cart" routerLinkActive="active">Shopping Cart</a></li>
-      <li><a routerLink="/products" routerLinkActive="active">Products</a></li>
-    </ul>
-  </nav>  
+  <ul >
+    <li><a class="left" routerLink="/signIn" routerLinkActive="active">Log in/Sign in</a></li>
+  </ul>
+  <ul class="center">
+    <li><a routerLink="/home" routerLinkActive="active">Home Page</a></li>
+    <li><a routerLink="/cart" routerLinkActive="active">Shopping Cart</a></li>
+    <li><a routerLink="/products" routerLinkActive="active">Products</a></li>
+  </ul>
+</nav>
 <router-outlet></router-outlet>

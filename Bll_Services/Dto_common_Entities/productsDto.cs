@@ -1,0 +1,30 @@
+﻿using System.ComponentModel.Design;
+using System.Diagnostics;
+
+namespace Dto_common_Entities
+{
+    public class productsDto
+    {
+        public int Id { get; set; }
+        public string Name { get; set; } = null!;
+
+        public int Categoryid { get; set; }
+
+        public int Companyid { get; set; }
+
+        public int Age { get; set; }
+
+        public string Description { get; set; } = null!;
+
+        public string Picture { get; set; } = null!;
+
+        public int Price { get; set; }
+
+        public int Amount { get; set; }
+
+        //public virtual Category Category { get; set; } = null!;
+
+        //public virtual Company Company { get; set; } = null!;
+    }
+}
+

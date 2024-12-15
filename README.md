@@ -1,4 +1,5 @@
 # Toys4you
+<<<<<<< HEAD
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 18.2.12.
 
@@ -25,3 +26,10 @@ Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To u
 ## Further help
 
 To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
+=======
+<<<<<<< HEAD
+=======
+Angular project
+<h1>הי</h1>
+>>>>>>> fe0deffd1d73c91904d3abf1caf0f1e6941ed157
+>>>>>>> 2cbc39793cfceaa381d88a7b2550e2c898dd6649

@@ -22,6 +22,7 @@ export class SingInComponent {
     ) { }
   
   isSignIn: boolean = true; 
+  isMessage: boolean = true; 
   Name: string;
   Phone: string;
   Email: string;
@@ -30,6 +31,7 @@ export class SingInComponent {
 
   toggleForm() {
     this.isSignIn = !this.isSignIn; 
+    this.isMessage = !this.isMessage
   }
   message: string = '';  
 
@@ -42,23 +44,17 @@ export class SingInComponent {
         }
       },
       (error) => {
-        this.handleSignInError(error);
+        const errorMessage = error.error?.message; 
+        this.message = errorMessage;  
+        //העברה לדף הlog in
+        setTimeout(() => {this.toggleForm()
+        }, 500);
       }
     );
   }
-  
-  private handleSignInError(error: any) {
-    console.log("Error occurred:", error);
-    if (error.status === 404) {
-      const errorMessage = error.error?.message || "אין לך חשבון, אנא פתח חשבון."; 
-      this.message = errorMessage;  
-    } else {
-      this.message = "שגיאה כלשהי קרתה."; 
-    }
-  }
-  
   logIn(){
-
+    console.log("dfghjkhgfd");
+    
   }
 }
 

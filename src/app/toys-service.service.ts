@@ -18,11 +18,10 @@ export class ToysServiceService {
   }
   getCustomerByPassword(password: string, name: string): Observable<any> {
     return this.http.post<any>(
-      `http://localhost:5252/api/Product/${password}?name=${encodeURIComponent(name)}`,
-      {}
+      `http://localhost:5252/api/Product/api/Product/${password}?name=${name}`,
+      {}      
     );
   }
-  
 
   private selectedProduct: ModelProduct; 
 
