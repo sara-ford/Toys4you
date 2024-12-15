@@ -22,6 +22,7 @@ export class SingInComponent {
     ) { }
   
   isSignIn: boolean = true; 
+  isMessage: boolean = true; 
   Name: string;
   Phone: string;
   Email: string;
@@ -30,33 +31,26 @@ export class SingInComponent {
 
   toggleForm() {
     this.isSignIn = !this.isSignIn; 
+    this.isMessage = !this.isMessage
   }
   message: string = '';  
 
   signIn() {
     this.toysService.getCustomerByPassword(this.value, this.Name).subscribe(
-      (customer) => {
-        if (customer) {
-          console.log(`שלום ${customer.name}, ברוך הבא!`);
-          this.message = `שלום ${customer.name}, ברוך הבא!`;
+      (response) => {
+        if (response?.message) {
+          this.message = response.message;
         }
       },
       (error) => {
-        this.handleSignInError(error);
+        const errorMessage = error.error?.message; 
+        this.message = errorMessage;  
+        //העברה לדף הlog in
+        setTimeout(() => {this.toggleForm()
+        }, 500);
       }
     );
   }
-  
-  private handleSignInError(error: any) {
-    console.log("Error occurred:", error);
-    if (error.status === 404) {
-      const errorMessage = error.error?.message || "אין לך חשבון, אנא פתח חשבון."; 
-      this.message = errorMessage;  
-    } else {
-      this.message = "שגיאה כלשהי קרתה."; 
-    }
-  }
-  
   logIn(){
 
   }

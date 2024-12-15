@@ -1,30 +1,40 @@
 .navbar {
-    background-color: #333; /* צבע רקע כהה */
-    padding: 10px;
-    display: flex;
-    justify-content: center; /* ממרכז את האלמנטים בתוך ה-nav */
-  }
-  
-  .navbar ul {
-    list-style-type: none; /* מסיר את הנקודות של ה-list */
-    margin: 0;
-    padding: 0;
-    display: flex;
-  }
-  
-  .navbar ul li {
-    margin: 0 15px; 
-  }
-  
-  .navbar ul li a {
-    text-decoration: none; 
-    color: white; 
-    font-size: 18px;
-    transition: color 0.3s ease; /* אפקט מעבר צבע על hover */
-  }
-  
-  .navbar ul li a.active,
-  .navbar ul li a:hover {
-    color: #ffcc00; /* צבע טקסט בהרחפה או כאשר הקישור פעיל */
-  }
-  
+  background-color: #333; /* Dark background color */
+  padding: 10px;
+  display: flex;
+  justify-content: space-between; /* Distribute items with space between */
+  align-items: center; /* Vertically centers items */
+}
+
+.navbar ul {
+  list-style-type: none; /* Remove bullet points */
+  margin: 0;
+  padding: 0;
+}
+
+.navbar .left {
+  display: flex;
+  flex-shrink: 0; /* Prevents shrinking of the left section */
+}
+
+.navbar .center {
+  display: flex;
+  justify-content: center; /* Center the remaining items */
+  flex-grow: 1; /* Allows this section to take available space */
+}
+
+.navbar ul li {
+  margin: 0 15px; /* Adds margin between links */
+}
+
+.navbar ul li a {
+  text-decoration: none;
+  color: white;
+  font-size: 18px;
+  transition: color 0.3s ease; /* Smooth color transition on hover */
+}
+
+.navbar ul li a.active,
+.navbar ul li a:hover {
+  color: #ffcc00; /* Color for active or hovered links */
+}
