@@ -40,6 +40,7 @@ export class SingInComponent {
       (response) => {
         if (response?.message) {
           this.message = response.message;
+          console.log(response.message);
         }
       },
       (error) => {
@@ -51,9 +52,8 @@ export class SingInComponent {
     );
   }
   logIn(){
-    console.log(
-      "sdfghjksasdfghjkl"
-    );
+    console.log("זה עובדדדדדדדדדדדדדדדבכעיעכעידדדדדדדדד");
+    
   }
 }
 
