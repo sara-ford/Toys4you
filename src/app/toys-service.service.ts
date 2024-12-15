@@ -18,7 +18,13 @@ export class ToysServiceService {
   }
   getCustomerByPassword(password: string, name: string): Observable<any> {
     return this.http.get<any>(
-      `http://localhost:5252/api/Product/api/Product/${password}?name=${name}`,
+      `http://localhost:5252/api/Product/api/Product/${password}${name}`,
+      {}      
+    );
+  }
+  insertCustomer(password: string, name: string,date: Date,Email:string,Phone:string): Observable<any> {
+    return this.http.post<any>(
+      `http://localhost:5252/api/customer/${password}${name}${Phone}${Email}$`,
       {}      
     );
   }
