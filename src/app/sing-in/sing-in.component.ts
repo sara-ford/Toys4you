@@ -53,7 +53,7 @@ export class SingInComponent {
     );
   }
   logIn(){
-    console.log("זה עובדדדדדדדדדדדדדדדבכעיעכעידדדדדדדדד");
+    console.log("זה עובדדדדדדדדדדדדדדדבכעיעכעידדדדדכדדדד");
     
   }
 }
