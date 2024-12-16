@@ -22,12 +22,6 @@ export class ToysServiceService {
       {}      
     );
   }
-  insertCustomer(password: string, name: string,date: Date,Email:string,Phone:string): Observable<any> {
-    return this.http.post<any>(
-      `http://localhost:5252/api/customer/${password}${name}${Phone}${Email}$`,
-      {}      
-    );
-  }
   insertCustomer(password: string, name: string, date: Date, email: string, phone: string): Observable<any> {
     const customer = {
       password: password,
@@ -38,8 +32,7 @@ export class ToysServiceService {
     };
   
     return this.http.post<any>(
-      `http://localhost:5252/api/Customer/add`, 
-      customer // כאן אתה שולח את האובייקט בגוף הבקשה
+      `http://localhost:5252/api/Customer/add`,customer 
     );
   }
   

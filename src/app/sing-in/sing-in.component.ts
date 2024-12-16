@@ -52,8 +52,7 @@ export class SingInComponent {
     );
   }
   logIn(){
-    console.log("זה עובדדדדדדדדדדדדדדדבכעיעכעידדדדדדדדד");
-    
+    this.toysService.getCustomerByPassword(this.value, this.Name)    
   }
 }
 
