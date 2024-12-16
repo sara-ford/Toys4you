@@ -64,5 +64,116 @@
   button:disabled {
     background-color: #ccc;
     cursor: not-allowed;
+  }.cart-container {
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
   }
+  
+  .cart-item {
+    display: flex;
+    margin-bottom: 20px;
+    border-bottom: 1px solid #ddd;
+    padding-bottom: 15px;
+  }
+  
+  .product-image {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    margin-right: 15px;
+  }
+  
+  .product-details {
+    flex: 1;
+  }
+  
+  .delete-btn {
+    background-color: #ff6b6b;
+    border: none;
+    padding: 10px;
+    font-size: 1.2em;
+    cursor: pointer;
+    color: white;
+    border-radius: 5px;
+  }
+  .total-price-box {
+    background-color: #f1f1f1;
+    border: 2px solid #ccc;
+    padding: 15px;
+    margin-top: 20px;
+    border-radius: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    font-size: 1.2em;
+    font-weight: bold;
+    width: 300px;  /* הגבלת רוחב */
+    max-width: 100%; /* מאפשר למרווחים להיות גמישים */
+    margin-left: auto; /* ממורכז בצד שמאל */
+    margin-right: auto; /* ממורכז בצד ימין */
+  }
+  
+  .total-price-box h2 {
+    color: #333;
+    margin: 0; /* להסיר מרווחים אוטומטיים שמגיעים מברירת המחדל */
+  }
+  
+  .total-price-box h2::after {
+    content: " ";
+  }.total-price-box {
+    background-color: #f1f1f1;
+    border: 2px solid #ccc;
+    padding: 15px;
+    margin-top: 20px;
+    border-radius: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    font-size: 1.2em;
+    font-weight: bold;
+    width: 300px;  /* הגבלת רוחב */
+    max-width: 100%; /* מאפשר למרווחים להיות גמישים */
+    margin-left: auto; /* ממורכז בצד שמאל */
+    margin-right: auto; /* ממורכז בצד ימין */
+  }
+  
+  .total-price-box h2 {
+    color: #333;
+    margin: 0; /* להסיר מרווחים אוטומטיים שמגיעים מברירת המחדל */
+  }
+  
+  .total-price-box h2::after {
+    content: " ";
+  }
+  
+  /* כפתור מעבר לקופה */
+  .checkout-btn-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+  }
+  
+  .checkout-btn {
+    background-color: #4CAF50; /* צבע רקע ירוק */
+    color: white;
+    font-size: 1.1em;
+    font-weight: bold;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .checkout-btn:hover {
+    background-color: #45a049; /* צבע רקע כהה יותר בעת ריחוף */
+  }
+  
+  .checkout-btn:focus {
+    outline: none; /* מסיר את הקו שמופיע בעת לחיצה */
+  }
+  
   

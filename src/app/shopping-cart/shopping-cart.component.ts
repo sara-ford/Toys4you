@@ -42,4 +42,10 @@ export class ShoppingCartComponent implements OnInit {
       this.cartlist.splice(index, 1)
     }
   }
+  getTotalPrice(): number {
+    return this.cartlist.reduce((total, product) => total + product.totalPrice, 0);
+  }
+  // goToCheckout(): void {
+  //   this.router.navigate(['/checkout']); // כאן תוכל להחליף את הנתיב לפי הצורך
+  // }
 }

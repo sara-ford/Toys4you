@@ -28,8 +28,8 @@ export class SingInComponent {
   message: string = '';
 
   toggleForm() {
-    this.isSignIn = !this.isSignIn;
-    this.isMessage = false; // Hide the message when toggling forms
+    this.isSignIn = !this.isSignIn; 
+    this.isMessage = !this.isMessage
   }
 
   signIn() {
@@ -37,23 +37,18 @@ export class SingInComponent {
       (response) => {
         if (response?.message) {
           this.message = response.message;
-          this.isMessage = true; // Show the message
         }
       },
       (error) => {
-        const errorMessage = error.error?.message || "No account found with this name and password.";
-        this.message = errorMessage;
-        this.isMessage = true; // Show the message
-
-        // Switch to log-in page after showing the error message
-        setTimeout(() => {
-          this.toggleForm();
-        }, 3000); // Delay for 3 seconds
+        const errorMessage = error.error?.message; 
+        this.message = errorMessage;  
+        //העברה לדף הlog in
+        setTimeout(() => {this.toggleForm()
+        }, 1000);
       }
     );
   }
-
-  logIn() {
-    // Logic for log-in
+  logIn(){
+    this.toysService.getCustomerByPassword(this.value, this.Name)    
   }
 }

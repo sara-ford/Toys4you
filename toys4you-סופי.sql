@@ -113,12 +113,14 @@ select * from products;
 select * from purchases;
 select * from purchasedetails;
 
+
+
 alter table customers
-add password varchar(50) null
+alter column password varchar(50)  not null
 
 
 update customers
-set password='kj7895'
-where customerId=4
+set password='qwe123'
+where customerId=1
 
 

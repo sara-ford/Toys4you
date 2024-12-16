@@ -18,4 +18,11 @@
     </div>
     <button class="delete-btn" (click)="removeProduct(product)">🗑️</button>
   </div>
+  <div class="total-price-box">
+    <h2>Total price: {{ getTotalPrice() }}&#x20AA;</h2>
+  </div>
+
+  <div class="checkout-btn-container">
+    <button class="checkout-btn" >for payment</button>
+  </div>
 </div>

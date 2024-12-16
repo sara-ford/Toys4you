@@ -8,6 +8,10 @@ build_property.PlatformNeutralAssembly =
 build_property.EnforceExtendedAnalyzerRules = 
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = Dto_common_Entities
+<<<<<<< HEAD
+build_property.ProjectDir = C:\Users\User\Desktop\מיכל\לימודים מיכל\פרויקט גמר\Toys4you\Bll_Services\Dto_common_Entities\
+=======
 build_property.ProjectDir = C:\Users\sara_p3qhpzt\Downloads\toys4you\Bll_Services\Dto_common_Entities\
+>>>>>>> d5239f885b21841baf3ba1f986df98ac0f935144
 build_property.EnableComHosting = 
 build_property.EnableGeneratedComInterfaceComImportInterop = 

@@ -17,6 +17,28 @@ export class ToysServiceService {
     return this.http.get<ModelProduct[]>('http://localhost:5252/api/Product');
   }
   getCustomerByPassword(password: string, name: string): Observable<any> {
+<<<<<<< HEAD
+    return this.http.post<any>(
+      `http://localhost:5252/api/Costumer/api/Costumer/${password}?name=${name}`,
+      {}      
+    );
+  }
+insertCustomer(password: string, name: string, date: Date, email: string, phone: string): Observable<any> {
+  const customer = {
+    password: password,
+    name: name,
+    date: date,
+    email: email,
+    phone: phone
+  };
+
+  return this.http.post<any>(
+    `http://localhost:5252/api/Customer/add`, 
+    customer // כאן אתה שולח את האובייקט בגוף הבקשה
+  );
+}
+
+=======
     return this.http.get<any>(
       `http://localhost:5252/api/Product/api/Product/${password}${name}`,
       {}      
@@ -36,6 +58,7 @@ export class ToysServiceService {
     );
   }
   
+>>>>>>> d5239f885b21841baf3ba1f986df98ac0f935144
 
   private selectedProduct: ModelProduct; 
 
@@ -60,5 +83,6 @@ export class ToysServiceService {
       this.cartlist.push(new CartProducts(product.amount, product, product.price * product.amount));
     }
     console.log(this.cartlist); 
+    
   }
 }
