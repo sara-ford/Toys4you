@@ -31,7 +31,7 @@ export class SingInComponent {
 
   toggleForm() {
     this.isSignIn = !this.isSignIn; 
-    this.isMessage = !this.isMessage
+    // this.isMessage = !this.isMessage
   }
   message: string = '';  
 
@@ -47,12 +47,12 @@ export class SingInComponent {
         this.message = errorMessage;  
         //העברה לדף הlog in
         setTimeout(() => {this.toggleForm()
-        }, 1000);
+        }, 3000);
       }
     );
   }
   logIn(){
-    console.log("זה עובדדדדדדדדדדדדדדדבכעיעכעידדדדדדדדד");
+    console.log("זה עובדדדדדדדדדדדדדדדבכעggggיעכעידדדדדדדדד");
     
   }
 }
