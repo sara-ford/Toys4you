@@ -1,6 +1,7 @@
 {
   "format": 1,
   "restore": {
+<<<<<<< HEAD
     "C:\\Users\\User\\Desktop\\מיכל\\לימודים מיכל\\פרויקט גמר\\Toys4you\\Bll_Services\\WebApi\\WebApi.csproj": {}
   },
   "projects": {
@@ -12,6 +13,19 @@
         "projectPath": "C:\\Users\\User\\Desktop\\מיכל\\לימודים מיכל\\פרויקט גמר\\Toys4you\\Bll_Services\\Bll_Services\\Bll_Services.csproj",
         "packagesPath": "C:\\Users\\User\\.nuget\\packages\\",
         "outputPath": "C:\\Users\\User\\Desktop\\מיכל\\לימודים מיכל\\פרויקט גמר\\Toys4you\\Bll_Services\\Bll_Services\\obj\\",
+=======
+    "C:\\Users\\sara_p3qhpzt\\Downloads\\toys4you\\Bll_Services\\WebApi\\WebApi.csproj": {}
+  },
+  "projects": {
+    "C:\\Users\\sara_p3qhpzt\\Downloads\\toys4you\\Bll_Services\\Bll_Services\\Bll_Services.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\sara_p3qhpzt\\Downloads\\toys4you\\Bll_Services\\Bll_Services\\Bll_Services.csproj",
+        "projectName": "Bll_Services",
+        "projectPath": "C:\\Users\\sara_p3qhpzt\\Downloads\\toys4you\\Bll_Services\\Bll_Services\\Bll_Services.csproj",
+        "packagesPath": "C:\\Users\\sara_p3qhpzt\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\sara_p3qhpzt\\Downloads\\toys4you\\Bll_Services\\Bll_Services\\obj\\",
+>>>>>>> d5239f885b21841baf3ba1f986df98ac0f935144
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -32,11 +46,19 @@
           "net8.0": {
             "targetAlias": "net8.0",
             "projectReferences": {
+<<<<<<< HEAD
               "C:\\Users\\User\\Desktop\\מיכל\\לימודים מיכל\\פרויקט גמר\\Toys4you\\Bll_Services\\Dal_Repository\\Dal_Repository.csproj": {
                 "projectPath": "C:\\Users\\User\\Desktop\\מיכל\\לימודים מיכל\\פרויקט גמר\\Toys4you\\Bll_Services\\Dal_Repository\\Dal_Repository.csproj"
               },
               "C:\\Users\\User\\Desktop\\מיכל\\לימודים מיכל\\פרויקט גמר\\Toys4you\\Bll_Services\\Dto_common_Entities\\Dto_common_Entities.csproj": {
                 "projectPath": "C:\\Users\\User\\Desktop\\מיכל\\לימודים מיכל\\פרויקט גמר\\Toys4you\\Bll_Services\\Dto_common_Entities\\Dto_common_Entities.csproj"
+=======
+              "C:\\Users\\sara_p3qhpzt\\Downloads\\toys4you\\Bll_Services\\Dal_Repository\\Dal_Repository.csproj": {
+                "projectPath": "C:\\Users\\sara_p3qhpzt\\Downloads\\toys4you\\Bll_Services\\Dal_Repository\\Dal_Repository.csproj"
+              },
+              "C:\\Users\\sara_p3qhpzt\\Downloads\\toys4you\\Bll_Services\\Dto_common_Entities\\Dto_common_Entities.csproj": {
+                "projectPath": "C:\\Users\\sara_p3qhpzt\\Downloads\\toys4you\\Bll_Services\\Dto_common_Entities\\Dto_common_Entities.csproj"
+>>>>>>> d5239f885b21841baf3ba1f986df98ac0f935144
               }
             }
           }
@@ -75,6 +97,7 @@
         }
       }
     },
+<<<<<<< HEAD
     "C:\\Users\\User\\Desktop\\מיכל\\לימודים מיכל\\פרויקט גמר\\Toys4you\\Bll_Services\\Dal_Repository\\Dal_Repository.csproj": {
       "version": "1.0.0",
       "restore": {
@@ -83,6 +106,16 @@
         "projectPath": "C:\\Users\\User\\Desktop\\מיכל\\לימודים מיכל\\פרויקט גמר\\Toys4you\\Bll_Services\\Dal_Repository\\Dal_Repository.csproj",
         "packagesPath": "C:\\Users\\User\\.nuget\\packages\\",
         "outputPath": "C:\\Users\\User\\Desktop\\מיכל\\לימודים מיכל\\פרויקט גמר\\Toys4you\\Bll_Services\\Dal_Repository\\obj\\",
+=======
+    "C:\\Users\\sara_p3qhpzt\\Downloads\\toys4you\\Bll_Services\\Dal_Repository\\Dal_Repository.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\sara_p3qhpzt\\Downloads\\toys4you\\Bll_Services\\Dal_Repository\\Dal_Repository.csproj",
+        "projectName": "Dal_Repository",
+        "projectPath": "C:\\Users\\sara_p3qhpzt\\Downloads\\toys4you\\Bll_Services\\Dal_Repository\\Dal_Repository.csproj",
+        "packagesPath": "C:\\Users\\sara_p3qhpzt\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\sara_p3qhpzt\\Downloads\\toys4you\\Bll_Services\\Dal_Repository\\obj\\",
+>>>>>>> d5239f885b21841baf3ba1f986df98ac0f935144
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -103,8 +136,13 @@
           "net8.0": {
             "targetAlias": "net8.0",
             "projectReferences": {
+<<<<<<< HEAD
               "C:\\Users\\User\\Desktop\\מיכל\\לימודים מיכל\\פרויקט גמר\\Toys4you\\Bll_Services\\Dto_common_Entities\\Dto_common_Entities.csproj": {
                 "projectPath": "C:\\Users\\User\\Desktop\\מיכל\\לימודים מיכל\\פרויקט גמר\\Toys4you\\Bll_Services\\Dto_common_Entities\\Dto_common_Entities.csproj"
+=======
+              "C:\\Users\\sara_p3qhpzt\\Downloads\\toys4you\\Bll_Services\\Dto_common_Entities\\Dto_common_Entities.csproj": {
+                "projectPath": "C:\\Users\\sara_p3qhpzt\\Downloads\\toys4you\\Bll_Services\\Dto_common_Entities\\Dto_common_Entities.csproj"
+>>>>>>> d5239f885b21841baf3ba1f986df98ac0f935144
               }
             }
           }
@@ -155,6 +193,7 @@
         }
       }
     },
+<<<<<<< HEAD
     "C:\\Users\\User\\Desktop\\מיכל\\לימודים מיכל\\פרויקט גמר\\Toys4you\\Bll_Services\\Dto_common_Entities\\Dto_common_Entities.csproj": {
       "version": "1.0.0",
       "restore": {
@@ -163,6 +202,16 @@
         "projectPath": "C:\\Users\\User\\Desktop\\מיכל\\לימודים מיכל\\פרויקט גמר\\Toys4you\\Bll_Services\\Dto_common_Entities\\Dto_common_Entities.csproj",
         "packagesPath": "C:\\Users\\User\\.nuget\\packages\\",
         "outputPath": "C:\\Users\\User\\Desktop\\מיכל\\לימודים מיכל\\פרויקט גמר\\Toys4you\\Bll_Services\\Dto_common_Entities\\obj\\",
+=======
+    "C:\\Users\\sara_p3qhpzt\\Downloads\\toys4you\\Bll_Services\\Dto_common_Entities\\Dto_common_Entities.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\sara_p3qhpzt\\Downloads\\toys4you\\Bll_Services\\Dto_common_Entities\\Dto_common_Entities.csproj",
+        "projectName": "Dto_common_Entities",
+        "projectPath": "C:\\Users\\sara_p3qhpzt\\Downloads\\toys4you\\Bll_Services\\Dto_common_Entities\\Dto_common_Entities.csproj",
+        "packagesPath": "C:\\Users\\sara_p3qhpzt\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\sara_p3qhpzt\\Downloads\\toys4you\\Bll_Services\\Dto_common_Entities\\obj\\",
+>>>>>>> d5239f885b21841baf3ba1f986df98ac0f935144
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -219,6 +268,7 @@
         }
       }
     },
+<<<<<<< HEAD
     "C:\\Users\\User\\Desktop\\מיכל\\לימודים מיכל\\פרויקט גמר\\Toys4you\\Bll_Services\\WebApi\\WebApi.csproj": {
       "version": "1.0.0",
       "restore": {
@@ -227,6 +277,16 @@
         "projectPath": "C:\\Users\\User\\Desktop\\מיכל\\לימודים מיכל\\פרויקט גמר\\Toys4you\\Bll_Services\\WebApi\\WebApi.csproj",
         "packagesPath": "C:\\Users\\User\\.nuget\\packages\\",
         "outputPath": "C:\\Users\\User\\Desktop\\מיכל\\לימודים מיכל\\פרויקט גמר\\Toys4you\\Bll_Services\\WebApi\\obj\\",
+=======
+    "C:\\Users\\sara_p3qhpzt\\Downloads\\toys4you\\Bll_Services\\WebApi\\WebApi.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\sara_p3qhpzt\\Downloads\\toys4you\\Bll_Services\\WebApi\\WebApi.csproj",
+        "projectName": "WebApi",
+        "projectPath": "C:\\Users\\sara_p3qhpzt\\Downloads\\toys4you\\Bll_Services\\WebApi\\WebApi.csproj",
+        "packagesPath": "C:\\Users\\sara_p3qhpzt\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\sara_p3qhpzt\\Downloads\\toys4you\\Bll_Services\\WebApi\\obj\\",
+>>>>>>> d5239f885b21841baf3ba1f986df98ac0f935144
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -247,11 +307,19 @@
           "net8.0": {
             "targetAlias": "net8.0",
             "projectReferences": {
+<<<<<<< HEAD
               "C:\\Users\\User\\Desktop\\מיכל\\לימודים מיכל\\פרויקט גמר\\Toys4you\\Bll_Services\\Bll_Services\\Bll_Services.csproj": {
                 "projectPath": "C:\\Users\\User\\Desktop\\מיכל\\לימודים מיכל\\פרויקט גמר\\Toys4you\\Bll_Services\\Bll_Services\\Bll_Services.csproj"
               },
               "C:\\Users\\User\\Desktop\\מיכל\\לימודים מיכל\\פרויקט גמר\\Toys4you\\Bll_Services\\Dto_common_Entities\\Dto_common_Entities.csproj": {
                 "projectPath": "C:\\Users\\User\\Desktop\\מיכל\\לימודים מיכל\\פרויקט גמר\\Toys4you\\Bll_Services\\Dto_common_Entities\\Dto_common_Entities.csproj"
+=======
+              "C:\\Users\\sara_p3qhpzt\\Downloads\\toys4you\\Bll_Services\\Bll_Services\\Bll_Services.csproj": {
+                "projectPath": "C:\\Users\\sara_p3qhpzt\\Downloads\\toys4you\\Bll_Services\\Bll_Services\\Bll_Services.csproj"
+              },
+              "C:\\Users\\sara_p3qhpzt\\Downloads\\toys4you\\Bll_Services\\Dto_common_Entities\\Dto_common_Entities.csproj": {
+                "projectPath": "C:\\Users\\sara_p3qhpzt\\Downloads\\toys4you\\Bll_Services\\Dto_common_Entities\\Dto_common_Entities.csproj"
+>>>>>>> d5239f885b21841baf3ba1f986df98ac0f935144
               }
             }
           }

@@ -4037,11 +4037,19 @@
   "project": {
     "version": "1.0.0",
     "restore": {
+<<<<<<< HEAD
       "projectUniqueName": "C:\\Users\\User\\Desktop\\מיכל\\לימודים מיכל\\פרויקט גמר\\Toys4you\\Bll_Services\\Dal_Repository\\Dal_Repository.csproj",
       "projectName": "Dal_Repository",
       "projectPath": "C:\\Users\\User\\Desktop\\מיכל\\לימודים מיכל\\פרויקט גמר\\Toys4you\\Bll_Services\\Dal_Repository\\Dal_Repository.csproj",
       "packagesPath": "C:\\Users\\User\\.nuget\\packages\\",
       "outputPath": "C:\\Users\\User\\Desktop\\מיכל\\לימודים מיכל\\פרויקט גמר\\Toys4you\\Bll_Services\\Dal_Repository\\obj\\",
+=======
+      "projectUniqueName": "C:\\Users\\sara_p3qhpzt\\Downloads\\toys4you\\Bll_Services\\Dal_Repository\\Dal_Repository.csproj",
+      "projectName": "Dal_Repository",
+      "projectPath": "C:\\Users\\sara_p3qhpzt\\Downloads\\toys4you\\Bll_Services\\Dal_Repository\\Dal_Repository.csproj",
+      "packagesPath": "C:\\Users\\sara_p3qhpzt\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\sara_p3qhpzt\\Downloads\\toys4you\\Bll_Services\\Dal_Repository\\obj\\",
+>>>>>>> d5239f885b21841baf3ba1f986df98ac0f935144
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -4062,8 +4070,13 @@
         "net8.0": {
           "targetAlias": "net8.0",
           "projectReferences": {
+<<<<<<< HEAD
             "C:\\Users\\User\\Desktop\\מיכל\\לימודים מיכל\\פרויקט גמר\\Toys4you\\Bll_Services\\Dto_common_Entities\\Dto_common_Entities.csproj": {
               "projectPath": "C:\\Users\\User\\Desktop\\מיכל\\לימודים מיכל\\פרויקט גמר\\Toys4you\\Bll_Services\\Dto_common_Entities\\Dto_common_Entities.csproj"
+=======
+            "C:\\Users\\sara_p3qhpzt\\Downloads\\toys4you\\Bll_Services\\Dto_common_Entities\\Dto_common_Entities.csproj": {
+              "projectPath": "C:\\Users\\sara_p3qhpzt\\Downloads\\toys4you\\Bll_Services\\Dto_common_Entities\\Dto_common_Entities.csproj"
+>>>>>>> d5239f885b21841baf3ba1f986df98ac0f935144
             }
           }
         }
