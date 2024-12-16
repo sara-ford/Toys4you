@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Dto_common_Entities")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+15ca242d10b0549298dd332823254fcef36568dc")]
 [assembly: System.Reflection.AssemblyProductAttribute("Dto_common_Entities")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Dto_common_Entities")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

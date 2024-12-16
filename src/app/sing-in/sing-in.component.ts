@@ -39,7 +39,9 @@ export class SingInComponent {
     this.toysService.getCustomerByPassword(this.value, this.Name).subscribe(
       (response) => {
         if (response?.message) {
-          this.message = response.message;
+          this.message = response.message;       
+          localStorage.setItem('userName', this.Name); 
+
         }
       },
       (error) => {
