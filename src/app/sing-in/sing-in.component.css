@@ -1,0 +1,46 @@
+.form-container {
+    max-width: 400px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    text-align: center; /* Center the text */
+  }
+  
+  h2 {
+    text-align: center;
+    color: #333;
+  }
+  
+  .form-group {
+    margin-bottom: 20px;
+  }
+  
+  input, p-password, p-datepicker {
+    width: 100%;
+  }
+  
+  .submit-button {
+    width: 100%;
+  }
+  
+  .form-footer {
+    text-align: center;
+    margin-top: 10px;
+  }
+  
+  .toggle-link {
+    color: #007bff;
+    cursor: pointer;
+    text-decoration: underline;
+  }
+  
+  .message {
+    text-align: center;
+    color: #d9534f;
+    margin-top: 10px;
+    font-size: 1.2em;
+    font-weight: bold;
+  }
+  

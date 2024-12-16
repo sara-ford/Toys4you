@@ -13,13 +13,13 @@ import { ToysServiceService } from '../toys-service.service';
   standalone: true,
   imports: [CommonModule, PasswordModule, FormsModule, InputTextModule, FloatLabel, ButtonModule, DatePicker],
   templateUrl: './sing-in.component.html',
-  styleUrls: ['./sing-in.component.css'] // Note the correct property name
+  styleUrls: ['./sing-in.component.css'] 
 })
 export class SingInComponent {
   constructor(private toysService: ToysServiceService) { }
 
   isSignIn: boolean = true;
-  isMessage: boolean = false; // Initially hide the message
+  isMessage: boolean = false; 
   Name: string;
   Phone: string;
   Email: string;
@@ -28,8 +28,8 @@ export class SingInComponent {
   message: string = '';
 
   toggleForm() {
-    this.isSignIn = !this.isSignIn; 
-    this.isMessage = !this.isMessage
+    this.isSignIn = !this.isSignIn;
+    this.isMessage = false; 
   }
 
   signIn() {
@@ -37,18 +37,22 @@ export class SingInComponent {
       (response) => {
         if (response?.message) {
           this.message = response.message;
+          this.isMessage = true; 
         }
       },
       (error) => {
-        const errorMessage = error.error?.message; 
-        this.message = errorMessage;  
-        //העברה לדף הlog in
-        setTimeout(() => {this.toggleForm()
-        }, 1000);
+        const errorMessage = error.error?.message || "No account found with this name and password.";
+        this.message = errorMessage;
+        this.isMessage = true; 
+
+  
+        setTimeout(() => {
+          this.toggleForm();
+        }, 500); 
       }
     );
   }
-  logIn(){
-    this.toysService.getCustomerByPassword(this.value, this.Name)    
+
+  logIn() {
   }
 }
