@@ -2,14 +2,14 @@ import { HttpClientModule } from '@angular/common/http'
 import { Component, OnInit } from '@angular/core';
 import { ToysServiceService } from '../toys-service.service';
 import { ModelProduct } from '../models/model-product';
-import { CommonModule } from '@angular/common';
-import { FormsModule } from '@angular/forms';
 import { Router } from '@angular/router';
-
+import { FormsModule } from '@angular/forms';
+import { CheckboxModule } from 'primeng/checkbox';
+import { CommonModule } from '@angular/common';
 @Component({
   selector: 'app-products',
   standalone: true,
-  imports: [CommonModule, FormsModule,HttpClientModule],
+  imports: [CommonModule,HttpClientModule,FormsModule, CheckboxModule, CommonModule],
   templateUrl: './products.component.html',
   styleUrls: ['./products.component.css']
 })
@@ -77,4 +77,66 @@ export class ProductsComponent implements OnInit {
     this.toysService.setSelectedProduct(product); 
     this.router.navigate(['/game-details']); 
   }
+  selectedCategory: any;  // לא מערך, אלא משתנה בודד
+
+  categories: any[] = [
+    { name: 'board game', key: '1' },
+    { name: 'card game', key: '2' },
+    { name: 'family game', key: '3' }
+  ];
+  onCategoryChange(): void {
+    // בודק אם יש קטגוריה שנבחרה
+    if (this.selectedCategory) {
+      // הדפסת הקטגוריה המלאה
+      console.log('Selected Category:', this.selectedCategory);
+  
+      // שולף רק את ה-key מתוך selectedCategory
+      const categoryId = this.selectedCategory.key;
+  
+      // הדפסת ה-key כדי לוודא שהוא מתקבל כראוי
+      console.log('Selected Category ID (key):', categoryId);
+  
+      // אם יש categoryId תקני (לא NaN או null)
+      if (categoryId) {
+        this.toysService.getProductByCategory(Number(categoryId)).subscribe(
+          (data) => {
+            this.products = data;  // מעדכן את המוצרים לפי הקטגוריה
+          },
+          (error) => {
+            console.error('Error fetching products by category:', error);
+            alert('There was an error fetching the products for the selected category. Please try again later.');
+          }
+        );
+      } else {
+        console.error('Invalid categoryId:', categoryId);
+        alert('Invalid category selected. Please select a valid category.');
+      }
+    } else {
+      console.log('No category selected.');
+      alert('Please select a category.');
+    }
+  }
+  
+
+  // sortByCategory() {
+  //   this.selectedCategories = [this.categories[1]]; 
+  
+  //     const categoryId = this.selectedCategories[0].key;
+  
+  //     this.toysService.getProductByCategory(Number(categoryId)).subscribe(
+  //         (data) => {
+  //             this.products = data; 
+  //         },
+  //         (error) => {
+  //             console.error('Error fetching products by category:', error);
+  //             alert('There was an error fetching the products for the selected category. Please try again later.');
+  //         }
+  //     );
+  // }
+  
 }
+
+
+
+
+  

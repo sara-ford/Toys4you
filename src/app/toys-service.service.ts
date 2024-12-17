@@ -15,7 +15,12 @@ export class ToysServiceService {
 
   getProductList(): Observable<ModelProduct[]> {
     return this.http.get<ModelProduct[]>('http://localhost:5252/api/Product');
+
   }
+  getProductByCategory(categoryId: number): Observable<ModelProduct[]> {
+  return this.http.get<ModelProduct[]>(`http://localhost:5252/api/Product/${categoryId}`);
+}
+
   getCustomerByPassword(password: string, name: string): Observable<any> {
     return this.http.post<any>(
       `http://localhost:5252/api/Costumer/api/Costumer/${password}?name=${name}`,
@@ -33,7 +38,7 @@ insertCustomer(password: string, name: string, date: Date, email: string, phone:
 
   return this.http.post<any>(
     `http://localhost:5252/api/Customer/add`, 
-    customer // כאן אתה שולח את האובייקט בגוף הבקשה
+    customer 
   );
 }
 
