@@ -24,7 +24,7 @@ export class SingInComponent {
   Phone: string;
   Email: string;
   value: string;
-  date: Date | undefined;
+  date: Date;
   message: string = '';
 
   toggleForm() {
@@ -54,5 +54,9 @@ export class SingInComponent {
   }
 
   logIn() {
+    this.toysService.insertCustomer(this.value,this.Name,this.date,this.Email,this.Phone)
+    alert("נרשמת בהצלחה")
+
+
   }
 }

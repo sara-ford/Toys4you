@@ -22,22 +22,30 @@ export class ToysServiceService {
       {}      
     );
   }
-insertCustomer(password: string, name: string, date: Date, email: string, phone: string): Observable<any> {
-  const customer = {
-    password: password,
-    name: name,
-    date: date,
-    email: email,
-    phone: phone
-  };
-
-  return this.http.post<any>(
-    `http://localhost:5252/api/Customer/add`, 
-    customer // כאן אתה שולח את האובייקט בגוף הבקשה
-  );
-}
-
-
+  insertCustomer(password: string, name: string, date: Date, email: string, phone: string): Observable<any> {
+    const customer = {
+      Password: password,
+      Name: name,
+      DateOfBirth: date,  // וודא שהפורמט של התאריך נכון
+      Email: email,
+      Phone: phone
+    };
+  
+    console.log(customer);  // הדפס את המידע לפני שליחתו
+  
+    return this.http.post<ModelCustomer[]>(
+      'http://localhost:5252/api/Costumer/api/Costumer/',
+      customer
+    ).pipe(
+      catchError(error => {
+        console.error('Error adding customer:', error);
+        return throwError(error);
+      })
+    );
+  }
+  
+  
+  
   private selectedProduct: ModelProduct; 
 
   setSelectedProduct(product: ModelProduct): void {

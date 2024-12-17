@@ -20,32 +20,30 @@ export class ShoppingCartComponent implements OnInit {
   ngOnInit(): void {
     const selectedProduct = this.toysService.getSelectedProduct();
     console.log(selectedProduct);
-      this.toysService.addToCart(selectedProduct);
+    this.toysService.addToCart(selectedProduct);
     this.cartlist = this.toysService.cartlist; 
   }
   
   increaseAmount(product: CartProducts): void {
-    product.amount++
-    product.totalPrice = product.amount * product.product.price
+    product.amount++;
+    product.totalPrice = product.amount * product.product.price;
   }
   
   decreaseAmount(product: CartProducts): void {
     if (product.amount > 1) { 
-      product.amount--
-      product.totalPrice = product.amount * product.product.price
+      product.amount--;
+      product.totalPrice = product.amount * product.product.price;
     }
   }
   
   removeProduct(product: CartProducts): void {
     const index = this.cartlist.indexOf(product);
     if (index !== -1) {
-      this.cartlist.splice(index, 1)
+      this.cartlist.splice(index, 1);
     }
   }
+  
   getTotalPrice(): number {
     return this.cartlist.reduce((total, product) => total + product.totalPrice, 0);
   }
-  // goToCheckout(): void {
-  //   this.router.navigate(['/checkout']); // כאן תוכל להחליף את הנתיב לפי הצורך
-  // }
 }

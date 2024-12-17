@@ -7,7 +7,7 @@ import { CommonModule } from '@angular/common';
 @Component({
   selector: 'app-game-details',
   standalone: true, 
-  imports: [CommonModule,RouterLink, RouterLinkActive, RouterOutlet],  
+  imports: [CommonModule, RouterLink, RouterLinkActive, RouterOutlet],  
   templateUrl: './game-details.component.html',
   styleUrls: ['./game-details.component.css']
 })
@@ -20,4 +20,4 @@ export class GameDetailsComponent implements OnInit {
     this.selectedProduct = this.toysService.getSelectedProduct();
     console.log(this.selectedProduct);
   }
-  }
+}
