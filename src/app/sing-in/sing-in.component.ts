@@ -38,6 +38,8 @@ export class SingInComponent {
         if (response?.message) {
           this.message = response.message;
           this.isMessage = true; 
+          sessionStorage.setItem('userName', this.Name); 
+
         }
       },
       (error) => {

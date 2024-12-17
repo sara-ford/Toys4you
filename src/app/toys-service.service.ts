@@ -15,37 +15,34 @@ export class ToysServiceService {
 
   getProductList(): Observable<ModelProduct[]> {
     return this.http.get<ModelProduct[]>('http://localhost:5252/api/Product');
+
   }
+  getProductByCategory(categoryId: number): Observable<ModelProduct[]> {
+  return this.http.get<ModelProduct[]>(`http://localhost:5252/api/Product/${categoryId}`);
+}
+
   getCustomerByPassword(password: string, name: string): Observable<any> {
     return this.http.post<any>(
       `http://localhost:5252/api/Costumer/api/Costumer/${password}?name=${name}`,
       {}      
     );
   }
-  insertCustomer(password: string, name: string, date: Date, email: string, phone: string): Observable<any> {
-    const customer = {
-      Password: password,
-      Name: name,
-      DateOfBirth: date,  // וודא שהפורמט של התאריך נכון
-      Email: email,
-      Phone: phone
-    };
-  
-    console.log(customer);  // הדפס את המידע לפני שליחתו
-  
-    return this.http.post<ModelCustomer[]>(
-      'http://localhost:5252/api/Costumer/api/Costumer/',
-      customer
-    ).pipe(
-      catchError(error => {
-        console.error('Error adding customer:', error);
-        return throwError(error);
-      })
-    );
-  }
-  
-  
-  
+insertCustomer(password: string, name: string, date: Date, email: string, phone: string): Observable<any> {
+  const customer = {
+    password: password,
+    name: name,
+    date: date,
+    email: email,
+    phone: phone
+  };
+
+  return this.http.post<any>(
+    `http://localhost:5252/api/Customer/add`, 
+    customer // כאן אתה שולח את האובייקט בגוף הבקשה
+  );
+}
+
+
   private selectedProduct: ModelProduct; 
 
   setSelectedProduct(product: ModelProduct): void {

@@ -15,7 +15,7 @@ export class AppComponent {
 
   constructor(private router: Router) {
     // בודק אם יש שם משתמש ב-localStorage
-    const userName = localStorage.getItem('userName');
+    const userName = sessionStorage.getItem('userName');
     if (userName) {
       this.isUserSignedIn = true;
       this.Name = userName;
