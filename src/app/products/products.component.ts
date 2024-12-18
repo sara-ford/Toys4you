@@ -16,9 +16,9 @@ import { CommonModule } from '@angular/common';
 
 export class ProductsComponent implements OnInit {
   products: ModelProduct[] = []; 
-
+  filterProducts: ModelProduct[] = []; 
   selected: string;
-  
+  filter:boolean = false
   constructor(
     private toysService: ToysServiceService,
     private router: Router 
@@ -77,44 +77,53 @@ export class ProductsComponent implements OnInit {
     this.toysService.setSelectedProduct(product); 
     this.router.navigate(['/game-details']); 
   }
-  selectedCategory: any;  // לא מערך, אלא משתנה בודד
+  selectedCategory: any; 
 
   categories: any[] = [
     { name: 'board game', key: '1' },
     { name: 'card game', key: '2' },
     { name: 'family game', key: '3' }
   ];
-  onCategoryChange(): void {
-    // בודק אם יש קטגוריה שנבחרה
-    if (this.selectedCategory) {
-      // הדפסת הקטגוריה המלאה
-      console.log('Selected Category:', this.selectedCategory);
+  onCategoryChange(category : number): void {debugger
+    this.toysService.getProductByCategory(Number(category)).subscribe((data:any)=>{
+      // this.filterProducts = [];
+
+      this.filterProducts=data
+      this.filter = true
+      console.log(this.filterProducts)
+      console.log(data)
+    debugger
+    })
+    //    // בודק אם יש קטגוריה שנבחרה
+    // if (this.selectedCategory) {
+    //   // הדפסת הקטגוריה המלאה
+    //   console.log('Selected Category:', this.selectedCategory);
   
-      // שולף רק את ה-key מתוך selectedCategory
-      const categoryId = this.selectedCategory.key;
+    //   // שולף רק את ה-key מתוך selectedCategory
+    //   const categoryId = this.selectedCategory.key;
   
-      // הדפסת ה-key כדי לוודא שהוא מתקבל כראוי
-      console.log('Selected Category ID (key):', categoryId);
+    //   // הדפסת ה-key כדי לוודא שהוא מתקבל כראוי
+    //   console.log('Selected Category ID (key):', categoryId);
   
-      // אם יש categoryId תקני (לא NaN או null)
-      if (categoryId) {
-        this.toysService.getProductByCategory(Number(categoryId)).subscribe(
-          (data) => {
-            this.products = data;  // מעדכן את המוצרים לפי הקטגוריה
-          },
-          (error) => {
-            console.error('Error fetching products by category:', error);
-            alert('There was an error fetching the products for the selected category. Please try again later.');
-          }
-        );
-      } else {
-        console.error('Invalid categoryId:', categoryId);
-        alert('Invalid category selected. Please select a valid category.');
-      }
-    } else {
-      console.log('No category selected.');
-      alert('Please select a category.');
-    }
+    //   // אם יש categoryId תקני (לא NaN או null)
+    //   if (categoryId) {
+    //     this.toysService.getProductByCategory(Number(categoryId)).subscribe(
+    //       (data) => {
+    //         this.products = data;  // מעדכן את המוצרים לפי הקטגוריה
+    //       },
+    //       (error) => {
+    //         console.error('Error fetching products by category:', error);
+    //         alert('There was an error fetching the products for the selected category. Please try again later.');
+    //       }
+    //     );
+    //   } else {
+    //     console.error('Invalid categoryId:', categoryId);
+    //     alert('Invalid category selected. Please select a valid category.');
+    //   }
+    // } else {
+    //   console.log('No category selected.');
+    //   alert('Please select a category.');
+    // }
   }
   
 

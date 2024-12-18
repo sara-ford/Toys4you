@@ -20,10 +20,11 @@
     name="group" 
     [value]="category" 
     [(ngModel)]="selectedCategory"  
-    (onChange)="onCategoryChange()"  
+    (onChange)="onCategoryChange(category.key)"  
   />
   <label [for]="category.key" class="ml-2"> {{ category.name }} </label>
 </div>
+{{selectedCategory | json}}
 
 
 
@@ -36,6 +37,8 @@
 </select>
 
 <div class="product-container">
+  <div *ngIf="!filter" class="product-container ">
+
   <div *ngFor="let product of products" class="product-card" (click)="onProductClick(product)">
     <img class="product-image" [src]="product.picture" alt="{{ product.name }}" />
     <h3>{{ product.name }}</h3>
@@ -45,6 +48,23 @@
     <p>id: {{product.id}}</p>
     <p>categoryId: {{product.categoryId}}</p>
     <p>companyId: {{product.companyId}}</p>
+    
+  </div>
+  </div>
+</div>
+
+<div class="product-container">
+  <div *ngIf="filter" class="product-container">
+  <div *ngFor="let product of filterProducts" class="product-card" (click)="onProductClick(product)">
+    <img class="product-image" [src]="product.picture" alt="{{ product.name }}" />
+    <h3>{{ product.name }}</h3>
+    <p>Description: {{ product.description }}</p>
+    <p class="price">Price: {{ product.price }}&#x20AA;</p>
+    <p>Age: {{ product.age }}</p>
+    <p>id: {{product.id}}</p>
+    <p>categoryId: {{product.categoryId}}</p>
+    <p>companyId: {{product.companyId}}</p>
+  </div>
   </div>
 </div>
 
