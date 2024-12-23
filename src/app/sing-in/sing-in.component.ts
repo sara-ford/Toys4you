@@ -7,6 +7,8 @@ import { FloatLabel } from 'primeng/floatlabel';
 import { ButtonModule } from 'primeng/button';
 import { DatePicker } from 'primeng/datepicker';
 import { ToysServiceService } from '../toys-service.service';
+import { ModelCustomer } from '../models/model-customer';
+
 @Component({
   selector: 'app-sing-in',
   standalone: true,
@@ -20,11 +22,12 @@ export class SingInComponent {
   isSignIn: boolean = true;
   isMessage: boolean = false; 
   Name: string;
-  Phone: string;
+  Phone: number;
   Email: string;
-  value: string;
-  date: Date;
+  Password: string;
+  DateOfBirth: Date;
   message: string = '';
+  num:number;
 
   toggleForm() {
     this.isSignIn = !this.isSignIn;
@@ -32,7 +35,7 @@ export class SingInComponent {
   }
 
   signIn() {
-    this.toysService.getCustomerByPassword(this.value, this.Name).subscribe(
+    this.toysService.getCustomerByPassword(this.Password, this.Name).subscribe(
       (response) => {
         if (response?.message) {
           this.message = response.message;
@@ -53,26 +56,30 @@ export class SingInComponent {
       }
     );
   }      
-  logIn(){
-    
+
+  logIn() {
+    const customer = new ModelCustomer(
+      this.Name,
+      this.Phone,
+      this.Email,
+      this.DateOfBirth, 
+      this.Password
+    );
+  
+    console.log('Customer data:', customer); // Log the customer data for debugging
+  
+    this.toysService.insertCustomer(customer).subscribe(
+      response => {
+        alert('נרשמת בהצלחה'); // "Successfully registered" in Hebrew
+      },
+      error => {
+        console.error('Error inserting customer', error); // Log the error for debugging
+        alert('An error occurred: ' + error.message);
+      }
+    );
   }
   
-      // logIn(ModelCustomer.name:string,ModelCustomer.password,ModelCustomer.data) {
-      //   // בודק אם כל השדות מלאים לפני שמבצע את השליחה
-      //   if (this.customer.name && this.customer.phone && this.customer.email && this.customer.value) {
-      //     this.toysService.insertCustomer(this.customer).subscribe(
-      //       (response) => {
-      //         console.log('Customer added successfully:', response);
-      //       },
-      //       (error) => {
-      //         console.error('Error adding customer:', error);
-      //       }
-      //     );
-      //   } else {
-      //     alert('Please fill in all fields.');
-      //   }
-      // }
+}
     
-    
-  }
+  
 
