@@ -3,24 +3,36 @@
   "WorkspaceRootPath": "C:\\Users\\sara_p3qhpzt\\OneDrive\\Documents\\\u05DC\u05D9\u05DE\u05D5\u05D3\u05D9\u05DD \u05E9\u05E0\u05D4 \u05D1\\Angular\\\u05E4\u05E8\u05D5\u05D9\u05E7\u05D8\\Bll_Services\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{6C18B575-5456-478F-9445-9FCB8703738B}|Dal_Repository\\Dal_Repository.csproj|c:\\users\\sara_p3qhpzt\\onedrive\\documents\\\u05DC\u05D9\u05DE\u05D5\u05D3\u05D9\u05DD \u05E9\u05E0\u05D4 \u05D1\\angular\\\u05E4\u05E8\u05D5\u05D9\u05E7\u05D8\\bll_services\\dal_repository\\models\\toys4youcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{6C18B575-5456-478F-9445-9FCB8703738B}|Dal_Repository\\Dal_Repository.csproj|solutionrelative:dal_repository\\models\\toys4youcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{3CBA860A-E411-407E-866C-EFE0479C03E5}|Bll_Services\\Bll_Services.csproj|c:\\users\\sara_p3qhpzt\\onedrive\\documents\\\u05DC\u05D9\u05DE\u05D5\u05D3\u05D9\u05DD \u05E9\u05E0\u05D4 \u05D1\\angular\\\u05E4\u05E8\u05D5\u05D9\u05E7\u05D8\\bll_services\\bll_services\\productbll.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3CBA860A-E411-407E-866C-EFE0479C03E5}|Bll_Services\\Bll_Services.csproj|solutionrelative:bll_services\\productbll.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{19689A55-5D3E-4EBD-9407-56CF986C2397}|WebApi\\WebApi.csproj|c:\\users\\sara_p3qhpzt\\onedrive\\documents\\\u05DC\u05D9\u05DE\u05D5\u05D3\u05D9\u05DD \u05E9\u05E0\u05D4 \u05D1\\angular\\\u05E4\u05E8\u05D5\u05D9\u05E7\u05D8\\bll_services\\webapi\\controllers\\productcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{19689A55-5D3E-4EBD-9407-56CF986C2397}|WebApi\\WebApi.csproj|solutionrelative:webapi\\controllers\\productcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{19689A55-5D3E-4EBD-9407-56CF986C2397}|WebApi\\WebApi.csproj|c:\\users\\sara_p3qhpzt\\onedrive\\documents\\\u05DC\u05D9\u05DE\u05D5\u05D3\u05D9\u05DD \u05E9\u05E0\u05D4 \u05D1\\angular\\\u05E4\u05E8\u05D5\u05D9\u05E7\u05D8\\bll_services\\webapi\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{19689A55-5D3E-4EBD-9407-56CF986C2397}|WebApi\\WebApi.csproj|solutionrelative:webapi\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{C3566E02-E6B9-4979-8516-FDDC8DF0CFFD}|Dto_common_Entities\\Dto_common_Entities.csproj|c:\\users\\sara_p3qhpzt\\onedrive\\documents\\\u05DC\u05D9\u05DE\u05D5\u05D3\u05D9\u05DD \u05E9\u05E0\u05D4 \u05D1\\angular\\\u05E4\u05E8\u05D5\u05D9\u05E7\u05D8\\bll_services\\dto_common_entities\\productsdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{C3566E02-E6B9-4979-8516-FDDC8DF0CFFD}|Dto_common_Entities\\Dto_common_Entities.csproj|solutionrelative:dto_common_entities\\productsdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{C3566E02-E6B9-4979-8516-FDDC8DF0CFFD}|Dto_common_Entities\\Dto_common_Entities.csproj|c:\\users\\sara_p3qhpzt\\onedrive\\documents\\\u05DC\u05D9\u05DE\u05D5\u05D3\u05D9\u05DD \u05E9\u05E0\u05D4 \u05D1\\angular\\\u05E4\u05E8\u05D5\u05D9\u05E7\u05D8\\bll_services\\dto_common_entities\\customerdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C3566E02-E6B9-4979-8516-FDDC8DF0CFFD}|Dto_common_Entities\\Dto_common_Entities.csproj|solutionrelative:dto_common_entities\\customerdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6C18B575-5456-478F-9445-9FCB8703738B}|Dal_Repository\\Dal_Repository.csproj|c:\\users\\sara_p3qhpzt\\onedrive\\documents\\\u05DC\u05D9\u05DE\u05D5\u05D3\u05D9\u05DD \u05E9\u05E0\u05D4 \u05D1\\angular\\\u05E4\u05E8\u05D5\u05D9\u05E7\u05D8\\bll_services\\dal_repository\\modelsconverters\\customerconverters.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6C18B575-5456-478F-9445-9FCB8703738B}|Dal_Repository\\Dal_Repository.csproj|solutionrelative:dal_repository\\modelsconverters\\customerconverters.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{6C18B575-5456-478F-9445-9FCB8703738B}|Dal_Repository\\Dal_Repository.csproj|c:\\users\\sara_p3qhpzt\\onedrive\\documents\\\u05DC\u05D9\u05DE\u05D5\u05D3\u05D9\u05DD \u05E9\u05E0\u05D4 \u05D1\\angular\\\u05E4\u05E8\u05D5\u05D9\u05E7\u05D8\\bll_services\\dal_repository\\productsdal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{6C18B575-5456-478F-9445-9FCB8703738B}|Dal_Repository\\Dal_Repository.csproj|solutionrelative:dal_repository\\productsdal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{3CBA860A-E411-407E-866C-EFE0479C03E5}|Bll_Services\\Bll_Services.csproj|c:\\users\\sara_p3qhpzt\\onedrive\\documents\\\u05DC\u05D9\u05DE\u05D5\u05D3\u05D9\u05DD \u05E9\u05E0\u05D4 \u05D1\\angular\\\u05E4\u05E8\u05D5\u05D9\u05E7\u05D8\\bll_services\\bll_services\\productbll.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{3CBA860A-E411-407E-866C-EFE0479C03E5}|Bll_Services\\Bll_Services.csproj|solutionrelative:bll_services\\productbll.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{C3566E02-E6B9-4979-8516-FDDC8DF0CFFD}|Dto_common_Entities\\Dto_common_Entities.csproj|c:\\users\\sara_p3qhpzt\\onedrive\\documents\\\u05DC\u05D9\u05DE\u05D5\u05D3\u05D9\u05DD \u05E9\u05E0\u05D4 \u05D1\\angular\\\u05E4\u05E8\u05D5\u05D9\u05E7\u05D8\\bll_services\\dto_common_entities\\productsdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C3566E02-E6B9-4979-8516-FDDC8DF0CFFD}|Dto_common_Entities\\Dto_common_Entities.csproj|solutionrelative:dto_common_entities\\productsdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6C18B575-5456-478F-9445-9FCB8703738B}|Dal_Repository\\Dal_Repository.csproj|c:\\users\\sara_p3qhpzt\\onedrive\\documents\\\u05DC\u05D9\u05DE\u05D5\u05D3\u05D9\u05DD \u05E9\u05E0\u05D4 \u05D1\\angular\\\u05E4\u05E8\u05D5\u05D9\u05E7\u05D8\\bll_services\\dal_repository\\modelsconverters\\productsconverters.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6C18B575-5456-478F-9445-9FCB8703738B}|Dal_Repository\\Dal_Repository.csproj|solutionrelative:dal_repository\\modelsconverters\\productsconverters.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{6C18B575-5456-478F-9445-9FCB8703738B}|Dal_Repository\\Dal_Repository.csproj|c:\\users\\sara_p3qhpzt\\onedrive\\documents\\\u05DC\u05D9\u05DE\u05D5\u05D3\u05D9\u05DD \u05E9\u05E0\u05D4 \u05D1\\angular\\\u05E4\u05E8\u05D5\u05D9\u05E7\u05D8\\bll_services\\dal_repository\\dal_repository.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
@@ -35,12 +47,8 @@
       "RelativeMoniker": "D:0:0:{3CBA860A-E411-407E-866C-EFE0479C03E5}|Bll_Services\\Bll_Services.csproj|solutionrelative:bll_services\\bll_services.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{6C18B575-5456-478F-9445-9FCB8703738B}|Dal_Repository\\Dal_Repository.csproj|c:\\users\\sara_p3qhpzt\\onedrive\\documents\\\u05DC\u05D9\u05DE\u05D5\u05D3\u05D9\u05DD \u05E9\u05E0\u05D4 \u05D1\\angular\\\u05E4\u05E8\u05D5\u05D9\u05E7\u05D8\\bll_services\\dal_repository\\modelsconverters\\productsconverters.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{6C18B575-5456-478F-9445-9FCB8703738B}|Dal_Repository\\Dal_Repository.csproj|solutionrelative:dal_repository\\modelsconverters\\productsconverters.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{19689A55-5D3E-4EBD-9407-56CF986C2397}|WebApi\\WebApi.csproj|c:\\users\\sara_p3qhpzt\\onedrive\\documents\\\u05DC\u05D9\u05DE\u05D5\u05D3\u05D9\u05DD \u05E9\u05E0\u05D4 \u05D1\\angular\\\u05E4\u05E8\u05D5\u05D9\u05E7\u05D8\\bll_services\\webapi\\controllers\\productcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{19689A55-5D3E-4EBD-9407-56CF986C2397}|WebApi\\WebApi.csproj|solutionrelative:webapi\\controllers\\productcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{6C18B575-5456-478F-9445-9FCB8703738B}|Dal_Repository\\Dal_Repository.csproj|c:\\users\\sara_p3qhpzt\\onedrive\\documents\\\u05DC\u05D9\u05DE\u05D5\u05D3\u05D9\u05DD \u05E9\u05E0\u05D4 \u05D1\\angular\\\u05E4\u05E8\u05D5\u05D9\u05E7\u05D8\\bll_services\\dal_repository\\models\\toys4youcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6C18B575-5456-478F-9445-9FCB8703738B}|Dal_Repository\\Dal_Repository.csproj|solutionrelative:dal_repository\\models\\toys4youcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{6C18B575-5456-478F-9445-9FCB8703738B}|Dal_Repository\\Dal_Repository.csproj|c:\\users\\sara_p3qhpzt\\onedrive\\documents\\\u05DC\u05D9\u05DE\u05D5\u05D3\u05D9\u05DD \u05E9\u05E0\u05D4 \u05D1\\angular\\\u05E4\u05E8\u05D5\u05D9\u05E7\u05D8\\bll_services\\dal_repository\\models\\product.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -66,7 +74,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 7,
+          "SelectedChildIndex": 1,
           "Children": [
             {
               "$type": "Bookmark",
@@ -74,52 +82,13 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 11,
-              "Title": "Dto_common_Entities.csproj",
-              "DocumentMoniker": "C:\\Users\\sara_p3qhpzt\\OneDrive\\Documents\\\u05DC\u05D9\u05DE\u05D5\u05D3\u05D9\u05DD \u05E9\u05E0\u05D4 \u05D1\\Angular\\\u05E4\u05E8\u05D5\u05D9\u05E7\u05D8\\Bll_Services\\Dto_common_Entities\\Dto_common_Entities.csproj",
-              "RelativeDocumentMoniker": "Dto_common_Entities\\Dto_common_Entities.csproj",
-              "ToolTip": "C:\\Users\\sara_p3qhpzt\\OneDrive\\Documents\\\u05DC\u05D9\u05DE\u05D5\u05D3\u05D9\u05DD \u05E9\u05E0\u05D4 \u05D1\\Angular\\\u05E4\u05E8\u05D5\u05D9\u05E7\u05D8\\Bll_Services\\Dto_common_Entities\\Dto_common_Entities.csproj",
-              "RelativeToolTip": "Dto_common_Entities\\Dto_common_Entities.csproj",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
-              "WhenOpened": "2024-12-11T11:51:03.342Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "Bll_Services.csproj",
-              "DocumentMoniker": "C:\\Users\\sara_p3qhpzt\\OneDrive\\Documents\\\u05DC\u05D9\u05DE\u05D5\u05D3\u05D9\u05DD \u05E9\u05E0\u05D4 \u05D1\\Angular\\\u05E4\u05E8\u05D5\u05D9\u05E7\u05D8\\Bll_Services\\Bll_Services\\Bll_Services.csproj",
-              "RelativeDocumentMoniker": "Bll_Services\\Bll_Services.csproj",
-              "ToolTip": "C:\\Users\\sara_p3qhpzt\\OneDrive\\Documents\\\u05DC\u05D9\u05DE\u05D5\u05D3\u05D9\u05DD \u05E9\u05E0\u05D4 \u05D1\\Angular\\\u05E4\u05E8\u05D5\u05D9\u05E7\u05D8\\Bll_Services\\Bll_Services\\Bll_Services.csproj",
-              "RelativeToolTip": "Bll_Services\\Bll_Services.csproj",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
-              "WhenOpened": "2024-12-11T10:11:56.11Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "Dal_Repository.csproj",
-              "DocumentMoniker": "C:\\Users\\sara_p3qhpzt\\OneDrive\\Documents\\\u05DC\u05D9\u05DE\u05D5\u05D3\u05D9\u05DD \u05E9\u05E0\u05D4 \u05D1\\Angular\\\u05E4\u05E8\u05D5\u05D9\u05E7\u05D8\\Bll_Services\\Dal_Repository\\Dal_Repository.csproj",
-              "RelativeDocumentMoniker": "Dal_Repository\\Dal_Repository.csproj",
-              "ToolTip": "C:\\Users\\sara_p3qhpzt\\OneDrive\\Documents\\\u05DC\u05D9\u05DE\u05D5\u05D3\u05D9\u05DD \u05E9\u05E0\u05D4 \u05D1\\Angular\\\u05E4\u05E8\u05D5\u05D9\u05E7\u05D8\\Bll_Services\\Dal_Repository\\Dal_Repository.csproj",
-              "RelativeToolTip": "Dal_Repository\\Dal_Repository.csproj",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
-              "WhenOpened": "2024-12-11T09:55:42.568Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 0,
               "Title": "productBll.cs",
               "DocumentMoniker": "C:\\Users\\sara_p3qhpzt\\OneDrive\\Documents\\\u05DC\u05D9\u05DE\u05D5\u05D3\u05D9\u05DD \u05E9\u05E0\u05D4 \u05D1\\Angular\\\u05E4\u05E8\u05D5\u05D9\u05E7\u05D8\\Bll_Services\\Bll_Services\\productBll.cs",
               "RelativeDocumentMoniker": "Bll_Services\\productBll.cs",
               "ToolTip": "C:\\Users\\sara_p3qhpzt\\OneDrive\\Documents\\\u05DC\u05D9\u05DE\u05D5\u05D3\u05D9\u05DD \u05E9\u05E0\u05D4 \u05D1\\Angular\\\u05E4\u05E8\u05D5\u05D9\u05E7\u05D8\\Bll_Services\\Bll_Services\\productBll.cs",
               "RelativeToolTip": "Bll_Services\\productBll.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAALAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAJAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-12-11T09:09:24.405Z",
               "EditorCaption": ""
@@ -127,94 +96,152 @@
             {
               "$type": "Document",
               "DocumentIndex": 3,
-              "Title": "productsDal.cs",
-              "DocumentMoniker": "C:\\Users\\sara_p3qhpzt\\OneDrive\\Documents\\\u05DC\u05D9\u05DE\u05D5\u05D3\u05D9\u05DD \u05E9\u05E0\u05D4 \u05D1\\Angular\\\u05E4\u05E8\u05D5\u05D9\u05E7\u05D8\\Bll_Services\\Dal_Repository\\productsDal.cs",
-              "RelativeDocumentMoniker": "Dal_Repository\\productsDal.cs",
-              "ToolTip": "C:\\Users\\sara_p3qhpzt\\OneDrive\\Documents\\\u05DC\u05D9\u05DE\u05D5\u05D3\u05D9\u05DD \u05E9\u05E0\u05D4 \u05D1\\Angular\\\u05E4\u05E8\u05D5\u05D9\u05E7\u05D8\\Bll_Services\\Dal_Repository\\productsDal.cs",
-              "RelativeToolTip": "Dal_Repository\\productsDal.cs",
-              "ViewState": "AgIAABAAAAAAAAAAAAAQwBwAAAALAAAAAAAAAA==",
+              "Title": "customerDto.cs",
+              "DocumentMoniker": "C:\\Users\\sara_p3qhpzt\\OneDrive\\Documents\\\u05DC\u05D9\u05DE\u05D5\u05D3\u05D9\u05DD \u05E9\u05E0\u05D4 \u05D1\\Angular\\\u05E4\u05E8\u05D5\u05D9\u05E7\u05D8\\Bll_Services\\Dto_common_Entities\\customerDto.cs",
+              "RelativeDocumentMoniker": "Dto_common_Entities\\customerDto.cs",
+              "ToolTip": "C:\\Users\\sara_p3qhpzt\\OneDrive\\Documents\\\u05DC\u05D9\u05DE\u05D5\u05D3\u05D9\u05DD \u05E9\u05E0\u05D4 \u05D1\\Angular\\\u05E4\u05E8\u05D5\u05D9\u05E7\u05D8\\Bll_Services\\Dto_common_Entities\\customerDto.cs",
+              "RelativeToolTip": "Dto_common_Entities\\customerDto.cs",
+              "ViewState": "AgIAAAQAAAAAAAAAAAAuwBgAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-11T09:10:37.559Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-12-14T19:27:46.646Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 6,
               "Title": "productsDto.cs",
               "DocumentMoniker": "C:\\Users\\sara_p3qhpzt\\OneDrive\\Documents\\\u05DC\u05D9\u05DE\u05D5\u05D3\u05D9\u05DD \u05E9\u05E0\u05D4 \u05D1\\Angular\\\u05E4\u05E8\u05D5\u05D9\u05E7\u05D8\\Bll_Services\\Dto_common_Entities\\productsDto.cs",
               "RelativeDocumentMoniker": "Dto_common_Entities\\productsDto.cs",
               "ToolTip": "C:\\Users\\sara_p3qhpzt\\OneDrive\\Documents\\\u05DC\u05D9\u05DE\u05D5\u05D3\u05D9\u05DD \u05E9\u05E0\u05D4 \u05D1\\Angular\\\u05E4\u05E8\u05D5\u05D9\u05E7\u05D8\\Bll_Services\\Dto_common_Entities\\productsDto.cs",
               "RelativeToolTip": "Dto_common_Entities\\productsDto.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAjAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAKAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-11T09:11:10.222Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-12-11T09:11:10.222Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "Toys4youContext.cs",
-              "DocumentMoniker": "C:\\Users\\sara_p3qhpzt\\OneDrive\\Documents\\\u05DC\u05D9\u05DE\u05D5\u05D3\u05D9\u05DD \u05E9\u05E0\u05D4 \u05D1\\Angular\\\u05E4\u05E8\u05D5\u05D9\u05E7\u05D8\\Bll_Services\\Dal_Repository\\models\\Toys4youContext.cs",
-              "RelativeDocumentMoniker": "Dal_Repository\\models\\Toys4youContext.cs",
-              "ToolTip": "C:\\Users\\sara_p3qhpzt\\OneDrive\\Documents\\\u05DC\u05D9\u05DE\u05D5\u05D3\u05D9\u05DD \u05E9\u05E0\u05D4 \u05D1\\Angular\\\u05E4\u05E8\u05D5\u05D9\u05E7\u05D8\\Bll_Services\\Dal_Repository\\models\\Toys4youContext.cs",
-              "RelativeToolTip": "Dal_Repository\\models\\Toys4youContext.cs",
-              "ViewState": "AgIAAJgAAAAAAAAAAAAUwB4AAAAJAAAAAAAAAA==",
+              "DocumentIndex": 4,
+              "Title": "customerConverters.cs",
+              "DocumentMoniker": "C:\\Users\\sara_p3qhpzt\\OneDrive\\Documents\\\u05DC\u05D9\u05DE\u05D5\u05D3\u05D9\u05DD \u05E9\u05E0\u05D4 \u05D1\\Angular\\\u05E4\u05E8\u05D5\u05D9\u05E7\u05D8\\Bll_Services\\Dal_Repository\\modelsConverters\\customerConverters.cs",
+              "RelativeDocumentMoniker": "Dal_Repository\\modelsConverters\\customerConverters.cs",
+              "ToolTip": "C:\\Users\\sara_p3qhpzt\\OneDrive\\Documents\\\u05DC\u05D9\u05DE\u05D5\u05D3\u05D9\u05DD \u05E9\u05E0\u05D4 \u05D1\\Angular\\\u05E4\u05E8\u05D5\u05D9\u05E7\u05D8\\Bll_Services\\Dal_Repository\\modelsConverters\\customerConverters.cs",
+              "RelativeToolTip": "Dal_Repository\\modelsConverters\\customerConverters.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABMAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-11T09:57:49.879Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-12-14T19:29:01.127Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 5,
+              "Title": "productsDal.cs",
+              "DocumentMoniker": "C:\\Users\\sara_p3qhpzt\\OneDrive\\Documents\\\u05DC\u05D9\u05DE\u05D5\u05D3\u05D9\u05DD \u05E9\u05E0\u05D4 \u05D1\\Angular\\\u05E4\u05E8\u05D5\u05D9\u05E7\u05D8\\Bll_Services\\Dal_Repository\\productsDal.cs",
+              "RelativeDocumentMoniker": "Dal_Repository\\productsDal.cs",
+              "ToolTip": "C:\\Users\\sara_p3qhpzt\\OneDrive\\Documents\\\u05DC\u05D9\u05DE\u05D5\u05D3\u05D9\u05DD \u05E9\u05E0\u05D4 \u05D1\\Angular\\\u05E4\u05E8\u05D5\u05D9\u05E7\u05D8\\Bll_Services\\Dal_Repository\\productsDal.cs",
+              "RelativeToolTip": "Dal_Repository\\productsDal.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAcwCYAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-11T09:10:37.559Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
               "Title": "ProductController.cs",
               "DocumentMoniker": "C:\\Users\\sara_p3qhpzt\\OneDrive\\Documents\\\u05DC\u05D9\u05DE\u05D5\u05D3\u05D9\u05DD \u05E9\u05E0\u05D4 \u05D1\\Angular\\\u05E4\u05E8\u05D5\u05D9\u05E7\u05D8\\Bll_Services\\WebApi\\Controllers\\ProductController.cs",
               "RelativeDocumentMoniker": "WebApi\\Controllers\\ProductController.cs",
               "ToolTip": "C:\\Users\\sara_p3qhpzt\\OneDrive\\Documents\\\u05DC\u05D9\u05DE\u05D5\u05D3\u05D9\u05DD \u05E9\u05E0\u05D4 \u05D1\\Angular\\\u05E4\u05E8\u05D5\u05D9\u05E7\u05D8\\Bll_Services\\WebApi\\Controllers\\ProductController.cs",
               "RelativeToolTip": "WebApi\\Controllers\\ProductController.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAJAAAAAAAAAA==",
+              "ViewState": "AgIAAA0AAAAAAAAAAAAQwB0AAAARAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-11T11:59:09.051Z"
+              "WhenOpened": "2024-12-11T11:59:09.051Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 2,
               "Title": "Program.cs",
               "DocumentMoniker": "C:\\Users\\sara_p3qhpzt\\OneDrive\\Documents\\\u05DC\u05D9\u05DE\u05D5\u05D3\u05D9\u05DD \u05E9\u05E0\u05D4 \u05D1\\Angular\\\u05E4\u05E8\u05D5\u05D9\u05E7\u05D8\\Bll_Services\\WebApi\\Program.cs",
               "RelativeDocumentMoniker": "WebApi\\Program.cs",
               "ToolTip": "C:\\Users\\sara_p3qhpzt\\OneDrive\\Documents\\\u05DC\u05D9\u05DE\u05D5\u05D3\u05D9\u05DD \u05E9\u05E0\u05D4 \u05D1\\Angular\\\u05E4\u05E8\u05D5\u05D9\u05E7\u05D8\\Bll_Services\\WebApi\\Program.cs",
               "RelativeToolTip": "WebApi\\Program.cs",
-              "ViewState": "AgIAAAYAAAAAAAAAAAAAABAAAAAaAAAAAAAAAA==",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAmwB8AAAAKAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-12-11T13:32:17.3Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 7,
               "Title": "productsConverters.cs",
               "DocumentMoniker": "C:\\Users\\sara_p3qhpzt\\OneDrive\\Documents\\\u05DC\u05D9\u05DE\u05D5\u05D3\u05D9\u05DD \u05E9\u05E0\u05D4 \u05D1\\Angular\\\u05E4\u05E8\u05D5\u05D9\u05E7\u05D8\\Bll_Services\\Dal_Repository\\modelsConverters\\productsConverters.cs",
               "RelativeDocumentMoniker": "Dal_Repository\\modelsConverters\\productsConverters.cs",
               "ToolTip": "C:\\Users\\sara_p3qhpzt\\OneDrive\\Documents\\\u05DC\u05D9\u05DE\u05D5\u05D3\u05D9\u05DD \u05E9\u05E0\u05D4 \u05D1\\Angular\\\u05E4\u05E8\u05D5\u05D9\u05E7\u05D8\\Bll_Services\\Dal_Repository\\modelsConverters\\productsConverters.cs",
               "RelativeToolTip": "Dal_Repository\\modelsConverters\\productsConverters.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABkAAAApAAAAAAAAAA==",
+              "ViewState": "AgIAAAIAAAAAAAAAAAAcwBwAAAAJAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-12-11T10:14:44.031Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 8,
+              "Title": "Dal_Repository.csproj",
+              "DocumentMoniker": "C:\\Users\\sara_p3qhpzt\\OneDrive\\Documents\\\u05DC\u05D9\u05DE\u05D5\u05D3\u05D9\u05DD \u05E9\u05E0\u05D4 \u05D1\\Angular\\\u05E4\u05E8\u05D5\u05D9\u05E7\u05D8\\Bll_Services\\Dal_Repository\\Dal_Repository.csproj",
+              "RelativeDocumentMoniker": "Dal_Repository\\Dal_Repository.csproj",
+              "ToolTip": "C:\\Users\\sara_p3qhpzt\\OneDrive\\Documents\\\u05DC\u05D9\u05DE\u05D5\u05D3\u05D9\u05DD \u05E9\u05E0\u05D4 \u05D1\\Angular\\\u05E4\u05E8\u05D5\u05D9\u05E7\u05D8\\Bll_Services\\Dal_Repository\\Dal_Repository.csproj",
+              "RelativeToolTip": "Dal_Repository\\Dal_Repository.csproj",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2024-12-11T09:55:42.568Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
               "Title": "Customer.cs",
               "DocumentMoniker": "C:\\Users\\sara_p3qhpzt\\OneDrive\\Documents\\\u05DC\u05D9\u05DE\u05D5\u05D3\u05D9\u05DD \u05E9\u05E0\u05D4 \u05D1\\Angular\\\u05E4\u05E8\u05D5\u05D9\u05E7\u05D8\\Bll_Services\\Dal_Repository\\models\\Customer.cs",
               "RelativeDocumentMoniker": "Dal_Repository\\models\\Customer.cs",
               "ToolTip": "C:\\Users\\sara_p3qhpzt\\OneDrive\\Documents\\\u05DC\u05D9\u05DE\u05D5\u05D3\u05D9\u05DD \u05E9\u05E0\u05D4 \u05D1\\Angular\\\u05E4\u05E8\u05D5\u05D9\u05E7\u05D8\\Bll_Services\\Dal_Repository\\models\\Customer.cs",
               "RelativeToolTip": "Dal_Repository\\models\\Customer.cs",
-              "ViewState": "AgIAAAUAAAAAAAAAAAA8wBMAAABYAAAAAAAAAA==",
+              "ViewState": "AgIAAAoAAAAAAAAAAAAAABIAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-12-12T11:30:57.313Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 10,
+              "Title": "Bll_Services.csproj",
+              "DocumentMoniker": "C:\\Users\\sara_p3qhpzt\\OneDrive\\Documents\\\u05DC\u05D9\u05DE\u05D5\u05D3\u05D9\u05DD \u05E9\u05E0\u05D4 \u05D1\\Angular\\\u05E4\u05E8\u05D5\u05D9\u05E7\u05D8\\Bll_Services\\Bll_Services\\Bll_Services.csproj",
+              "RelativeDocumentMoniker": "Bll_Services\\Bll_Services.csproj",
+              "ToolTip": "C:\\Users\\sara_p3qhpzt\\OneDrive\\Documents\\\u05DC\u05D9\u05DE\u05D5\u05D3\u05D9\u05DD \u05E9\u05E0\u05D4 \u05D1\\Angular\\\u05E4\u05E8\u05D5\u05D9\u05E7\u05D8\\Bll_Services\\Bll_Services\\Bll_Services.csproj",
+              "RelativeToolTip": "Bll_Services\\Bll_Services.csproj",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2024-12-11T10:11:56.11Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "Dto_common_Entities.csproj",
+              "DocumentMoniker": "C:\\Users\\sara_p3qhpzt\\OneDrive\\Documents\\\u05DC\u05D9\u05DE\u05D5\u05D3\u05D9\u05DD \u05E9\u05E0\u05D4 \u05D1\\Angular\\\u05E4\u05E8\u05D5\u05D9\u05E7\u05D8\\Bll_Services\\Dto_common_Entities\\Dto_common_Entities.csproj",
+              "RelativeDocumentMoniker": "Dto_common_Entities\\Dto_common_Entities.csproj",
+              "ToolTip": "C:\\Users\\sara_p3qhpzt\\OneDrive\\Documents\\\u05DC\u05D9\u05DE\u05D5\u05D3\u05D9\u05DD \u05E9\u05E0\u05D4 \u05D1\\Angular\\\u05E4\u05E8\u05D5\u05D9\u05E7\u05D8\\Bll_Services\\Dto_common_Entities\\Dto_common_Entities.csproj",
+              "RelativeToolTip": "Dto_common_Entities\\Dto_common_Entities.csproj",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2024-12-11T11:51:03.342Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "Toys4youContext.cs",
+              "DocumentMoniker": "C:\\Users\\sara_p3qhpzt\\OneDrive\\Documents\\\u05DC\u05D9\u05DE\u05D5\u05D3\u05D9\u05DD \u05E9\u05E0\u05D4 \u05D1\\Angular\\\u05E4\u05E8\u05D5\u05D9\u05E7\u05D8\\Bll_Services\\Dal_Repository\\models\\Toys4youContext.cs",
+              "RelativeDocumentMoniker": "Dal_Repository\\models\\Toys4youContext.cs",
+              "ToolTip": "C:\\Users\\sara_p3qhpzt\\OneDrive\\Documents\\\u05DC\u05D9\u05DE\u05D5\u05D3\u05D9\u05DD \u05E9\u05E0\u05D4 \u05D1\\Angular\\\u05E4\u05E8\u05D5\u05D9\u05E7\u05D8\\Bll_Services\\Dal_Repository\\models\\Toys4youContext.cs",
+              "RelativeToolTip": "Dal_Repository\\models\\Toys4youContext.cs",
+              "ViewState": "AgIAAGsAAAAAAAAAAAAUwB4AAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-11T09:57:49.879Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
               "Title": "Product.cs",
               "DocumentMoniker": "C:\\Users\\sara_p3qhpzt\\OneDrive\\Documents\\\u05DC\u05D9\u05DE\u05D5\u05D3\u05D9\u05DD \u05E9\u05E0\u05D4 \u05D1\\Angular\\\u05E4\u05E8\u05D5\u05D9\u05E7\u05D8\\Bll_Services\\Dal_Repository\\models\\Product.cs",
               "RelativeDocumentMoniker": "Dal_Repository\\models\\Product.cs",
@@ -226,7 +253,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 12,
+              "DocumentIndex": 14,
               "Title": "Category.cs",
               "DocumentMoniker": "C:\\Users\\sara_p3qhpzt\\OneDrive\\Documents\\\u05DC\u05D9\u05DE\u05D5\u05D3\u05D9\u05DD \u05E9\u05E0\u05D4 \u05D1\\Angular\\\u05E4\u05E8\u05D5\u05D9\u05E7\u05D8\\Bll_Services\\Dal_Repository\\models\\Category.cs",
               "RelativeDocumentMoniker": "Dal_Repository\\models\\Category.cs",
@@ -238,7 +265,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 13,
+              "DocumentIndex": 15,
               "Title": "WeatherForecast.cs",
               "DocumentMoniker": "C:\\Users\\sara_p3qhpzt\\OneDrive\\Documents\\\u05DC\u05D9\u05DE\u05D5\u05D3\u05D9\u05DD \u05E9\u05E0\u05D4 \u05D1\\Angular\\\u05E4\u05E8\u05D5\u05D9\u05E7\u05D8\\Bll_Services\\WebApi\\WeatherForecast.cs",
               "RelativeDocumentMoniker": "WebApi\\WeatherForecast.cs",

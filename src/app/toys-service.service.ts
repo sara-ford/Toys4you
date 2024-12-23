@@ -3,7 +3,7 @@ import { ModelProduct } from './models/model-product';
 import { CartProducts } from './models/cart-products';
 import { HttpClient } from '@angular/common/http';
 import { Observable,throwError} from 'rxjs';
-import { ModelCustomer } from './models/model-customer';
+// import { ModelCustomer } from './models/model-customer';
 import { catchError } from 'rxjs/operators'; 
 
 
@@ -26,10 +26,22 @@ export class ToysServiceService {
       {}      
     );
   }
-  insertCustomer(customer:ModelCustomer):Observable<boolean>{
-    console.log(customer);
-    return this.http.post<any>('http://localhost:5252/api/Customer/customer/', customer);
-  }
+insertCustomer(password: string, name: string, date: Date, email: string, phone: string): Observable<any> {
+  const customer = {
+    password: password,
+    name: name,
+    date: date,
+    email: email,
+    phone: phone
+  };
+
+  return this.http.post<any>(
+    `http://localhost:5252/api/Customer/add`, 
+    customer // כאן אתה שולח את האובייקט בגוף הבקשה
+  );
+}
+
+
   private selectedProduct: ModelProduct; 
 
   setSelectedProduct(product: ModelProduct): void {

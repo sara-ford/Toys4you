@@ -17,7 +17,7 @@ public partial class Product
 
     public string Description { get; set; } = null!;
 
-    public DateOnly? Datelastupdate { get; set; }
+    public DateTime Datelastupdate { get; set; }
 
     public string Picture { get; set; } = null!;
 

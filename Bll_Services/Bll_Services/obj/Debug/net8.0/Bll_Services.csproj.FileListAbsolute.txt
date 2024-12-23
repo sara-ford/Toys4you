@@ -32,3 +32,22 @@ C:\Users\sara_p3qhpzt\OneDrive\Documents\Bll_Services-aaa\Bll_Services\obj\Debug
 C:\Users\sara_p3qhpzt\OneDrive\Documents\Bll_Services-aaa\Bll_Services\obj\Debug\net8.0\refint\Bll_Services.dll
 C:\Users\sara_p3qhpzt\OneDrive\Documents\Bll_Services-aaa\Bll_Services\obj\Debug\net8.0\Bll_Services.pdb
 C:\Users\sara_p3qhpzt\OneDrive\Documents\Bll_Services-aaa\Bll_Services\obj\Debug\net8.0\ref\Bll_Services.dll
+C:\Users\sara_p3qhpzt\OneDrive\Documents\לימודים שנה ב\Angular\פרויקט\Bll_Services\Bll_Services\obj\Debug\net8.0\Bll_Services.sourcelink.json
+C:\Users\User\Desktop\מיכל\לימודים מיכל\פרויקט גמר\Bll_Services\Bll_Services\bin\Debug\net8.0\Bll_Services.deps.json
+C:\Users\User\Desktop\מיכל\לימודים מיכל\פרויקט גמר\Bll_Services\Bll_Services\bin\Debug\net8.0\Bll_Services.dll
+C:\Users\User\Desktop\מיכל\לימודים מיכל\פרויקט גמר\Bll_Services\Bll_Services\bin\Debug\net8.0\Bll_Services.pdb
+C:\Users\User\Desktop\מיכל\לימודים מיכל\פרויקט גמר\Bll_Services\Bll_Services\bin\Debug\net8.0\Dal_Repository.dll
+C:\Users\User\Desktop\מיכל\לימודים מיכל\פרויקט גמר\Bll_Services\Bll_Services\bin\Debug\net8.0\Dto_common_Entities.dll
+C:\Users\User\Desktop\מיכל\לימודים מיכל\פרויקט גמר\Bll_Services\Bll_Services\bin\Debug\net8.0\Dal_Repository.pdb
+C:\Users\User\Desktop\מיכל\לימודים מיכל\פרויקט גמר\Bll_Services\Bll_Services\bin\Debug\net8.0\Dto_common_Entities.pdb
+C:\Users\User\Desktop\מיכל\לימודים מיכל\פרויקט גמר\Bll_Services\Bll_Services\obj\Debug\net8.0\Bll_Services.csproj.AssemblyReference.cache
+C:\Users\User\Desktop\מיכל\לימודים מיכל\פרויקט גמר\Bll_Services\Bll_Services\obj\Debug\net8.0\Bll_Services.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\User\Desktop\מיכל\לימודים מיכל\פרויקט גמר\Bll_Services\Bll_Services\obj\Debug\net8.0\Bll_Services.AssemblyInfoInputs.cache
+C:\Users\User\Desktop\מיכל\לימודים מיכל\פרויקט גמר\Bll_Services\Bll_Services\obj\Debug\net8.0\Bll_Services.AssemblyInfo.cs
+C:\Users\User\Desktop\מיכל\לימודים מיכל\פרויקט גמר\Bll_Services\Bll_Services\obj\Debug\net8.0\Bll_Services.csproj.CoreCompileInputs.cache
+C:\Users\User\Desktop\מיכל\לימודים מיכל\פרויקט גמר\Bll_Services\Bll_Services\obj\Debug\net8.0\Bll_Serv.E59EB5EE.Up2Date
+C:\Users\User\Desktop\מיכל\לימודים מיכל\פרויקט גמר\Bll_Services\Bll_Services\obj\Debug\net8.0\Bll_Services.dll
+C:\Users\User\Desktop\מיכל\לימודים מיכל\פרויקט גמר\Bll_Services\Bll_Services\obj\Debug\net8.0\refint\Bll_Services.dll
+C:\Users\User\Desktop\מיכל\לימודים מיכל\פרויקט גמר\Bll_Services\Bll_Services\obj\Debug\net8.0\Bll_Services.pdb
+C:\Users\User\Desktop\מיכל\לימודים מיכל\פרויקט גמר\Bll_Services\Bll_Services\obj\Debug\net8.0\ref\Bll_Services.dll
+C:\Users\User\Desktop\מיכל\לימודים מיכל\פרויקט גמר\Bll_Services\Bll_Services\obj\Debug\net8.0\Bll_Services.sourcelink.json

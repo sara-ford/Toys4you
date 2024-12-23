@@ -20,3 +20,16 @@ C:\Users\sara_p3qhpzt\OneDrive\Documents\Bll_Services-aaa\Dto_common_Entities\ob
 C:\Users\sara_p3qhpzt\OneDrive\Documents\Bll_Services-aaa\Dto_common_Entities\obj\Debug\net8.0\refint\Dto_common_Entities.dll
 C:\Users\sara_p3qhpzt\OneDrive\Documents\Bll_Services-aaa\Dto_common_Entities\obj\Debug\net8.0\Dto_common_Entities.pdb
 C:\Users\sara_p3qhpzt\OneDrive\Documents\Bll_Services-aaa\Dto_common_Entities\obj\Debug\net8.0\ref\Dto_common_Entities.dll
+C:\Users\sara_p3qhpzt\OneDrive\Documents\לימודים שנה ב\Angular\פרויקט\Bll_Services\Dto_common_Entities\obj\Debug\net8.0\Dto_common_Entities.sourcelink.json
+C:\Users\User\Desktop\מיכל\לימודים מיכל\פרויקט גמר\Bll_Services\Dto_common_Entities\bin\Debug\net8.0\Dto_common_Entities.deps.json
+C:\Users\User\Desktop\מיכל\לימודים מיכל\פרויקט גמר\Bll_Services\Dto_common_Entities\bin\Debug\net8.0\Dto_common_Entities.dll
+C:\Users\User\Desktop\מיכל\לימודים מיכל\פרויקט גמר\Bll_Services\Dto_common_Entities\bin\Debug\net8.0\Dto_common_Entities.pdb
+C:\Users\User\Desktop\מיכל\לימודים מיכל\פרויקט גמר\Bll_Services\Dto_common_Entities\obj\Debug\net8.0\Dto_common_Entities.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\User\Desktop\מיכל\לימודים מיכל\פרויקט גמר\Bll_Services\Dto_common_Entities\obj\Debug\net8.0\Dto_common_Entities.AssemblyInfoInputs.cache
+C:\Users\User\Desktop\מיכל\לימודים מיכל\פרויקט גמר\Bll_Services\Dto_common_Entities\obj\Debug\net8.0\Dto_common_Entities.AssemblyInfo.cs
+C:\Users\User\Desktop\מיכל\לימודים מיכל\פרויקט גמר\Bll_Services\Dto_common_Entities\obj\Debug\net8.0\Dto_common_Entities.csproj.CoreCompileInputs.cache
+C:\Users\User\Desktop\מיכל\לימודים מיכל\פרויקט גמר\Bll_Services\Dto_common_Entities\obj\Debug\net8.0\Dto_common_Entities.dll
+C:\Users\User\Desktop\מיכל\לימודים מיכל\פרויקט גמר\Bll_Services\Dto_common_Entities\obj\Debug\net8.0\refint\Dto_common_Entities.dll
+C:\Users\User\Desktop\מיכל\לימודים מיכל\פרויקט גמר\Bll_Services\Dto_common_Entities\obj\Debug\net8.0\Dto_common_Entities.pdb
+C:\Users\User\Desktop\מיכל\לימודים מיכל\פרויקט גמר\Bll_Services\Dto_common_Entities\obj\Debug\net8.0\ref\Dto_common_Entities.dll
+C:\Users\User\Desktop\מיכל\לימודים מיכל\פרויקט גמר\Bll_Services\Dto_common_Entities\obj\Debug\net8.0\Dto_common_Entities.sourcelink.json
