@@ -1,8 +1,9 @@
 <p>shopping-cart works!</p>
 <div class="cart-container">
-    <div *ngIf="cartlist.length === 0" class="empty-cart-message">
+    <div *ngIf="cartlist.length == 0" class="empty-cart-message">
     Your cart is empty
   </div>
+  
   <div *ngFor="let product of cartlist" class="cart-item">
     <img class="product-image" [src]="product.product.picture" alt="{{ product.product.name }}" />
     <div class="product-details">

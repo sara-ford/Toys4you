@@ -54,7 +54,14 @@ export class SingInComponent {
     );
   }      
   logIn(){
-    
+    this.toysService.insertCustomer(this.value, this.Name, this.date, this.Email, this.Phone).subscribe(
+      (response) => {
+        console.log('Customer inserted successfully!', response);
+      },
+      (error) => {
+        console.log('Error inserting customer', error);
+      }
+    );
   }
   
       // logIn(ModelCustomer.name:string,ModelCustomer.password,ModelCustomer.data) {
