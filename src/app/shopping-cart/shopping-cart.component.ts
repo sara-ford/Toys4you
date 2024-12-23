@@ -43,8 +43,15 @@ export class ShoppingCartComponent implements OnInit {
       this.cartlist.splice(index, 1);
     }
   }
-  
-  getTotalPrice(): number {
-    return this.cartlist.reduce((total, product) => total + product.totalPrice, 0);
-  }
+
+  getTotalPrice(): string {
+    // אם הסל ריק
+    if (this.cartlist.length === 0) {
+        return "Your cart is empty"; 
+    }
+
+    const totalPrice = this.cartlist.reduce((total, product) => total + product.totalPrice, 0);
+    return `Total price: $${totalPrice}`;  // מחזיר את הסכום עם הטקסט המתאים
+}
+
 }
