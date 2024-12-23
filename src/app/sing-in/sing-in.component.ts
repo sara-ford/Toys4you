@@ -7,7 +7,6 @@ import { FloatLabel } from 'primeng/floatlabel';
 import { ButtonModule } from 'primeng/button';
 import { DatePicker } from 'primeng/datepicker';
 import { ToysServiceService } from '../toys-service.service';
-import { ModelCustomer } from '../models/model-customer';
 
 @Component({
   selector: 'app-sing-in',
@@ -18,7 +17,6 @@ import { ModelCustomer } from '../models/model-customer';
 })
 export class SingInComponent {
   constructor(private toysService: ToysServiceService) { }
-  products: ModelCustomer[] = []; 
 
   isSignIn: boolean = true;
   isMessage: boolean = false; 
@@ -76,5 +74,11 @@ export class SingInComponent {
       }
     );
   }
-}
 
+  logIn() {
+    this.toysService.insertCustomer(this.value,this.Name,this.date,this.Email,this.Phone)
+    alert("נרשמת בהצלחה")
+
+
+  }
+}
