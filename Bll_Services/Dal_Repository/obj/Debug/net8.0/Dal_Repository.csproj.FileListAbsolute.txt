@@ -32,3 +32,22 @@ C:\Users\sara_p3qhpzt\OneDrive\Documents\Bll_Services-aaa\Dal_Repository\obj\Deb
 C:\Users\sara_p3qhpzt\OneDrive\Documents\Bll_Services-aaa\Dal_Repository\obj\Debug\net8.0\Dal_Repository.pdb
 C:\Users\sara_p3qhpzt\OneDrive\Documents\Bll_Services-aaa\Dal_Repository\obj\Debug\net8.0\Dal_Repository.genruntimeconfig.cache
 C:\Users\sara_p3qhpzt\OneDrive\Documents\Bll_Services-aaa\Dal_Repository\obj\Debug\net8.0\ref\Dal_Repository.dll
+C:\Users\sara_p3qhpzt\OneDrive\Documents\לימודים שנה ב\Angular\פרויקט\Bll_Services\Dal_Repository\obj\Debug\net8.0\Dal_Repository.sourcelink.json
+C:\Users\User\Desktop\מיכל\לימודים מיכל\פרויקט גמר\Bll_Services\Dal_Repository\bin\Debug\net8.0\Dal_Repository.deps.json
+C:\Users\User\Desktop\מיכל\לימודים מיכל\פרויקט גמר\Bll_Services\Dal_Repository\bin\Debug\net8.0\Dal_Repository.runtimeconfig.json
+C:\Users\User\Desktop\מיכל\לימודים מיכל\פרויקט גמר\Bll_Services\Dal_Repository\bin\Debug\net8.0\Dal_Repository.dll
+C:\Users\User\Desktop\מיכל\לימודים מיכל\פרויקט גמר\Bll_Services\Dal_Repository\bin\Debug\net8.0\Dal_Repository.pdb
+C:\Users\User\Desktop\מיכל\לימודים מיכל\פרויקט גמר\Bll_Services\Dal_Repository\bin\Debug\net8.0\Dto_common_Entities.dll
+C:\Users\User\Desktop\מיכל\לימודים מיכל\פרויקט גמר\Bll_Services\Dal_Repository\bin\Debug\net8.0\Dto_common_Entities.pdb
+C:\Users\User\Desktop\מיכל\לימודים מיכל\פרויקט גמר\Bll_Services\Dal_Repository\obj\Debug\net8.0\Dal_Repository.csproj.AssemblyReference.cache
+C:\Users\User\Desktop\מיכל\לימודים מיכל\פרויקט גמר\Bll_Services\Dal_Repository\obj\Debug\net8.0\Dal_Repository.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\User\Desktop\מיכל\לימודים מיכל\פרויקט גמר\Bll_Services\Dal_Repository\obj\Debug\net8.0\Dal_Repository.AssemblyInfoInputs.cache
+C:\Users\User\Desktop\מיכל\לימודים מיכל\פרויקט גמר\Bll_Services\Dal_Repository\obj\Debug\net8.0\Dal_Repository.AssemblyInfo.cs
+C:\Users\User\Desktop\מיכל\לימודים מיכל\פרויקט גמר\Bll_Services\Dal_Repository\obj\Debug\net8.0\Dal_Repository.csproj.CoreCompileInputs.cache
+C:\Users\User\Desktop\מיכל\לימודים מיכל\פרויקט גמר\Bll_Services\Dal_Repository\obj\Debug\net8.0\Dal_Repo.D41FEB8E.Up2Date
+C:\Users\User\Desktop\מיכל\לימודים מיכל\פרויקט גמר\Bll_Services\Dal_Repository\obj\Debug\net8.0\Dal_Repository.dll
+C:\Users\User\Desktop\מיכל\לימודים מיכל\פרויקט גמר\Bll_Services\Dal_Repository\obj\Debug\net8.0\refint\Dal_Repository.dll
+C:\Users\User\Desktop\מיכל\לימודים מיכל\פרויקט גמר\Bll_Services\Dal_Repository\obj\Debug\net8.0\Dal_Repository.pdb
+C:\Users\User\Desktop\מיכל\לימודים מיכל\פרויקט גמר\Bll_Services\Dal_Repository\obj\Debug\net8.0\Dal_Repository.genruntimeconfig.cache
+C:\Users\User\Desktop\מיכל\לימודים מיכל\פרויקט גמר\Bll_Services\Dal_Repository\obj\Debug\net8.0\ref\Dal_Repository.dll
+C:\Users\User\Desktop\מיכל\לימודים מיכל\פרויקט גמר\Bll_Services\Dal_Repository\obj\Debug\net8.0\Dal_Repository.sourcelink.json

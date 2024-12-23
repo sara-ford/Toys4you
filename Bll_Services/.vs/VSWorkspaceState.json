@@ -3,15 +3,9 @@
     "",
     "\\Bll_Services",
     "\\Dal_Repository",
-    "\\Dal_Repository\\bin",
-    "\\Dal_Repository\\bin\\Release",
-    "\\Dal_Repository\\obj",
-    "\\Dal_Repository\\obj\\Debug",
-    "\\Dal_Repository\\obj\\Release",
-    "\\Dal_Repository\\obj\\Release\\net8.0",
-    "\\Dal_Repository\\obj\\Release\\net8.0\\ref",
-    "\\Dal_Repository\\obj\\Release\\net8.0\\refint"
+    "\\WebApi",
+    "\\WebApi\\Controllers"
   ],
-  "SelectedNode": "\\Bll_Services",
+  "SelectedNode": "\\WebApi\\Controllers\\CostumerController.cs",
   "PreviewInSolutionExplorer": false
 }

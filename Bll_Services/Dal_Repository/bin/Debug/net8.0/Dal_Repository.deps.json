@@ -914,10 +914,7 @@
       },
       "Dto_common_Entities/1.0.0": {
         "runtime": {
-          "Dto_common_Entities.dll": {
-            "assemblyVersion": "1.0.0",
-            "fileVersion": "1.0.0.0"
-          }
+          "Dto_common_Entities.dll": {}
         }
       }
     }

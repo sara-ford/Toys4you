@@ -1,4 +1,5 @@
-﻿using Microsoft.AspNetCore.Http;
+﻿using Dal_Repository.models;
+using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 
 namespace WebApi.Controllers
@@ -10,8 +11,16 @@ namespace WebApi.Controllers
         [HttpGet]
         public List<Dto_common_Entities.productsDto> Get()
         {
-            Bll_Services.productBll p=new Bll_Services.productBll();
+            Bll_Services.productBll p = new Bll_Services.productBll();
             return p.SelectAll();
         }
+        [HttpGet]
+        [Route("SortByCategory")]
+        public List<Dto_common_Entities.productsDto> SortByCategory(int categoryId)
+        {
+            Bll_Services.productBll p = new Bll_Services.productBll();
+            return p.SortByCategory(categoryId);
+        }
+
     }
 }

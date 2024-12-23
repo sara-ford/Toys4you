@@ -7,8 +7,6 @@ import { FloatLabel } from 'primeng/floatlabel';
 import { ButtonModule } from 'primeng/button';
 import { DatePicker } from 'primeng/datepicker';
 import { ToysServiceService } from '../toys-service.service';
-import { ModelCustomer } from '../models/model-customer';
-
 @Component({
   selector: 'app-sing-in',
   standalone: true,
@@ -18,8 +16,7 @@ import { ModelCustomer } from '../models/model-customer';
 })
 export class SingInComponent {
   constructor(private toysService: ToysServiceService) { }
-  products: ModelCustomer[] = []; 
-
+  
   isSignIn: boolean = true;
   isMessage: boolean = false; 
   Name: string;
@@ -28,12 +25,7 @@ export class SingInComponent {
   value: string;
   date: Date;
   message: string = '';
-  DateOfBirth: string = '';  // Declare DateOfBirth
-  Password: string = '';     // Declare Password
 
-
-  logIn() {
-  }
   toggleForm() {
     this.isSignIn = !this.isSignIn;
     this.isMessage = false; 
@@ -61,5 +53,26 @@ export class SingInComponent {
       }
     );
   }      
+  logIn(){
+    
+  }
+  
+      // logIn(ModelCustomer.name:string,ModelCustomer.password,ModelCustomer.data) {
+      //   // בודק אם כל השדות מלאים לפני שמבצע את השליחה
+      //   if (this.customer.name && this.customer.phone && this.customer.email && this.customer.value) {
+      //     this.toysService.insertCustomer(this.customer).subscribe(
+      //       (response) => {
+      //         console.log('Customer added successfully:', response);
+      //       },
+      //       (error) => {
+      //         console.error('Error adding customer:', error);
+      //       }
+      //     );
+      //   } else {
+      //     alert('Please fill in all fields.');
+      //   }
+      // }
+    
+    
+  }
 
-}

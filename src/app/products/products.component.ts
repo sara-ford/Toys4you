@@ -109,7 +109,7 @@ this.filterProducts = [...this.filterProducts, ...data];
 else{
   this.activeCategories.splice(index, 1);
   // this.filterProducts = []
-  console.log('קטגוריות פעולות לאחר ההסרה:', this.activeCategories);
+  console.log('קטגוריות פעולות לאחר ההסרה:', this.filterProducts);
   
   // this.toysService.getProductByCategory(Number(category)).subscribe((data:any)=>{
   // this.filterProducts = [...this.filterProducts, ...data];

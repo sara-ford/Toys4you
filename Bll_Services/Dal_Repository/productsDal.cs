@@ -15,18 +15,25 @@ namespace Dal_Repository
         {
             using (Toys4youContext db = new Toys4youContext())
             {
-                var l = db.Products.ToList();
+                var l = db.Products.Include(a => a.Company).Include(a => a.Category).ToList();
                 return modelsConverters.productsConverters.ToProductDtoList(l);
             }
         }
-        //public List<Dto_common_Entities.productsDto> GetById(string pass)
-        //{
-        //    using (Toys4youContext db = new Toys4youContext())
-        //    {
-        //        var l = db.Customers.FirstOrDefault(a => a.Password == a.Password);
-        //        return modelsConverters.productsConverters.ToProductDtoList(l);
-        //    }
-        //}
+        public List<Dto_common_Entities.productsDto> SortByCategory(int categoryId)
+        {
+            using (Toys4youContext db = new Toys4youContext())
+            {
+                var products = db.Products
+                                 .Where(p => p.Categoryid == categoryId).Include(a => a.Company).Include(a => a.Category)
+                                 .ToList();
+                return modelsConverters.productsConverters.ToProductDtoList(products);
+            }
+
+        }
+
+
+
+
     }
 }
 

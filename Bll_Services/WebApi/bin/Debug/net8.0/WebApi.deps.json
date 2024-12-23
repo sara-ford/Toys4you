@@ -550,10 +550,7 @@
           "Dto_common_Entities": "1.0.0"
         },
         "runtime": {
-          "Bll_Services.dll": {
-            "assemblyVersion": "1.0.0",
-            "fileVersion": "1.0.0.0"
-          }
+          "Bll_Services.dll": {}
         }
       },
       "Dal_Repository/1.0.0": {
@@ -562,18 +559,12 @@
           "Microsoft.EntityFrameworkCore.SqlServer": "8.0.0"
         },
         "runtime": {
-          "Dal_Repository.dll": {
-            "assemblyVersion": "1.0.0",
-            "fileVersion": "1.0.0.0"
-          }
+          "Dal_Repository.dll": {}
         }
       },
       "Dto_common_Entities/1.0.0": {
         "runtime": {
-          "Dto_common_Entities.dll": {
-            "assemblyVersion": "1.0.0",
-            "fileVersion": "1.0.0.0"
-          }
+          "Dto_common_Entities.dll": {}
         }
       }
     }

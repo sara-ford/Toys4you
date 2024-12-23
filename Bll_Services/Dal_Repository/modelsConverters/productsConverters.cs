@@ -1,4 +1,6 @@
-﻿namespace Dal_Repository.modelsConverters
+﻿using Dal_Repository.models;
+
+namespace Dal_Repository.modelsConverters
 {
     internal class productsConverters
     {
@@ -24,6 +26,9 @@
             pc.Name = p.Name;
             pc.Companyid = p.Companyid;
             pc.Categoryid = p.Categoryid;
+            pc.Company = p.Company.Name;
+            pc.Category = p.Category.Name;
+
 
             return pc; 
         }
