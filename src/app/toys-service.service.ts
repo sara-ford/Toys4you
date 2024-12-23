@@ -26,22 +26,10 @@ export class ToysServiceService {
       {}      
     );
   }
-insertCustomer(password: string, name: string, date: Date, email: string, phone: string): Observable<any> {
-  const customer = {
-    password: password,
-    name: name,
-    date: date,
-    email: email,
-    phone: phone
-  };
-
-  return this.http.post<any>(
-    `http://localhost:5252/api/Customer/add`, 
-    customer // כאן אתה שולח את האובייקט בגוף הבקשה
-  );
-}
-
-
+  insertCustomer(customer:ModelCustomer):Observable<boolean>{
+    console.log(customer);
+    return this.http.post<any>('http://localhost:5252/api/Customer/customer/', customer);
+  }
   private selectedProduct: ModelProduct; 
 
   setSelectedProduct(product: ModelProduct): void {

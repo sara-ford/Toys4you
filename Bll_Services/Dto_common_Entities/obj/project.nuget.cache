@@ -1,14 +1,15 @@
 {
   "version": 2,
-<<<<<<< HEAD
-  "dgSpecHash": "Vcy9Qt24GpEVPjP0M2EQCEcPl04LjdezAU7gvwd4GP3yiJP0f5uwgAfeHm/5QpZ4HjZAG+7s2TIJmUxsaNLXlA==",
-  "success": true,
-  "projectFilePath": "C:\\Users\\User\\Desktop\\מיכל\\לימודים מיכל\\פרויקט גמר\\Toys4you\\Bll_Services\\Dto_common_Entities\\Dto_common_Entities.csproj",
-=======
   "dgSpecHash": "lVkN6JF46K8=",
   "success": true,
   "projectFilePath": "C:\\Users\\sara_p3qhpzt\\Downloads\\toys4you\\Bll_Services\\Dto_common_Entities\\Dto_common_Entities.csproj",
->>>>>>> d5239f885b21841baf3ba1f986df98ac0f935144
   "expectedPackageFiles": [],
-  "logs": []
+  "logs": [
+    {
+      "code": "Undefined",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Problem reading the cache file C:\\Users\\sara_p3qhpzt\\Downloads\\toys4you\\Bll_Services\\Dto_common_Entities\\obj\\project.nuget.cache : Invalid property identifier character: <. Path 'version', line 3, position 0."
+    }
+  ]
 }

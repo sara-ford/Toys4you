@@ -1,27 +1,20 @@
-//  import { NgModule } from '@angular/core';
-//  import { BrowserModule } from '@angular/platform-browser';
-//  import { HttpClientModule } from '@angular/common/http';  
-//  import { AppComponent } from './app.component';
-//  import { ToysServiceService } from './toys-service.service'; 
+// import { NgModule } from '@angular/core';
+// import { BrowserModule } from '@angular/platform-browser';
+// import { FormsModule } from '@angular/forms';  // Import FormsModule
 
+// import { AppComponent } from './app.component';
+// import { CheckOutComponent } from './check-out/check-out.component';
 
-//  import { HomePageComponent } from './home-page/home-page.component';
-// import { ProductsComponent } from './products/products.component';
-// import { ShoppingCartComponent } from './shopping-cart/shopping-cart.component';
-//  import { NotFoundComponent } from './not-found/not-found.component';
-//  import { GameDetailsComponent } from './game-details/game-details.component';
-
-//  @NgModule({
-//    imports: [
+// @NgModule({
+//   declarations: [
+//     AppComponent,
+//     CheckOutComponent
+//   ],
+//   imports: [
 //     BrowserModule,
-//     HttpClientModule, 
-//      HomePageComponent,  
-//      ProductsComponent,  
-//     ShoppingCartComponent, 
-//      NotFoundComponent,
-//      GameDetailsComponent 
-//    ],
-//    providers: [ToysServiceService],  
-//    bootstrap: [AppComponent]
-//  })
-//  export class AppModule { }
+//     FormsModule  // Add FormsModule here to enable ngModel
+//   ],
+//   providers: [],
+//   bootstrap: [AppComponent]
+// })
+// export class AppModule { }
