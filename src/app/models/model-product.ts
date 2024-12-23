@@ -1,8 +1,8 @@
 export class ModelProduct {
     id: number
     name: string
-    categoryId: number
-    companyId: number
+    categoryid: number
+    companyid: number
     description: string
     price: number
     picture: string
@@ -13,7 +13,7 @@ export class ModelProduct {
     company: string 
 
 
-    constructor(id: number, name: string, categoryId: number, companyId: number
+    constructor(id: number, name: string, categoryid: number, companyid: number
         , description: string
         , price: number
         , picture: string
@@ -25,8 +25,8 @@ export class ModelProduct {
         {
          this.id = id,
          this.name = name
-         this.categoryId=categoryId
-         this.companyId=companyId
+         this.categoryid=categoryid
+         this.companyid=companyid
          this.dateLastUpdate=dateLastUpdate
          this.description=description
          this.price=price

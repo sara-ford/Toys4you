@@ -56,30 +56,26 @@ export class SingInComponent {
       }
     );
   }      
-
-  logIn() {
-    const customer = new ModelCustomer(
-      this.Name,
-      this.Phone,
-      this.Email,
-      this.DateOfBirth, 
-      this.Password
-    );
-  
-    console.log('Customer data:', customer); // Log the customer data for debugging
-  
-    this.toysService.insertCustomer(customer).subscribe(
-      response => {
-        alert('נרשמת בהצלחה'); // "Successfully registered" in Hebrew
-      },
-      error => {
-        console.error('Error inserting customer', error); // Log the error for debugging
-        alert('An error occurred: ' + error.message);
-      }
-    );
+  logIn(){
+    
   }
   
-}
+      // logIn(ModelCustomer.name:string,ModelCustomer.password,ModelCustomer.data) {
+      //   // בודק אם כל השדות מלאים לפני שמבצע את השליחה
+      //   if (this.customer.name && this.customer.phone && this.customer.email && this.customer.value) {
+      //     this.toysService.insertCustomer(this.customer).subscribe(
+      //       (response) => {
+      //         console.log('Customer added successfully:', response);
+      //       },
+      //       (error) => {
+      //         console.error('Error adding customer:', error);
+      //       }
+      //     );
+      //   } else {
+      //     alert('Please fill in all fields.');
+      //   }
+      // }
+    
     
   
 

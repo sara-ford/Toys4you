@@ -18,11 +18,11 @@ export class ShoppingCartComponent implements OnInit {
 
   constructor(private toysService: ToysServiceService) {}
 
-  ngOnInit(): void {
+  ngOnInit(): void {    debugger
     const selectedProduct = this.toysService.getSelectedProduct();
     console.log(selectedProduct);
-    this.toysService.addToCart(selectedProduct);
     this.cartlist = this.toysService.cartlist; 
+    this.toysService.addToCart(selectedProduct);
   }
   
   increaseAmount(product: CartProducts): void {
