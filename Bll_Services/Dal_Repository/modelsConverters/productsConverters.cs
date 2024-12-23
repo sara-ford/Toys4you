@@ -1,4 +1,4 @@
-﻿using Dal_Repository.models;
+using Dal_Repository.models;
 
 namespace Dal_Repository.modelsConverters
 {
@@ -28,8 +28,6 @@ namespace Dal_Repository.modelsConverters
             pc.Categoryid = p.Categoryid;
             pc.Company = p.Company.Name;
             pc.Category = p.Category.Name;
-
-
             return pc; 
         }
     }
