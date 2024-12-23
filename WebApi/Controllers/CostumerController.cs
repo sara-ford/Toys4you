@@ -22,6 +22,7 @@ namespace WebApi.Controllers
             return Ok(new { message = $"Hello, {name}!" });
         }
         [HttpPost]
+        [Route("InsertCustomer")]
         public void InsertCustomer( [FromBody] Dto_common_Entities.customerDto c)
         {
             Bll_Services.customerBll customer = new Bll_Services.customerBll();

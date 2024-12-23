@@ -21,6 +21,8 @@ namespace Dto_common_Entities
         public int Price { get; set; }
 
         public int Amount { get; set; }
+        public string Company { get; set; }  // הוספתי שדה לשם החברה
+        public string Category { get; set; }
 
         //public virtual Category Category { get; set; } = null!;
 

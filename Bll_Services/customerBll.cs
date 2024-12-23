@@ -16,7 +16,7 @@ namespace Bll_Services
         public void InsertCustomer(Dto_common_Entities.customerDto customer)
         {
             Dal_Repository.customerDal c = new Dal_Repository.customerDal();
-            var a = 8;
+      
             c.InsertCustomer(customer);
         }
     }

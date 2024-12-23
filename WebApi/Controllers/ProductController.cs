@@ -14,7 +14,13 @@ namespace WebApi.Controllers
             Bll_Services.productBll p = new Bll_Services.productBll();
             return p.SelectAll();
         }
+        [HttpGet]
+        [Route("SortByCategory")]
+        public List<Dto_common_Entities.productsDto> SortByCategory(int categoryId)
+        {
+            Bll_Services.productBll p = new Bll_Services.productBll();
+            return p.SortByCategory(categoryId);
+        }
 
-       
     }
 }

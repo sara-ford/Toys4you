@@ -17,7 +17,11 @@ public partial class Toys4youContext : DbContext
 
     public virtual DbSet<Category> Categories { get; set; }
 
+    public virtual DbSet<CategoryLookup> CategoryLookups { get; set; }
+
     public virtual DbSet<Company> Companies { get; set; }
+
+    public virtual DbSet<CompanyLookup> CompanyLookups { get; set; }
 
     public virtual DbSet<Customer> Customers { get; set; }
 
@@ -48,6 +52,21 @@ public partial class Toys4youContext : DbContext
                 .HasColumnName("name");
         });
 
+        modelBuilder.Entity<CategoryLookup>(entity =>
+        {
+            entity.HasKey(e => e.CategoryId).HasName("pk_category_lookup");
+
+            entity.ToTable("category_lookup");
+
+            entity.Property(e => e.CategoryId)
+                .ValueGeneratedNever()
+                .HasColumnName("categoryId");
+            entity.Property(e => e.CategoryName)
+                .HasMaxLength(50)
+                .IsUnicode(false)
+                .HasColumnName("categoryName");
+        });
+
         modelBuilder.Entity<Company>(entity =>
         {
             entity.HasKey(e => e.CompanyId).HasName("pk_companies");
@@ -59,6 +78,21 @@ public partial class Toys4youContext : DbContext
                 .HasMaxLength(20)
                 .IsUnicode(false)
                 .HasColumnName("name");
+        });
+
+        modelBuilder.Entity<CompanyLookup>(entity =>
+        {
+            entity.HasKey(e => e.CompanyId).HasName("pk_company_lookup");
+
+            entity.ToTable("company_lookup");
+
+            entity.Property(e => e.CompanyId)
+                .ValueGeneratedNever()
+                .HasColumnName("companyId");
+            entity.Property(e => e.CompanyName)
+                .HasMaxLength(50)
+                .IsUnicode(false)
+                .HasColumnName("companyName");
         });
 
         modelBuilder.Entity<Customer>(entity =>
@@ -107,7 +141,7 @@ public partial class Toys4youContext : DbContext
                 .IsUnicode(false)
                 .HasColumnName("name");
             entity.Property(e => e.Picture)
-                .HasMaxLength(50)
+                .HasMaxLength(500)
                 .IsUnicode(false)
                 .HasColumnName("picture");
             entity.Property(e => e.Price).HasColumnName("price");
