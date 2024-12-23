@@ -42,7 +42,6 @@
   <div *ngFor="let product of products" class="product-card" (click)="onProductClick(product)">
     <img class="product-image" [src]="product.picture" alt="{{ product.name }}" />
     <h3>{{ product.name }}</h3>
-    <p>Description: {{ product.description }}</p>
     <p class="price">Price: {{ product.price }}&#x20AA;</p>
     <p>Age: {{ product.age }}</p>
     <p>id: {{product.id}}</p>

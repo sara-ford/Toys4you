@@ -23,7 +23,7 @@ export class SingInComponent {
   Phone: string;
   Email: string;
   value: string;
-  date: Date | undefined;
+  date: Date;
   message: string = '';
 
   toggleForm() {

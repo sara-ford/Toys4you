@@ -37,7 +37,7 @@ insertCustomer(password: string, name: string, date: Date, email: string, phone:
 
   return this.http.post<any>(
     `http://localhost:5252/api/Customer/add`, 
-    customer 
+    customer // כאן אתה שולח את האובייקט בגוף הבקשה
   );
 }
 
