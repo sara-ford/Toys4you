@@ -7,6 +7,7 @@ import { FloatLabel } from 'primeng/floatlabel';
 import { ButtonModule } from 'primeng/button';
 import { DatePicker } from 'primeng/datepicker';
 import { ToysServiceService } from '../toys-service.service';
+import { ModelCustomer } from '../models/model-customer';
 
 @Component({
   selector: 'app-sing-in',
@@ -17,6 +18,7 @@ import { ToysServiceService } from '../toys-service.service';
 })
 export class SingInComponent {
   constructor(private toysService: ToysServiceService) { }
+  products: ModelCustomer[] = []; 
 
   isSignIn: boolean = true;
   isMessage: boolean = false; 
@@ -26,7 +28,27 @@ export class SingInComponent {
   value: string;
   date: Date;
   message: string = '';
+  DateOfBirth: string = '';  // Declare DateOfBirth
+  Password: string = '';     // Declare Password
 
+
+  logIn() {
+    // Now the properties are correctly defined
+    const customer = new ModelCustomer(
+      this.Name,
+      this.Phone,
+      this.Email,
+      this.DateOfBirth,  // Ensure this is a string like "YYYY-MM-DD"
+      this.Password
+    );
+
+    // Call the service to insert the customer
+    this.toysService.insertCustomer(customer).subscribe(response => {
+      alert('נרשמת בהצלחה');
+    }, error => {
+      alert('An error occurred: ' + error.message);
+    });
+  }
   toggleForm() {
     this.isSignIn = !this.isSignIn;
     this.isMessage = false; 
@@ -54,11 +76,5 @@ export class SingInComponent {
       }
     );
   }
-
-  logIn() {
-    this.toysService.insertCustomer(this.value,this.Name,this.date,this.Email,this.Phone)
-    alert("נרשמת בהצלחה")
-
-
-  }
 }
+

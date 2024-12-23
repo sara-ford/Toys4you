@@ -5,6 +5,7 @@ import { FormsModule } from '@angular/forms';
 import { RouterLink, RouterLinkActive, RouterOutlet } from '@angular/router';
 import { CartProducts } from '../models/cart-products';
 
+
 @Component({
   selector: 'app-shopping-cart',
   standalone: true,

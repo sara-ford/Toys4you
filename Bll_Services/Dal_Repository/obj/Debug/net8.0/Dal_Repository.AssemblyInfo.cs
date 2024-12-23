@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Dal_Repository")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+e9169de006da3fbdbf5864dc45f47c94f4bef658")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+05ef130683e520b5c6f0095005de6f7e28c97c48")]
 [assembly: System.Reflection.AssemblyProductAttribute("Dal_Repository")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Dal_Repository")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
