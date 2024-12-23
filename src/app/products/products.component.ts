@@ -85,7 +85,6 @@ export class ProductsComponent implements OnInit {
     { name: 'family game', key: '3'}
   ];
 
-
   onCategoryChange(category : number): void {
     // debugger
     this.filter=true
@@ -129,8 +128,3 @@ if(this.activeCategories.length==0){
   }
   
 }
-
-
-
-
-  
