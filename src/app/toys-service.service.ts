@@ -17,7 +17,7 @@ export class ToysServiceService {
     return this.http.get<ModelProduct[]>('http://localhost:5252/api/Product');
 
   }
-  getProductByCategory( categoryId :number): Observable<ModelProduct[]> {debugger
+  getProductByCategory( categoryId :number): Observable<ModelProduct[]> {
     return this.http.get<ModelProduct[]>(`http://localhost:5252/api/Product/SortByCategory?categoryId=${categoryId}`);
   }
   getCustomerByPassword(password: string, name: string): Observable<any> {

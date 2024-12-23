@@ -1,5 +1,8 @@
 <p>shopping-cart works!</p>
 <div class="cart-container">
+    <div *ngIf="cartlist.length === 0" class="empty-cart-message">
+    Your cart is empty
+  </div>
   <div *ngFor="let product of cartlist" class="cart-item">
     <img class="product-image" [src]="product.product.picture" alt="{{ product.product.name }}" />
     <div class="product-details">
@@ -19,7 +22,7 @@
     <button class="delete-btn" (click)="removeProduct(product)">🗑️</button>
   </div>
   <div class="total-price-box">
-    <h2>Total price: {{ getTotalPrice() }}&#x20AA;</h2>
+    <h2> {{getTotalPrice() }}&#x20AA;</h2>
   </div>
   <div class="checkout-btn-container">
     <button class="checkout-btn">for payment</button>

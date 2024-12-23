@@ -17,6 +17,7 @@ import { CommonModule } from '@angular/common';
 export class ProductsComponent implements OnInit {
   products: ModelProduct[] = []; 
   filterProducts: ModelProduct[] = []; 
+  activeCategories: number[] = [];
   selected: string;
   filter:boolean = false
   constructor(
@@ -77,71 +78,55 @@ export class ProductsComponent implements OnInit {
     this.toysService.setSelectedProduct(product); 
     this.router.navigate(['/game-details']); 
   }
-  selectedCategory: any; 
-
+  // selectedCategory: any; 
   categories: any[] = [
-    { name: 'board game', key: '1' },
-    { name: 'card game', key: '2' },
-    { name: 'family game', key: '3' }
+    { name: 'board game', key: '1'},
+    { name: 'card game', key: '2'},
+    { name: 'family game', key: '3'}
   ];
-  onCategoryChange(category : number): void {debugger
-    this.toysService.getProductByCategory(Number(category)).subscribe((data:any)=>{
-      // this.filterProducts = [];
 
-      this.filterProducts=data
-      this.filter = true
-      console.log(this.filterProducts)
-      console.log(data)
-    debugger
-    })
-    //    // בודק אם יש קטגוריה שנבחרה
-    // if (this.selectedCategory) {
-    //   // הדפסת הקטגוריה המלאה
-    //   console.log('Selected Category:', this.selectedCategory);
-  
-    //   // שולף רק את ה-key מתוך selectedCategory
-    //   const categoryId = this.selectedCategory.key;
-  
-    //   // הדפסת ה-key כדי לוודא שהוא מתקבל כראוי
-    //   console.log('Selected Category ID (key):', categoryId);
-  
-    //   // אם יש categoryId תקני (לא NaN או null)
-    //   if (categoryId) {
-    //     this.toysService.getProductByCategory(Number(categoryId)).subscribe(
-    //       (data) => {
-    //         this.products = data;  // מעדכן את המוצרים לפי הקטגוריה
-    //       },
-    //       (error) => {
-    //         console.error('Error fetching products by category:', error);
-    //         alert('There was an error fetching the products for the selected category. Please try again later.');
-    //       }
-    //     );
-    //   } else {
-    //     console.error('Invalid categoryId:', categoryId);
-    //     alert('Invalid category selected. Please select a valid category.');
-    //   }
-    // } else {
-    //   console.log('No category selected.');
-    //   alert('Please select a category.');
-    // }
+
+  onCategoryChange(category : number): void {
+    // debugger
+    this.filter=true
+     
+     const index= this.activeCategories.indexOf(category)    
+    console.log(this.activeCategories.indexOf(category) );
+
+      if(index==-1){
+        this.activeCategories.push(category);
+        console.log('קטגוריות פעולות:', this.activeCategories);
+        
+//         this.toysService.getProductByCategory(Number(category)).subscribe((data:any)=>{   
+//         this.filterProducts = [...this.filterProducts, ...data];
+//   })
+// }  
+this.toysService.getProductByCategory(Number(category)).subscribe((data:any)=>{
+
+// this.filterProducts=data
+this.filterProducts = [...this.filterProducts, ...data];
   }
+);}
+else{
+  this.activeCategories.splice(index, 1);
+  // this.filterProducts = []
+  console.log('קטגוריות פעולות לאחר ההסרה:', this.activeCategories);
   
-
-  // sortByCategory() {
-  //   this.selectedCategories = [this.categories[1]]; 
-  
-  //     const categoryId = this.selectedCategories[0].key;
-  
-  //     this.toysService.getProductByCategory(Number(categoryId)).subscribe(
-  //         (data) => {
-  //             this.products = data; 
-  //         },
-  //         (error) => {
-  //             console.error('Error fetching products by category:', error);
-  //             alert('There was an error fetching the products for the selected category. Please try again later.');
-  //         }
-  //     );
-  // }
+  // this.toysService.getProductByCategory(Number(category)).subscribe((data:any)=>{
+  // this.filterProducts = [...this.filterProducts, ...data];
+  // })
+  this.filterProducts = this.filterProducts.filter(product => product.categoryId != category);
+  console.log(this.filterProducts);
+}
+if(this.activeCategories.length==0){
+  this.filter=false
+  this.toysService.getProductList().subscribe(
+    (data) => {
+      this.filterProducts=[]
+      this.products = data;
+    })
+}  
+  }
   
 }
 

@@ -4,6 +4,7 @@ export class ModelCategory {
     constructor(categoryId:number,name:string){
         this.categoryId=categoryId,
         this.name=name
+     
     }
 }
 
