@@ -7,7 +7,7 @@
     </p-floatlabel>
   </div>
   <div class="form-group">
-    <p-password [(ngModel)]="value" placeholder="Password"></p-password>
+    <p-password [(ngModel)]="Password" placeholder="Password"></p-password>
   </div>
   <p-button label="Sign In" severity="info" (click)="signIn()" class="submit-button" />
   <p class="form-footer">New here? <span (click)="toggleForm()" class="toggle-link">Create an account</span></p>
@@ -34,10 +34,10 @@
     </p-floatlabel>
   </div> 
   <div class="form-group">
-    <p-datepicker [(ngModel)]="date"></p-datepicker>
+    <p-datepicker [(ngModel)]="DateOfBirth"></p-datepicker>
   </div>
   <div class="form-group">
-    <p-password [(ngModel)]="value" promptLabel="Choose a password" weakLabel="Too simple" mediumLabel="Average complexity" strongLabel="Complex password" placeholder="Password"></p-password>
+    <p-password [(ngModel)]="Password" promptLabel="Choose a password" weakLabel="Too simple" mediumLabel="Average complexity" strongLabel="Complex password" placeholder="Password"></p-password>
   </div>
   <p-button label="Create Account" severity="success" (click)="logIn()" class="submit-button"  routerLink="/home" routerLinkActive="active"
   />
