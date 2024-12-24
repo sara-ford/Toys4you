@@ -26,7 +26,7 @@
     <h2> {{getTotalPrice() }}&#x20AA;</h2>
   </div>
   <div class="checkout-btn-container">
-    <button  class="checkout-btn" routerLink="/check-out" routerLinkActive="active">for payment</button>
+    <button (click)="checkIfLogInBeforePyment" class="checkout-btn" routerLink="/check-out" routerLinkActive="active">for payment</button>
     
   </div>
 </div>

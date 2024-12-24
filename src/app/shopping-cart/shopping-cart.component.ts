@@ -4,7 +4,7 @@ import { CommonModule } from '@angular/common';
 import { FormsModule } from '@angular/forms';
 import { RouterLink, RouterLinkActive, RouterOutlet } from '@angular/router';
 import { CartProducts } from '../models/cart-products';
-
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-shopping-cart',
@@ -16,8 +16,10 @@ import { CartProducts } from '../models/cart-products';
 export class ShoppingCartComponent implements OnInit {
   cartlist: CartProducts[] = [];  
 
-  constructor(private toysService: ToysServiceService) {}
-
+  constructor(
+    private toysService: ToysServiceService,
+    private router: Router
+  ) { }
   ngOnInit(): void {    debugger
     const selectedProduct = this.toysService.getSelectedProduct();
     console.log(selectedProduct);
@@ -46,12 +48,25 @@ export class ShoppingCartComponent implements OnInit {
 
   getTotalPrice(): string {
     // אם הסל ריק
-    if (this.cartlist.length === 0) {
+    if (this.cartlist.length == 0) {
         return "Your cart is empty"; 
     }
 
     const totalPrice = this.cartlist.reduce((total, product) => total + product.totalPrice, 0);
-    return `Total price: $${totalPrice}`;  // מחזיר את הסכום עם הטקסט המתאים
+    return `Total price: $${totalPrice}`;  
+}
+
+
+checkIfLogInBeforePyment(){
+  //לבדוק האם הלקוח כבר נכנס לחשבון
+  if(sessionStorage.getItem('userName')!=null){
+     this.router.navigate(['/check-out']);
+  }
+  else{
+    this.router.navigate(['/sing-in']);
+  }
+     
+ 
 }
 
 }

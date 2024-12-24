@@ -7,10 +7,6 @@
       "RelativeMoniker": "D:0:0:{19689A55-5D3E-4EBD-9407-56CF986C2397}|WebApi\\WebApi.csproj|solutionrelative:webapi\\controllers\\costumercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{6C18B575-5456-478F-9445-9FCB8703738B}|Dal_Repository\\Dal_Repository.csproj|C:\\Users\\User\\Desktop\\\u05DE\u05D9\u05DB\u05DC\\\u05DC\u05D9\u05DE\u05D5\u05D3\u05D9\u05DD \u05DE\u05D9\u05DB\u05DC\\\u05E4\u05E8\u05D5\u05D9\u05E7\u05D8 \u05D2\u05DE\u05E8\\Toys4you\\Bll_Services\\dal_repository\\customerdal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{6C18B575-5456-478F-9445-9FCB8703738B}|Dal_Repository\\Dal_Repository.csproj|solutionrelative:dal_repository\\customerdal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{6C18B575-5456-478F-9445-9FCB8703738B}|Dal_Repository\\Dal_Repository.csproj|c:\\users\\user\\desktop\\\u05DE\u05D9\u05DB\u05DC\\\u05DC\u05D9\u05DE\u05D5\u05D3\u05D9\u05DD \u05DE\u05D9\u05DB\u05DC\\\u05E4\u05E8\u05D5\u05D9\u05E7\u05D8 \u05D2\u05DE\u05E8\\toys4you\\bll_services\\dal_repository\\modelsconverters\\productsconverters.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{6C18B575-5456-478F-9445-9FCB8703738B}|Dal_Repository\\Dal_Repository.csproj|solutionrelative:dal_repository\\modelsconverters\\productsconverters.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -19,20 +15,32 @@
       "RelativeMoniker": "D:0:0:{3CBA860A-E411-407E-866C-EFE0479C03E5}|Bll_Services\\Bll_Services.csproj|solutionrelative:bll_services\\productbll.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
+      "AbsoluteMoniker": "D:0:0:{C3566E02-E6B9-4979-8516-FDDC8DF0CFFD}|Dto_common_Entities\\Dto_common_Entities.csproj|C:\\Users\\User\\Desktop\\\u05DE\u05D9\u05DB\u05DC\\\u05DC\u05D9\u05DE\u05D5\u05D3\u05D9\u05DD \u05DE\u05D9\u05DB\u05DC\\\u05E4\u05E8\u05D5\u05D9\u05E7\u05D8 \u05D2\u05DE\u05E8\\Toys4you\\Bll_Services\\dto_common_entities\\productsdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C3566E02-E6B9-4979-8516-FDDC8DF0CFFD}|Dto_common_Entities\\Dto_common_Entities.csproj|solutionrelative:dto_common_entities\\productsdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{6C18B575-5456-478F-9445-9FCB8703738B}|Dal_Repository\\Dal_Repository.csproj|C:\\Users\\User\\Desktop\\\u05DE\u05D9\u05DB\u05DC\\\u05DC\u05D9\u05DE\u05D5\u05D3\u05D9\u05DD \u05DE\u05D9\u05DB\u05DC\\\u05E4\u05E8\u05D5\u05D9\u05E7\u05D8 \u05D2\u05DE\u05E8\\Toys4you\\Bll_Services\\dal_repository\\models\\product.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{6C18B575-5456-478F-9445-9FCB8703738B}|Dal_Repository\\Dal_Repository.csproj|solutionrelative:dal_repository\\models\\product.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6C18B575-5456-478F-9445-9FCB8703738B}|Dal_Repository\\Dal_Repository.csproj|C:\\Users\\User\\Desktop\\\u05DE\u05D9\u05DB\u05DC\\\u05DC\u05D9\u05DE\u05D5\u05D3\u05D9\u05DD \u05DE\u05D9\u05DB\u05DC\\\u05E4\u05E8\u05D5\u05D9\u05E7\u05D8 \u05D2\u05DE\u05E8\\Toys4you\\Bll_Services\\dal_repository\\models\\categorylookup.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6C18B575-5456-478F-9445-9FCB8703738B}|Dal_Repository\\Dal_Repository.csproj|solutionrelative:dal_repository\\models\\categorylookup.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{19689A55-5D3E-4EBD-9407-56CF986C2397}|WebApi\\WebApi.csproj|C:\\Users\\User\\Desktop\\\u05DE\u05D9\u05DB\u05DC\\\u05DC\u05D9\u05DE\u05D5\u05D3\u05D9\u05DD \u05DE\u05D9\u05DB\u05DC\\\u05E4\u05E8\u05D5\u05D9\u05E7\u05D8 \u05D2\u05DE\u05E8\\Toys4you\\Bll_Services\\webapi\\controllers\\productcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{19689A55-5D3E-4EBD-9407-56CF986C2397}|WebApi\\WebApi.csproj|solutionrelative:webapi\\controllers\\productcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{6C18B575-5456-478F-9445-9FCB8703738B}|Dal_Repository\\Dal_Repository.csproj|C:\\Users\\User\\Desktop\\\u05DE\u05D9\u05DB\u05DC\\\u05DC\u05D9\u05DE\u05D5\u05D3\u05D9\u05DD \u05DE\u05D9\u05DB\u05DC\\\u05E4\u05E8\u05D5\u05D9\u05E7\u05D8 \u05D2\u05DE\u05E8\\Toys4you\\Bll_Services\\dal_repository\\productsdal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{6C18B575-5456-478F-9445-9FCB8703738B}|Dal_Repository\\Dal_Repository.csproj|solutionrelative:dal_repository\\productsdal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{C3566E02-E6B9-4979-8516-FDDC8DF0CFFD}|Dto_common_Entities\\Dto_common_Entities.csproj|C:\\Users\\User\\Desktop\\\u05DE\u05D9\u05DB\u05DC\\\u05DC\u05D9\u05DE\u05D5\u05D3\u05D9\u05DD \u05DE\u05D9\u05DB\u05DC\\\u05E4\u05E8\u05D5\u05D9\u05E7\u05D8 \u05D2\u05DE\u05E8\\Toys4you\\Bll_Services\\dto_common_entities\\productsdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{C3566E02-E6B9-4979-8516-FDDC8DF0CFFD}|Dto_common_Entities\\Dto_common_Entities.csproj|solutionrelative:dto_common_entities\\productsdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{C3566E02-E6B9-4979-8516-FDDC8DF0CFFD}|Dto_common_Entities\\Dto_common_Entities.csproj|C:\\Users\\User\\Desktop\\\u05DE\u05D9\u05DB\u05DC\\\u05DC\u05D9\u05DE\u05D5\u05D3\u05D9\u05DD \u05DE\u05D9\u05DB\u05DC\\\u05E4\u05E8\u05D5\u05D9\u05E7\u05D8 \u05D2\u05DE\u05E8\\Toys4you\\Bll_Services\\dto_common_entities\\customerdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C3566E02-E6B9-4979-8516-FDDC8DF0CFFD}|Dto_common_Entities\\Dto_common_Entities.csproj|solutionrelative:dto_common_entities\\customerdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{19689A55-5D3E-4EBD-9407-56CF986C2397}|WebApi\\WebApi.csproj|C:\\Users\\User\\Desktop\\\u05DE\u05D9\u05DB\u05DC\\\u05DC\u05D9\u05DE\u05D5\u05D3\u05D9\u05DD \u05DE\u05D9\u05DB\u05DC\\\u05E4\u05E8\u05D5\u05D9\u05E7\u05D8 \u05D2\u05DE\u05E8\\Toys4you\\Bll_Services\\webapi\\controllers\\productcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{19689A55-5D3E-4EBD-9407-56CF986C2397}|WebApi\\WebApi.csproj|solutionrelative:webapi\\controllers\\productcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{6C18B575-5456-478F-9445-9FCB8703738B}|Dal_Repository\\Dal_Repository.csproj|C:\\Users\\User\\Desktop\\\u05DE\u05D9\u05DB\u05DC\\\u05DC\u05D9\u05DE\u05D5\u05D3\u05D9\u05DD \u05DE\u05D9\u05DB\u05DC\\\u05E4\u05E8\u05D5\u05D9\u05E7\u05D8 \u05D2\u05DE\u05E8\\Toys4you\\Bll_Services\\dal_repository\\customerdal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6C18B575-5456-478F-9445-9FCB8703738B}|Dal_Repository\\Dal_Repository.csproj|solutionrelative:dal_repository\\customerdal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{6C18B575-5456-478F-9445-9FCB8703738B}|Dal_Repository\\Dal_Repository.csproj|C:\\Users\\User\\Desktop\\\u05DE\u05D9\u05DB\u05DC\\\u05DC\u05D9\u05DE\u05D5\u05D3\u05D9\u05DD \u05DE\u05D9\u05DB\u05DC\\\u05E4\u05E8\u05D5\u05D9\u05E7\u05D8 \u05D2\u05DE\u05E8\\Toys4you\\Bll_Services\\dal_repository\\models\\toys4youcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -65,10 +73,6 @@
       "RelativeMoniker": "D:0:0:{C3566E02-E6B9-4979-8516-FDDC8DF0CFFD}|Dto_common_Entities\\Dto_common_Entities.csproj|solutionrelative:dto_common_entities\\dto_common_entities.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{C3566E02-E6B9-4979-8516-FDDC8DF0CFFD}|Dto_common_Entities\\Dto_common_Entities.csproj|C:\\Users\\User\\Desktop\\\u05DE\u05D9\u05DB\u05DC\\\u05DC\u05D9\u05DE\u05D5\u05D3\u05D9\u05DD \u05DE\u05D9\u05DB\u05DC\\\u05E4\u05E8\u05D5\u05D9\u05E7\u05D8 \u05D2\u05DE\u05E8\\Toys4you\\Bll_Services\\dto_common_entities\\customerdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{C3566E02-E6B9-4979-8516-FDDC8DF0CFFD}|Dto_common_Entities\\Dto_common_Entities.csproj|solutionrelative:dto_common_entities\\customerdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{6C18B575-5456-478F-9445-9FCB8703738B}|Dal_Repository\\Dal_Repository.csproj|C:\\Users\\User\\Desktop\\\u05DE\u05D9\u05DB\u05DC\\\u05DC\u05D9\u05DE\u05D5\u05D3\u05D9\u05DD \u05DE\u05D9\u05DB\u05DC\\\u05E4\u05E8\u05D5\u05D9\u05E7\u05D8 \u05D2\u05DE\u05E8\\Toys4you\\Bll_Services\\dal_repository\\dal_repository.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
       "RelativeMoniker": "D:0:0:{6C18B575-5456-478F-9445-9FCB8703738B}|Dal_Repository\\Dal_Repository.csproj|solutionrelative:dal_repository\\dal_repository.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
     },
@@ -91,10 +95,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{6C18B575-5456-478F-9445-9FCB8703738B}|Dal_Repository\\Dal_Repository.csproj|C:\\Users\\User\\Desktop\\\u05DE\u05D9\u05DB\u05DC\\\u05DC\u05D9\u05DE\u05D5\u05D3\u05D9\u05DD \u05DE\u05D9\u05DB\u05DC\\\u05E4\u05E8\u05D5\u05D9\u05E7\u05D8 \u05D2\u05DE\u05E8\\Toys4you\\Bll_Services\\dal_repository\\models\\companylookup.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{6C18B575-5456-478F-9445-9FCB8703738B}|Dal_Repository\\Dal_Repository.csproj|solutionrelative:dal_repository\\models\\companylookup.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{6C18B575-5456-478F-9445-9FCB8703738B}|Dal_Repository\\Dal_Repository.csproj|C:\\Users\\User\\Desktop\\\u05DE\u05D9\u05DB\u05DC\\\u05DC\u05D9\u05DE\u05D5\u05D3\u05D9\u05DD \u05DE\u05D9\u05DB\u05DC\\\u05E4\u05E8\u05D5\u05D9\u05E7\u05D8 \u05D2\u05DE\u05E8\\Toys4you\\Bll_Services\\dal_repository\\models\\categorylookup.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{6C18B575-5456-478F-9445-9FCB8703738B}|Dal_Repository\\Dal_Repository.csproj|solutionrelative:dal_repository\\models\\categorylookup.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -112,80 +112,124 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 3,
+              "Title": "productsDto.cs",
+              "DocumentMoniker": "C:\\Users\\User\\Desktop\\\u05DE\u05D9\u05DB\u05DC\\\u05DC\u05D9\u05DE\u05D5\u05D3\u05D9\u05DD \u05DE\u05D9\u05DB\u05DC\\\u05E4\u05E8\u05D5\u05D9\u05E7\u05D8 \u05D2\u05DE\u05E8\\Toys4you\\Bll_Services\\Dto_common_Entities\\productsDto.cs",
+              "RelativeDocumentMoniker": "Dto_common_Entities\\productsDto.cs",
+              "ToolTip": "C:\\Users\\User\\Desktop\\\u05DE\u05D9\u05DB\u05DC\\\u05DC\u05D9\u05DE\u05D5\u05D3\u05D9\u05DD \u05DE\u05D9\u05DB\u05DC\\\u05E4\u05E8\u05D5\u05D9\u05E7\u05D8 \u05D2\u05DE\u05E8\\Toys4you\\Bll_Services\\Dto_common_Entities\\productsDto.cs",
+              "RelativeToolTip": "Dto_common_Entities\\productsDto.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAsAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-11T09:11:10.222Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Product.cs",
+              "DocumentMoniker": "C:\\Users\\User\\Desktop\\\u05DE\u05D9\u05DB\u05DC\\\u05DC\u05D9\u05DE\u05D5\u05D3\u05D9\u05DD \u05DE\u05D9\u05DB\u05DC\\\u05E4\u05E8\u05D5\u05D9\u05E7\u05D8 \u05D2\u05DE\u05E8\\Toys4you\\Bll_Services\\Dal_Repository\\models\\Product.cs",
+              "RelativeDocumentMoniker": "Dal_Repository\\models\\Product.cs",
+              "ToolTip": "C:\\Users\\User\\Desktop\\\u05DE\u05D9\u05DB\u05DC\\\u05DC\u05D9\u05DE\u05D5\u05D3\u05D9\u05DD \u05DE\u05D9\u05DB\u05DC\\\u05E4\u05E8\u05D5\u05D9\u05E7\u05D8 \u05D2\u05DE\u05E8\\Toys4you\\Bll_Services\\Dal_Repository\\models\\Product.cs",
+              "RelativeToolTip": "Dal_Repository\\models\\Product.cs",
+              "ViewState": "AQIAAAYAAACANDMzMzMKwA8AAAAgAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-11T10:37:28.725Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
               "Title": "productsConverters.cs",
               "DocumentMoniker": "C:\\Users\\User\\Desktop\\\u05DE\u05D9\u05DB\u05DC\\\u05DC\u05D9\u05DE\u05D5\u05D3\u05D9\u05DD \u05DE\u05D9\u05DB\u05DC\\\u05E4\u05E8\u05D5\u05D9\u05E7\u05D8 \u05D2\u05DE\u05E8\\Toys4you\\Bll_Services\\Dal_Repository\\modelsConverters\\productsConverters.cs",
               "RelativeDocumentMoniker": "Dal_Repository\\modelsConverters\\productsConverters.cs",
-              "ToolTip": "C:\\Users\\User\\Desktop\\\u05DE\u05D9\u05DB\u05DC\\\u05DC\u05D9\u05DE\u05D5\u05D3\u05D9\u05DD \u05DE\u05D9\u05DB\u05DC\\\u05E4\u05E8\u05D5\u05D9\u05E7\u05D8 \u05D2\u05DE\u05E8\\Toys4you\\Bll_Services\\Dal_Repository\\modelsConverters\\productsConverters.cs*",
-              "RelativeToolTip": "Dal_Repository\\modelsConverters\\productsConverters.cs*",
-              "ViewState": "AQIAAAIAAAAAAAAAAAAmwB8AAAAJAAAA",
+              "ToolTip": "C:\\Users\\User\\Desktop\\\u05DE\u05D9\u05DB\u05DC\\\u05DC\u05D9\u05DE\u05D5\u05D3\u05D9\u05DD \u05DE\u05D9\u05DB\u05DC\\\u05E4\u05E8\u05D5\u05D9\u05E7\u05D8 \u05D2\u05DE\u05E8\\Toys4you\\Bll_Services\\Dal_Repository\\modelsConverters\\productsConverters.cs",
+              "RelativeToolTip": "Dal_Repository\\modelsConverters\\productsConverters.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAYAAAAzAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-12-11T10:14:44.031Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 6,
+              "Title": "ProductController.cs",
+              "DocumentMoniker": "C:\\Users\\User\\Desktop\\\u05DE\u05D9\u05DB\u05DC\\\u05DC\u05D9\u05DE\u05D5\u05D3\u05D9\u05DD \u05DE\u05D9\u05DB\u05DC\\\u05E4\u05E8\u05D5\u05D9\u05E7\u05D8 \u05D2\u05DE\u05E8\\Toys4you\\Bll_Services\\WebApi\\Controllers\\ProductController.cs",
+              "RelativeDocumentMoniker": "WebApi\\Controllers\\ProductController.cs",
+              "ToolTip": "C:\\Users\\User\\Desktop\\\u05DE\u05D9\u05DB\u05DC\\\u05DC\u05D9\u05DE\u05D5\u05D3\u05D9\u05DD \u05DE\u05D9\u05DB\u05DC\\\u05E4\u05E8\u05D5\u05D9\u05E7\u05D8 \u05D2\u05DE\u05E8\\Toys4you\\Bll_Services\\WebApi\\Controllers\\ProductController.cs",
+              "RelativeToolTip": "WebApi\\Controllers\\ProductController.cs",
+              "ViewState": "AQIAAAYAAAAAAAAAAAAAABIAAABBAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-11T11:59:09.051Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "productsDal.cs",
+              "DocumentMoniker": "C:\\Users\\User\\Desktop\\\u05DE\u05D9\u05DB\u05DC\\\u05DC\u05D9\u05DE\u05D5\u05D3\u05D9\u05DD \u05DE\u05D9\u05DB\u05DC\\\u05E4\u05E8\u05D5\u05D9\u05E7\u05D8 \u05D2\u05DE\u05E8\\Toys4you\\Bll_Services\\Dal_Repository\\productsDal.cs",
+              "RelativeDocumentMoniker": "Dal_Repository\\productsDal.cs",
+              "ToolTip": "C:\\Users\\User\\Desktop\\\u05DE\u05D9\u05DB\u05DC\\\u05DC\u05D9\u05DE\u05D5\u05D3\u05D9\u05DD \u05DE\u05D9\u05DB\u05DC\\\u05E4\u05E8\u05D5\u05D9\u05E7\u05D8 \u05D2\u05DE\u05E8\\Toys4you\\Bll_Services\\Dal_Repository\\productsDal.cs",
+              "RelativeToolTip": "Dal_Repository\\productsDal.cs",
+              "ViewState": "AQIAABAAAAAAAAAAAAAQwBEAAAA0AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-11T09:10:37.559Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
               "Title": "productBll.cs",
               "DocumentMoniker": "C:\\Users\\User\\Desktop\\\u05DE\u05D9\u05DB\u05DC\\\u05DC\u05D9\u05DE\u05D5\u05D3\u05D9\u05DD \u05DE\u05D9\u05DB\u05DC\\\u05E4\u05E8\u05D5\u05D9\u05E7\u05D8 \u05D2\u05DE\u05E8\\Toys4you\\Bll_Services\\Bll_Services\\productBll.cs",
               "RelativeDocumentMoniker": "Bll_Services\\productBll.cs",
               "ToolTip": "C:\\Users\\User\\Desktop\\\u05DE\u05D9\u05DB\u05DC\\\u05DC\u05D9\u05DE\u05D5\u05D3\u05D9\u05DD \u05DE\u05D9\u05DB\u05DC\\\u05E4\u05E8\u05D5\u05D9\u05E7\u05D8 \u05D2\u05DE\u05E8\\Toys4you\\Bll_Services\\Bll_Services\\productBll.cs",
               "RelativeToolTip": "Bll_Services\\productBll.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA8AAAAcAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAcAAAAJAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-11T09:09:24.405Z"
+              "WhenOpened": "2024-12-11T09:09:24.405Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "productsDto.cs",
-              "DocumentMoniker": "C:\\Users\\User\\Desktop\\\u05DE\u05D9\u05DB\u05DC\\\u05DC\u05D9\u05DE\u05D5\u05D3\u05D9\u05DD \u05DE\u05D9\u05DB\u05DC\\\u05E4\u05E8\u05D5\u05D9\u05E7\u05D8 \u05D2\u05DE\u05E8\\Toys4you\\Bll_Services\\Dto_common_Entities\\productsDto.cs",
-              "RelativeDocumentMoniker": "Dto_common_Entities\\productsDto.cs",
-              "ToolTip": "C:\\Users\\User\\Desktop\\\u05DE\u05D9\u05DB\u05DC\\\u05DC\u05D9\u05DE\u05D5\u05D3\u05D9\u05DD \u05DE\u05D9\u05DB\u05DC\\\u05E4\u05E8\u05D5\u05D9\u05E7\u05D8 \u05D2\u05DE\u05E8\\Toys4you\\Bll_Services\\Dto_common_Entities\\productsDto.cs",
-              "RelativeToolTip": "Dto_common_Entities\\productsDto.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABwAAAAbAAAA",
+              "DocumentIndex": 5,
+              "Title": "CategoryLookup.cs",
+              "DocumentMoniker": "C:\\Users\\User\\Desktop\\\u05DE\u05D9\u05DB\u05DC\\\u05DC\u05D9\u05DE\u05D5\u05D3\u05D9\u05DD \u05DE\u05D9\u05DB\u05DC\\\u05E4\u05E8\u05D5\u05D9\u05E7\u05D8 \u05D2\u05DE\u05E8\\Toys4you\\Bll_Services\\Dal_Repository\\models\\CategoryLookup.cs",
+              "RelativeDocumentMoniker": "Dal_Repository\\models\\CategoryLookup.cs",
+              "ToolTip": "C:\\Users\\User\\Desktop\\\u05DE\u05D9\u05DB\u05DC\\\u05DC\u05D9\u05DE\u05D5\u05D3\u05D9\u05DD \u05DE\u05D9\u05DB\u05DC\\\u05E4\u05E8\u05D5\u05D9\u05E7\u05D8 \u05D2\u05DE\u05E8\\Toys4you\\Bll_Services\\Dal_Repository\\models\\CategoryLookup.cs",
+              "RelativeToolTip": "Dal_Repository\\models\\CategoryLookup.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAcAAAAnAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-11T09:11:10.222Z"
+              "WhenOpened": "2024-12-22T18:51:18.449Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "CostumerController.cs",
+              "DocumentMoniker": "C:\\Users\\User\\Desktop\\\u05DE\u05D9\u05DB\u05DC\\\u05DC\u05D9\u05DE\u05D5\u05D3\u05D9\u05DD \u05DE\u05D9\u05DB\u05DC\\\u05E4\u05E8\u05D5\u05D9\u05E7\u05D8 \u05D2\u05DE\u05E8\\Toys4you\\Bll_Services\\WebApi\\Controllers\\CostumerController.cs",
+              "RelativeDocumentMoniker": "WebApi\\Controllers\\CostumerController.cs",
+              "ToolTip": "C:\\Users\\User\\Desktop\\\u05DE\u05D9\u05DB\u05DC\\\u05DC\u05D9\u05DE\u05D5\u05D3\u05D9\u05DD \u05DE\u05D9\u05DB\u05DC\\\u05E4\u05E8\u05D5\u05D9\u05E7\u05D8 \u05D2\u05DE\u05E8\\Toys4you\\Bll_Services\\WebApi\\Controllers\\CostumerController.cs",
+              "RelativeToolTip": "WebApi\\Controllers\\CostumerController.cs",
+              "ViewState": "AQIAAAgAAAAAAAAAAAAAwBQAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-15T16:15:52.65Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 8,
-              "Title": "Toys4youContext.cs",
-              "DocumentMoniker": "C:\\Users\\User\\Desktop\\\u05DE\u05D9\u05DB\u05DC\\\u05DC\u05D9\u05DE\u05D5\u05D3\u05D9\u05DD \u05DE\u05D9\u05DB\u05DC\\\u05E4\u05E8\u05D5\u05D9\u05E7\u05D8 \u05D2\u05DE\u05E8\\Toys4you\\Bll_Services\\Dal_Repository\\models\\Toys4youContext.cs",
-              "RelativeDocumentMoniker": "Dal_Repository\\models\\Toys4youContext.cs",
-              "ToolTip": "C:\\Users\\User\\Desktop\\\u05DE\u05D9\u05DB\u05DC\\\u05DC\u05D9\u05DE\u05D5\u05D3\u05D9\u05DD \u05DE\u05D9\u05DB\u05DC\\\u05E4\u05E8\u05D5\u05D9\u05E7\u05D8 \u05D2\u05DE\u05E8\\Toys4you\\Bll_Services\\Dal_Repository\\models\\Toys4youContext.cs",
-              "RelativeToolTip": "Dal_Repository\\models\\Toys4youContext.cs",
-              "ViewState": "AQIAAHkAAAAAAAAAAAAQwJoAAAAwAAAA",
+              "Title": "customerDto.cs",
+              "DocumentMoniker": "C:\\Users\\User\\Desktop\\\u05DE\u05D9\u05DB\u05DC\\\u05DC\u05D9\u05DE\u05D5\u05D3\u05D9\u05DD \u05DE\u05D9\u05DB\u05DC\\\u05E4\u05E8\u05D5\u05D9\u05E7\u05D8 \u05D2\u05DE\u05E8\\Toys4you\\Bll_Services\\Dto_common_Entities\\customerDto.cs",
+              "RelativeDocumentMoniker": "Dto_common_Entities\\customerDto.cs",
+              "ToolTip": "C:\\Users\\User\\Desktop\\\u05DE\u05D9\u05DB\u05DC\\\u05DC\u05D9\u05DE\u05D5\u05D3\u05D9\u05DD \u05DE\u05D9\u05DB\u05DC\\\u05E4\u05E8\u05D5\u05D9\u05E7\u05D8 \u05D2\u05DE\u05E8\\Toys4you\\Bll_Services\\Dto_common_Entities\\customerDto.cs",
+              "RelativeToolTip": "Dto_common_Entities\\customerDto.cs",
+              "ViewState": "AQIAAAcAAAAAAAAAAAAcwBgAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-11T09:57:49.879Z"
+              "WhenOpened": "2024-12-14T19:27:46.646Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 9,
-              "Title": "Category.cs",
-              "DocumentMoniker": "C:\\Users\\User\\Desktop\\\u05DE\u05D9\u05DB\u05DC\\\u05DC\u05D9\u05DE\u05D5\u05D3\u05D9\u05DD \u05DE\u05D9\u05DB\u05DC\\\u05E4\u05E8\u05D5\u05D9\u05E7\u05D8 \u05D2\u05DE\u05E8\\Toys4you\\Bll_Services\\Dal_Repository\\models\\Category.cs",
-              "RelativeDocumentMoniker": "Dal_Repository\\models\\Category.cs",
-              "ToolTip": "C:\\Users\\User\\Desktop\\\u05DE\u05D9\u05DB\u05DC\\\u05DC\u05D9\u05DE\u05D5\u05D3\u05D9\u05DD \u05DE\u05D9\u05DB\u05DC\\\u05E4\u05E8\u05D5\u05D9\u05E7\u05D8 \u05D2\u05DE\u05E8\\Toys4you\\Bll_Services\\Dal_Repository\\models\\Category.cs",
-              "RelativeToolTip": "Dal_Repository\\models\\Category.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-11T10:41:23.24Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 22,
-              "Title": "CompanyLookup.cs",
-              "DocumentMoniker": "C:\\Users\\User\\Desktop\\\u05DE\u05D9\u05DB\u05DC\\\u05DC\u05D9\u05DE\u05D5\u05D3\u05D9\u05DD \u05DE\u05D9\u05DB\u05DC\\\u05E4\u05E8\u05D5\u05D9\u05E7\u05D8 \u05D2\u05DE\u05E8\\Toys4you\\Bll_Services\\Dal_Repository\\models\\CompanyLookup.cs",
-              "RelativeDocumentMoniker": "Dal_Repository\\models\\CompanyLookup.cs",
-              "ToolTip": "C:\\Users\\User\\Desktop\\\u05DE\u05D9\u05DB\u05DC\\\u05DC\u05D9\u05DE\u05D5\u05D3\u05D9\u05DD \u05DE\u05D9\u05DB\u05DC\\\u05E4\u05E8\u05D5\u05D9\u05E7\u05D8 \u05D2\u05DE\u05E8\\Toys4you\\Bll_Services\\Dal_Repository\\models\\CompanyLookup.cs",
-              "RelativeToolTip": "Dal_Repository\\models\\CompanyLookup.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAkAAAAYAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-23T09:02:24.589Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
               "Title": "customerDal.cs",
               "DocumentMoniker": "C:\\Users\\User\\Desktop\\\u05DE\u05D9\u05DB\u05DC\\\u05DC\u05D9\u05DE\u05D5\u05D3\u05D9\u05DD \u05DE\u05D9\u05DB\u05DC\\\u05E4\u05E8\u05D5\u05D9\u05E7\u05D8 \u05D2\u05DE\u05E8\\Toys4you\\Bll_Services\\Dal_Repository\\customerDal.cs",
               "RelativeDocumentMoniker": "Dal_Repository\\customerDal.cs",
@@ -198,56 +242,43 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "CostumerController.cs",
-              "DocumentMoniker": "C:\\Users\\User\\Desktop\\\u05DE\u05D9\u05DB\u05DC\\\u05DC\u05D9\u05DE\u05D5\u05D3\u05D9\u05DD \u05DE\u05D9\u05DB\u05DC\\\u05E4\u05E8\u05D5\u05D9\u05E7\u05D8 \u05D2\u05DE\u05E8\\Toys4you\\Bll_Services\\WebApi\\Controllers\\CostumerController.cs",
-              "RelativeDocumentMoniker": "WebApi\\Controllers\\CostumerController.cs",
-              "ToolTip": "C:\\Users\\User\\Desktop\\\u05DE\u05D9\u05DB\u05DC\\\u05DC\u05D9\u05DE\u05D5\u05D3\u05D9\u05DD \u05DE\u05D9\u05DB\u05DC\\\u05E4\u05E8\u05D5\u05D9\u05E7\u05D8 \u05D2\u05DE\u05E8\\Toys4you\\Bll_Services\\WebApi\\Controllers\\CostumerController.cs",
-              "RelativeToolTip": "WebApi\\Controllers\\CostumerController.cs",
-              "ViewState": "AQIAAAgAAAAAAAAAAAAAwBkAAABOAAAA",
+              "DocumentIndex": 23,
+              "Title": "CompanyLookup.cs",
+              "DocumentMoniker": "C:\\Users\\User\\Desktop\\\u05DE\u05D9\u05DB\u05DC\\\u05DC\u05D9\u05DE\u05D5\u05D3\u05D9\u05DD \u05DE\u05D9\u05DB\u05DC\\\u05E4\u05E8\u05D5\u05D9\u05E7\u05D8 \u05D2\u05DE\u05E8\\Toys4you\\Bll_Services\\Dal_Repository\\models\\CompanyLookup.cs",
+              "RelativeDocumentMoniker": "Dal_Repository\\models\\CompanyLookup.cs",
+              "ToolTip": "C:\\Users\\User\\Desktop\\\u05DE\u05D9\u05DB\u05DC\\\u05DC\u05D9\u05DE\u05D5\u05D3\u05D9\u05DD \u05DE\u05D9\u05DB\u05DC\\\u05E4\u05E8\u05D5\u05D9\u05E7\u05D8 \u05D2\u05DE\u05E8\\Toys4you\\Bll_Services\\Dal_Repository\\models\\CompanyLookup.cs",
+              "RelativeToolTip": "Dal_Repository\\models\\CompanyLookup.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAkAAAAYAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-15T16:15:52.65Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-12-23T09:02:24.589Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "Product.cs",
-              "DocumentMoniker": "C:\\Users\\User\\Desktop\\\u05DE\u05D9\u05DB\u05DC\\\u05DC\u05D9\u05DE\u05D5\u05D3\u05D9\u05DD \u05DE\u05D9\u05DB\u05DC\\\u05E4\u05E8\u05D5\u05D9\u05E7\u05D8 \u05D2\u05DE\u05E8\\Toys4you\\Bll_Services\\Dal_Repository\\models\\Product.cs",
-              "RelativeDocumentMoniker": "Dal_Repository\\models\\Product.cs",
-              "ToolTip": "C:\\Users\\User\\Desktop\\\u05DE\u05D9\u05DB\u05DC\\\u05DC\u05D9\u05DE\u05D5\u05D3\u05D9\u05DD \u05DE\u05D9\u05DB\u05DC\\\u05E4\u05E8\u05D5\u05D9\u05E7\u05D8 \u05D2\u05DE\u05E8\\Toys4you\\Bll_Services\\Dal_Repository\\models\\Product.cs",
-              "RelativeToolTip": "Dal_Repository\\models\\Product.cs",
-              "ViewState": "AQIAABIAAAAgzczMzIwuwA0AAAAmAAAA",
+              "DocumentIndex": 11,
+              "Title": "Category.cs",
+              "DocumentMoniker": "C:\\Users\\User\\Desktop\\\u05DE\u05D9\u05DB\u05DC\\\u05DC\u05D9\u05DE\u05D5\u05D3\u05D9\u05DD \u05DE\u05D9\u05DB\u05DC\\\u05E4\u05E8\u05D5\u05D9\u05E7\u05D8 \u05D2\u05DE\u05E8\\Toys4you\\Bll_Services\\Dal_Repository\\models\\Category.cs",
+              "RelativeDocumentMoniker": "Dal_Repository\\models\\Category.cs",
+              "ToolTip": "C:\\Users\\User\\Desktop\\\u05DE\u05D9\u05DB\u05DC\\\u05DC\u05D9\u05DE\u05D5\u05D3\u05D9\u05DD \u05DE\u05D9\u05DB\u05DC\\\u05E4\u05E8\u05D5\u05D9\u05E7\u05D8 \u05D2\u05DE\u05E8\\Toys4you\\Bll_Services\\Dal_Repository\\models\\Category.cs",
+              "RelativeToolTip": "Dal_Repository\\models\\Category.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-11T10:37:28.725Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "ProductController.cs",
-              "DocumentMoniker": "C:\\Users\\User\\Desktop\\\u05DE\u05D9\u05DB\u05DC\\\u05DC\u05D9\u05DE\u05D5\u05D3\u05D9\u05DD \u05DE\u05D9\u05DB\u05DC\\\u05E4\u05E8\u05D5\u05D9\u05E7\u05D8 \u05D2\u05DE\u05E8\\Toys4you\\Bll_Services\\WebApi\\Controllers\\ProductController.cs",
-              "RelativeDocumentMoniker": "WebApi\\Controllers\\ProductController.cs",
-              "ToolTip": "C:\\Users\\User\\Desktop\\\u05DE\u05D9\u05DB\u05DC\\\u05DC\u05D9\u05DE\u05D5\u05D3\u05D9\u05DD \u05DE\u05D9\u05DB\u05DC\\\u05E4\u05E8\u05D5\u05D9\u05E7\u05D8 \u05D2\u05DE\u05E8\\Toys4you\\Bll_Services\\WebApi\\Controllers\\ProductController.cs",
-              "RelativeToolTip": "WebApi\\Controllers\\ProductController.cs",
-              "ViewState": "AQIAAAgAAAAAMzMzMzP7vxoAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-11T11:59:09.051Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "productsDal.cs",
-              "DocumentMoniker": "C:\\Users\\User\\Desktop\\\u05DE\u05D9\u05DB\u05DC\\\u05DC\u05D9\u05DE\u05D5\u05D3\u05D9\u05DD \u05DE\u05D9\u05DB\u05DC\\\u05E4\u05E8\u05D5\u05D9\u05E7\u05D8 \u05D2\u05DE\u05E8\\Toys4you\\Bll_Services\\Dal_Repository\\productsDal.cs",
-              "RelativeDocumentMoniker": "Dal_Repository\\productsDal.cs",
-              "ToolTip": "C:\\Users\\User\\Desktop\\\u05DE\u05D9\u05DB\u05DC\\\u05DC\u05D9\u05DE\u05D5\u05D3\u05D9\u05DD \u05DE\u05D9\u05DB\u05DC\\\u05E4\u05E8\u05D5\u05D9\u05E7\u05D8 \u05D2\u05DE\u05E8\\Toys4you\\Bll_Services\\Dal_Repository\\productsDal.cs",
-              "RelativeToolTip": "Dal_Repository\\productsDal.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAwAAAAFAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-11T09:10:37.559Z"
+              "WhenOpened": "2024-12-11T10:41:23.24Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 10,
+              "Title": "Toys4youContext.cs",
+              "DocumentMoniker": "C:\\Users\\User\\Desktop\\\u05DE\u05D9\u05DB\u05DC\\\u05DC\u05D9\u05DE\u05D5\u05D3\u05D9\u05DD \u05DE\u05D9\u05DB\u05DC\\\u05E4\u05E8\u05D5\u05D9\u05E7\u05D8 \u05D2\u05DE\u05E8\\Toys4you\\Bll_Services\\Dal_Repository\\models\\Toys4youContext.cs",
+              "RelativeDocumentMoniker": "Dal_Repository\\models\\Toys4youContext.cs",
+              "ToolTip": "C:\\Users\\User\\Desktop\\\u05DE\u05D9\u05DB\u05DC\\\u05DC\u05D9\u05DE\u05D5\u05D3\u05D9\u05DD \u05DE\u05D9\u05DB\u05DC\\\u05E4\u05E8\u05D5\u05D9\u05E7\u05D8 \u05D2\u05DE\u05E8\\Toys4you\\Bll_Services\\Dal_Repository\\models\\Toys4youContext.cs",
+              "RelativeToolTip": "Dal_Repository\\models\\Toys4youContext.cs",
+              "ViewState": "AQIAAHkAAAAAAAAAAAAQwJoAAAAwAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-11T09:57:49.879Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
               "Title": "Company.cs",
               "DocumentMoniker": "C:\\Users\\User\\Desktop\\\u05DE\u05D9\u05DB\u05DC\\\u05DC\u05D9\u05DE\u05D5\u05D3\u05D9\u05DD \u05DE\u05D9\u05DB\u05DC\\\u05E4\u05E8\u05D5\u05D9\u05E7\u05D8 \u05D2\u05DE\u05E8\\Toys4you\\Bll_Services\\Dal_Repository\\models\\Company.cs",
               "RelativeDocumentMoniker": "Dal_Repository\\models\\Company.cs",
@@ -259,7 +290,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 11,
+              "DocumentIndex": 13,
               "Title": "Customer.cs",
               "DocumentMoniker": "C:\\Users\\User\\Desktop\\\u05DE\u05D9\u05DB\u05DC\\\u05DC\u05D9\u05DE\u05D5\u05D3\u05D9\u05DD \u05DE\u05D9\u05DB\u05DC\\\u05E4\u05E8\u05D5\u05D9\u05E7\u05D8 \u05D2\u05DE\u05E8\\Toys4you\\Bll_Services\\Dal_Repository\\models\\Customer.cs",
               "RelativeDocumentMoniker": "Dal_Repository\\models\\Customer.cs",
@@ -271,19 +302,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 23,
-              "Title": "CategoryLookup.cs",
-              "DocumentMoniker": "C:\\Users\\User\\Desktop\\\u05DE\u05D9\u05DB\u05DC\\\u05DC\u05D9\u05DE\u05D5\u05D3\u05D9\u05DD \u05DE\u05D9\u05DB\u05DC\\\u05E4\u05E8\u05D5\u05D9\u05E7\u05D8 \u05D2\u05DE\u05E8\\Toys4you\\Bll_Services\\Dal_Repository\\models\\CategoryLookup.cs",
-              "RelativeDocumentMoniker": "Dal_Repository\\models\\CategoryLookup.cs",
-              "ToolTip": "C:\\Users\\User\\Desktop\\\u05DE\u05D9\u05DB\u05DC\\\u05DC\u05D9\u05DE\u05D5\u05D3\u05D9\u05DD \u05DE\u05D9\u05DB\u05DC\\\u05E4\u05E8\u05D5\u05D9\u05E7\u05D8 \u05D2\u05DE\u05E8\\Toys4you\\Bll_Services\\Dal_Repository\\models\\CategoryLookup.cs",
-              "RelativeToolTip": "Dal_Repository\\models\\CategoryLookup.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAsAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-22T18:51:18.449Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 13,
+              "DocumentIndex": 15,
               "Title": "Toys4youContext.cs",
               "DocumentMoniker": "C:\\Users\\User\\Desktop\\\u05DE\u05D9\u05DB\u05DC\\\u05DC\u05D9\u05DE\u05D5\u05D3\u05D9\u05DD \u05DE\u05D9\u05DB\u05DC\\\u05E4\u05E8\u05D5\u05D9\u05E7\u05D8 \u05D2\u05DE\u05E8\\Bll_Services\\Dal_Repository\\model-Force\\Toys4youContext.cs",
               "RelativeDocumentMoniker": "..\\..\\Bll_Services\\Dal_Repository\\model-Force\\Toys4youContext.cs",
@@ -295,7 +314,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 12,
+              "DocumentIndex": 14,
               "Title": "Toys4youContext.cs",
               "DocumentMoniker": "C:\\Users\\User\\Desktop\\\u05DE\u05D9\u05DB\u05DC\\\u05DC\u05D9\u05DE\u05D5\u05D3\u05D9\u05DD \u05DE\u05D9\u05DB\u05DC\\\u05E4\u05E8\u05D5\u05D9\u05E7\u05D8 \u05D2\u05DE\u05E8\\Bll_Services\\Dal_Repository\\model\\Toys4youContext.cs",
               "RelativeDocumentMoniker": "..\\..\\Bll_Services\\Dal_Repository\\model\\Toys4youContext.cs",
@@ -307,7 +326,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 15,
+              "DocumentIndex": 17,
               "Title": "Dto_common_Entities.csproj",
               "DocumentMoniker": "C:\\Users\\User\\Desktop\\\u05DE\u05D9\u05DB\u05DC\\\u05DC\u05D9\u05DE\u05D5\u05D3\u05D9\u05DD \u05DE\u05D9\u05DB\u05DC\\\u05E4\u05E8\u05D5\u05D9\u05E7\u05D8 \u05D2\u05DE\u05E8\\Toys4you\\Bll_Services\\Dto_common_Entities\\Dto_common_Entities.csproj",
               "RelativeDocumentMoniker": "Dto_common_Entities\\Dto_common_Entities.csproj",
@@ -319,7 +338,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 14,
+              "DocumentIndex": 16,
               "Title": "WebApi.csproj",
               "DocumentMoniker": "C:\\Users\\User\\Desktop\\\u05DE\u05D9\u05DB\u05DC\\\u05DC\u05D9\u05DE\u05D5\u05D3\u05D9\u05DD \u05DE\u05D9\u05DB\u05DC\\\u05E4\u05E8\u05D5\u05D9\u05E7\u05D8 \u05D2\u05DE\u05E8\\Toys4you\\Bll_Services\\WebApi\\WebApi.csproj",
               "RelativeDocumentMoniker": "WebApi\\WebApi.csproj",
@@ -331,19 +350,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 16,
-              "Title": "customerDto.cs",
-              "DocumentMoniker": "C:\\Users\\User\\Desktop\\\u05DE\u05D9\u05DB\u05DC\\\u05DC\u05D9\u05DE\u05D5\u05D3\u05D9\u05DD \u05DE\u05D9\u05DB\u05DC\\\u05E4\u05E8\u05D5\u05D9\u05E7\u05D8 \u05D2\u05DE\u05E8\\Toys4you\\Bll_Services\\Dto_common_Entities\\customerDto.cs",
-              "RelativeDocumentMoniker": "Dto_common_Entities\\customerDto.cs",
-              "ToolTip": "C:\\Users\\User\\Desktop\\\u05DE\u05D9\u05DB\u05DC\\\u05DC\u05D9\u05DE\u05D5\u05D3\u05D9\u05DD \u05DE\u05D9\u05DB\u05DC\\\u05E4\u05E8\u05D5\u05D9\u05E7\u05D8 \u05D2\u05DE\u05E8\\Toys4you\\Bll_Services\\Dto_common_Entities\\customerDto.cs",
-              "RelativeToolTip": "Dto_common_Entities\\customerDto.cs",
-              "ViewState": "AQIAAAcAAAAAAAAAAAAcwBgAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-14T19:27:46.646Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 17,
+              "DocumentIndex": 18,
               "Title": "Dal_Repository.csproj",
               "DocumentMoniker": "C:\\Users\\User\\Desktop\\\u05DE\u05D9\u05DB\u05DC\\\u05DC\u05D9\u05DE\u05D5\u05D3\u05D9\u05DD \u05DE\u05D9\u05DB\u05DC\\\u05E4\u05E8\u05D5\u05D9\u05E7\u05D8 \u05D2\u05DE\u05E8\\Toys4you\\Bll_Services\\Dal_Repository\\Dal_Repository.csproj",
               "RelativeDocumentMoniker": "Dal_Repository\\Dal_Repository.csproj",
@@ -355,7 +362,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 18,
+              "DocumentIndex": 19,
               "Title": "customerBll.cs",
               "DocumentMoniker": "C:\\Users\\User\\Desktop\\\u05DE\u05D9\u05DB\u05DC\\\u05DC\u05D9\u05DE\u05D5\u05D3\u05D9\u05DD \u05DE\u05D9\u05DB\u05DC\\\u05E4\u05E8\u05D5\u05D9\u05E7\u05D8 \u05D2\u05DE\u05E8\\Toys4you\\Bll_Services\\Bll_Services\\customerBll.cs",
               "RelativeDocumentMoniker": "Bll_Services\\customerBll.cs",
@@ -367,7 +374,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 19,
+              "DocumentIndex": 20,
               "Title": "customerConverters.cs",
               "DocumentMoniker": "C:\\Users\\User\\Desktop\\\u05DE\u05D9\u05DB\u05DC\\\u05DC\u05D9\u05DE\u05D5\u05D3\u05D9\u05DD \u05DE\u05D9\u05DB\u05DC\\\u05E4\u05E8\u05D5\u05D9\u05E7\u05D8 \u05D2\u05DE\u05E8\\Toys4you\\Bll_Services\\Dal_Repository\\modelsConverters\\customerConverters.cs",
               "RelativeDocumentMoniker": "Dal_Repository\\modelsConverters\\customerConverters.cs",
@@ -379,7 +386,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 20,
+              "DocumentIndex": 21,
               "Title": "Bll_Services.csproj",
               "DocumentMoniker": "C:\\Users\\User\\Desktop\\\u05DE\u05D9\u05DB\u05DC\\\u05DC\u05D9\u05DE\u05D5\u05D3\u05D9\u05DD \u05DE\u05D9\u05DB\u05DC\\\u05E4\u05E8\u05D5\u05D9\u05E7\u05D8 \u05D2\u05DE\u05E8\\Toys4you\\Bll_Services\\Bll_Services\\Bll_Services.csproj",
               "RelativeDocumentMoniker": "Bll_Services\\Bll_Services.csproj",
@@ -390,7 +397,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 21,
+              "DocumentIndex": 22,
               "Title": "WeatherForecast.cs",
               "DocumentMoniker": "C:\\Users\\User\\Desktop\\\u05DE\u05D9\u05DB\u05DC\\\u05DC\u05D9\u05DE\u05D5\u05D3\u05D9\u05DD \u05DE\u05D9\u05DB\u05DC\\\u05E4\u05E8\u05D5\u05D9\u05E7\u05D8 \u05D2\u05DE\u05E8\\Toys4you\\Bll_Services\\WebApi\\WeatherForecast.cs",
               "RelativeDocumentMoniker": "WebApi\\WeatherForecast.cs",
