@@ -63,4 +63,7 @@ export class CheckOutComponent {
     const inputElement = event.target as HTMLInputElement;
     document.querySelector('.ccv div')!.innerHTML = inputElement.value;
   }
+//   submit(){
+// console.log("הזמנה בוצעה");
+//   }
 }

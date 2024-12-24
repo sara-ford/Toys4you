@@ -22,7 +22,7 @@ export class SingInComponent {
   isSignIn: boolean = true;
   isMessage: boolean = false; 
   Name: string;
-  Phone: number;
+  phone: string;
   Email: string;
   Password: string;
   DateOfBirth: Date;
@@ -60,7 +60,7 @@ export class SingInComponent {
   logIn() {
     const customer = new ModelCustomer(
       this.Name,
-      this.Phone,
+      this.phone.toString(),  // Ensure phone is a string
       this.Email,
       this.DateOfBirth, 
       this.Password

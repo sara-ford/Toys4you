@@ -1,12 +1,12 @@
 export class ModelCustomer {
   // customerId: number
   name: string
-  phone:number
+  phone: string;
   email:string
-  dateOfBirth:Date
+  dateOfBirth: Date;
   password:string
 
-  constructor(name: string,phone:number,email:string,dateOfBirth:Date,password:string) 
+  constructor(name: string,phone: string,email:string,dateOfBirth:Date,password:string) 
   {
       // this.customerId = customerId,
       this.name = name,

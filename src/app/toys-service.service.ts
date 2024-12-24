@@ -1,7 +1,7 @@
 import { Injectable } from '@angular/core';
 import { ModelProduct } from './models/model-product';
 import { CartProducts } from './models/cart-products';
-import { HttpClient,HttpHeaders  } from '@angular/common/http';
+import { HttpClient  } from '@angular/common/http';
 import { Observable,throwError} from 'rxjs';
 import { ModelCustomer } from './models/model-customer';
 import { catchError } from 'rxjs/operators'; 
@@ -26,13 +26,9 @@ export class ToysServiceService {
       {}      
     );
   }
-  insertCustomer(customer: ModelCustomer) {
-    return this.http.post('http://localhost:5252/api/Customer/api/Customer/customer', customer, {
-      headers: new HttpHeaders({ 'Content-Type': 'application/json' })
-    });
-  }
-  
-
+  insertCustomer(customer: ModelCustomer): Observable<ModelCustomer>  {
+    return this.http.post<ModelCustomer>(`http://localhost:5252/api/Costumer/customerPost`, customer);
+    }
   private selectedProduct: ModelProduct; 
 
   setSelectedProduct(product: ModelProduct): void {
