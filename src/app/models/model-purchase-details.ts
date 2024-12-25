@@ -3,6 +3,7 @@ export class ModelPurchaseDetails {
     purchaseId:number
     productId:number
     amount:number
+   
     
     constructor(purchaseDetailsId:number,purchaseId:number, productId:number, amount:number){
         this.purchaseDetailsId=purchaseDetailsId,

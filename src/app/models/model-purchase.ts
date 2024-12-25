@@ -1,7 +1,7 @@
 export class ModelPurchase {
-    purchaseId:number
+    purchaseId?:number
     customerId: number             
-    dateOfpurchase:number
+    dateOfpurchase?:number
     sumToPay:number
     comments:string
 

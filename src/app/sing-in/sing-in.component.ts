@@ -60,26 +60,19 @@ export class SingInComponent {
   logIn() {
     const customer = new ModelCustomer(
       this.Name,
-      this.phone.toString(),  // Ensure phone is a string
+      this.phone.toString(), 
       this.Email,
       this.DateOfBirth, 
       this.Password
     );
   
-    console.log('Customer data:', customer); // Log the customer data for debugging
-  
-    this.toysService.insertCustomer(customer).subscribe(
+    this.toysService.insertCustomer(customer).subscribe(  // Use `customer` here
       response => {
-        alert('נרשמת בהצלחה'); // "Successfully registered" in Hebrew
+        console.log('Customer inserted successfully', response);
       },
       error => {
-        console.error('Error inserting customer', error); // Log the error for debugging
-        alert('An error occurred: ' + error.message);
+        console.error('Error inserting customer', error);
       }
     );
   }
-  
-}
-    
-  
-
+}  

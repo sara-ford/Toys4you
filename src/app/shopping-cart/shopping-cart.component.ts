@@ -5,6 +5,7 @@ import { FormsModule } from '@angular/forms';
 import { RouterLink, RouterLinkActive, RouterOutlet } from '@angular/router';
 import { CartProducts } from '../models/cart-products';
 import { Router } from '@angular/router';
+import { ModelPurchase } from '../models/model-purchase';
 
 @Component({
   selector: 'app-shopping-cart',
@@ -68,5 +69,20 @@ checkIfLogInBeforePyment(){
      
  
 }
+purchase: ModelPurchase = {
+  customerId: 1,
+  sumToPay: 150,
+  comments: 'הערות על הרכישה'
+};
 
+submitPurchase() {
+  this.toysService.insertPurchase(this.purchase).subscribe(
+    response => {
+      console.log('Purchase inserted successfully', response);
+    },
+    error => {
+      console.error('Error inserting purchase', error);
+    }
+  );
+}
 }

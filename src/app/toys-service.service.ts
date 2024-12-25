@@ -5,7 +5,7 @@ import { HttpClient  } from '@angular/common/http';
 import { Observable,throwError} from 'rxjs';
 import { ModelCustomer } from './models/model-customer';
 import { catchError } from 'rxjs/operators'; 
-
+import { ModelPurchase } from './models/model-purchase';
 
 @Injectable({
   providedIn: 'root'
@@ -26,9 +26,6 @@ export class ToysServiceService {
       {}      
     );
   }
-  insertCustomer(customer: ModelCustomer): Observable<ModelCustomer>  {
-    return this.http.post<ModelCustomer>(`http://localhost:5252/api/Costumer/customerPost`, customer);
-    }
   private selectedProduct: ModelProduct; 
 
   setSelectedProduct(product: ModelProduct): void {
@@ -54,4 +51,22 @@ export class ToysServiceService {
     console.log(this.cartlist); 
     
   }
-}
+    // //הכנסת משתמש
+    // insertCustomer(customer: ModelCustomer): Observable<ModelCustomer>  {
+    //   return this.http.post<ModelCustomer>(`http://localhost:5252/api/Costumer/customerPost`, customer);
+    //   }
+    private apiUrlCustomer = `http://localhost:5252/api/Costumer/InsertCustomer`;
+    private apiUrlPurchase = `http://localhost:5252/api/purchase/InsertPurchase`;
+  
+    insertCustomer(customer: ModelCustomer): Observable<ModelCustomer> {
+      console.log(customer);
+      return this.http.post<ModelCustomer>(this.apiUrlCustomer, customer);
+    }    
+  
+    insertPurchase(purchase: ModelPurchase): Observable<any> {
+
+      return this.http.post<any>(this.apiUrlPurchase, purchase);
+    }
+  
+  
+  }
