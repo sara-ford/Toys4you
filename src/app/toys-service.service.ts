@@ -1,10 +1,10 @@
 import { Injectable } from '@angular/core';
 import { ModelProduct } from './models/model-product';
 import { CartProducts } from './models/cart-products';
-import { HttpClient,HttpHeaders  } from '@angular/common/http';
-import { Observable,throwError} from 'rxjs';
+import { HttpClient, HttpHeaders } from '@angular/common/http';
+import { Observable, throwError } from 'rxjs';
 import { ModelCustomer } from './models/model-customer';
-import { catchError } from 'rxjs/operators'; 
+import { catchError } from 'rxjs/operators';
 
 
 @Injectable({
@@ -17,13 +17,13 @@ export class ToysServiceService {
     return this.http.get<ModelProduct[]>('http://localhost:5252/api/Product');
 
   }
-  getProductByCategory( categoryId :number): Observable<ModelProduct[]> {
+  getProductByCategory(categoryId: number): Observable<ModelProduct[]> {
     return this.http.get<ModelProduct[]>(`http://localhost:5252/api/Product/SortByCategory?categoryId=${categoryId}`);
   }
   getCustomerByPassword(password: string, name: string): Observable<any> {
     return this.http.post<any>(
       `http://localhost:5252/api/Costumer/api/Costumer/${password}?name=${name}`,
-      {}      
+      {}
     );
   }
   insertCustomer(customer: ModelCustomer) {
@@ -31,18 +31,18 @@ export class ToysServiceService {
       headers: new HttpHeaders({ 'Content-Type': 'application/json' })
     });
   }
-  
 
-  private selectedProduct: ModelProduct; 
+
+  private selectedProduct: ModelProduct;
 
   setSelectedProduct(product: ModelProduct): void {
-    this.selectedProduct = product; 
+    this.selectedProduct = product;
   }
-  
+
   getSelectedProduct(): ModelProduct {
-    return this.selectedProduct;  
+    return this.selectedProduct;
   }
-  
+
   cartlist: CartProducts[] = [];
 
   addToCart(product: ModelProduct): void {
@@ -55,7 +55,30 @@ export class ToysServiceService {
     } else {
       this.cartlist.push(new CartProducts(product.amount, product, product.price * product.amount));
     }
-    console.log(this.cartlist); 
-    
+    console.log(this.cartlist);
+
   }
+
+
+
+addTofavorite: ModelProduct[] =[];
+
+addToLove(cartProduct: CartProducts | ModelProduct): void {
+  // אם המוצר הוא מסוג CartProducts, גש ל- product שלו
+  const product = cartProduct instanceof CartProducts ? cartProduct.product : cartProduct;
+
+  if (!product || !product.id) {
+      console.error('המוצר לא מכיל id:', product);
+      return;
+  }
+
+  const existingProduct = this.addTofavorite.find(a => a.id === product.id);
+  if (!existingProduct) {
+      this.addTofavorite.push(product);
+      console.log('מוצר נוסף למועדפים:', product);
+  } else {
+      console.log('המוצר כבר במועדפים');
+  }
+}
+
 }

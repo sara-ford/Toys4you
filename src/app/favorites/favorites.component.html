@@ -1,0 +1,22 @@
+<p>favorites works!</p>
+<div class="favorite-products-container">
+    <h2> favorites Products</h2>
+
+    <!-- אם אין מוצרים מועדפים -->
+    <div *ngIf="favoriteProducts.length == 0">
+        <p>אין מוצרים מועדפים.</p>
+    </div>
+
+    <!-- אם יש מוצרים מועדפים -->
+    <div *ngIf="favoriteProducts.length > 0">
+        <div *ngFor="let product of favoriteProducts" class="product-card">
+            <img [src]="product.picture" alt="{{ product.name }}" class="product-image" />
+            <h3>{{ product.name }}</h3>
+            <p>{{ product.description }}</p>
+            <p>price: {{ product.price }}&#x20AA;</p>
+            <p>categoryName: {{ product.category }}</p>
+            <p>companyName: {{ product.company }}</p>
+            <button (click)="removeFromFavorites(product)">הסר מהמועדפים</button>
+        </div>
+    </div>
+</div>

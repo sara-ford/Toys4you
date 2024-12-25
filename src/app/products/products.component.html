@@ -1,12 +1,13 @@
-
-
+<br><br><br>
+<div class="divOffilter">
 <!-- כפתור מיון -->
-<h3>sort</h3>
+<h3>sort by price- to change!!</h3>
 <select [(ngModel)]="selected" (ngModelChange)="onChangeofOptionsofSort($event)">
     <option value="byPrice">byPrice</option>
     <option value="byAge">byAge</option>
     <option value="byCategory">byCategory</option>
 </select>
+<br><br><br>
 <!-- כפתור מיון -->
 <!-- 
 <div *ngFor="let category of categories" class="flex items-center">
@@ -22,17 +23,19 @@
         (onChange)="onCategoryChange(category.key)"  
   />
   <label [for]="category.key" class="ml-2"> {{ category.name }} </label>
+  <br><br>
 </div>
 
-
+<br><br>
 <!-- כפתור סינון -->
-<h3>filter</h3>
+<h3>filter by age</h3>
 <select [(ngModel)]="selected" (ngModelChange)="onChangeofOptionsofFilter($event)" aria-placeholder="filter" >
   <option value="forKids">For Kids</option>
   <option value="forTeens">For Teens</option>
   <option value="forAdults">For Adults</option>
 </select>
 
+</div>
 <div class="product-container">
   <div *ngIf="!filter" class="product-container ">
 
@@ -45,7 +48,10 @@
     <p>id: {{product.id}}</p>
     <p>categoryName: {{product.category}}</p>
     <p>companyName: {{product.company}}</p>
+    <button (click)="favorite($event, product)">💓</button>
   </div>
+ 
+  
   </div>
 </div>
 

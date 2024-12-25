@@ -57,16 +57,16 @@ export class ShoppingCartComponent implements OnInit {
 }
 
 
-checkIfLogInBeforePyment(){
-  //לבדוק האם הלקוח כבר נכנס לחשבון
-  if(sessionStorage.getItem('userName')!=null){
-     this.router.navigate(['/check-out']);
-  }
-  else{
-    this.router.navigate(['/sing-in']);
-  }
+// checkIfLogInBeforePyment(){
+//   //לבדוק האם הלקוח כבר נכנס לחשבון
+//   if(sessionStorage.getItem('userName')!=null){
+//      this.router.navigate(['/check-out']);
+//   }
+//   else{
+//     this.router.navigate(['/sing-in']);
+//   }
      
  
-}
+// }
 
 }

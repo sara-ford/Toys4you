@@ -73,3 +73,11 @@ h3 {
   font-weight: bold;
   color: #e74c3c;
 }
+
+.divOffilterSort {
+  height: 400px;
+  width: 300px;
+  border: 1px solid #cb2b2b;
+  border-radius: 4px;
+
+}
