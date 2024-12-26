@@ -7,16 +7,14 @@ using System.Threading.Tasks;
 
 namespace Dal_Repository
 {
-  public class purchaseDal:IpurchaseDal
+  public class purchaseDetailsDal
   {
-
-
-      public async  Task InsertPurchaseAsync(Dto_common_Entities.purchaseDto purchase)
+    public void InsertPurchaseDetails(Dto_common_Entities.purchaseDetailsDto p)
     {
       using (Toys4youContext db = new Toys4youContext())
       {
-        var c =  db.Purchases.Add(modelsConverters.purchaseConverters.ToPurchaseModel(purchase));
-       await db.SaveChangesAsync();
+        var pd = db.Purchasedetails.Add(modelsConverters.purchaseDetailsConverters.ToPurchaseDetailsModel(p));
+        db.SaveChanges();
       }
     }
   }

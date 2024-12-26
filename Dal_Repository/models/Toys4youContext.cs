@@ -33,7 +33,7 @@ public partial class Toys4youContext : DbContext
 
     protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
 #warning To protect potentially sensitive information in your connection string, you should move it out of source code. You can avoid scaffolding the connection string by using the Name= syntax to read it from configuration - see https://go.microsoft.com/fwlink/?linkid=2131148. For more guidance on storing connection strings, see https://go.microsoft.com/fwlink/?LinkId=723263.
-        => optionsBuilder.UseSqlServer("Server=.;Database=toys4you;Trusted_Connection=True;TrustServerCertificate=True");
+        => optionsBuilder.UseSqlServer("Server=BSIATSDISHMAYA\\SQLEXPRESS;Database=toys4you;Trusted_Connection=True;TrustServerCertificate=True");
 
     protected override void OnModelCreating(ModelBuilder modelBuilder)
     {
@@ -129,9 +129,7 @@ public partial class Toys4youContext : DbContext
             entity.Property(e => e.Amount).HasColumnName("amount");
             entity.Property(e => e.Categoryid).HasColumnName("categoryid");
             entity.Property(e => e.Companyid).HasColumnName("companyid");
-            entity.Property(e => e.Datelastupdate)
-                .HasColumnType("datetime")
-                .HasColumnName("datelastupdate");
+            entity.Property(e => e.Datelastupdate).HasColumnName("datelastupdate");
             entity.Property(e => e.Description)
                 .HasMaxLength(1000)
                 .IsUnicode(false)
