@@ -4,6 +4,11 @@
   display: flex;
   justify-content: space-between; /* Distribute items with space between */
   align-items: center; /* Vertically centers items */
+  position: fixed; /* Fixes the navbar at the top of the page */
+  top: 0; /* Aligns it to the top */
+  left: 0; /* Ensures it spans the full width */
+  width: 100%; /* Ensures the navbar takes the full width of the screen */
+  z-index: 1000; /* Makes sure the navbar stays on top of other elements */
 }
 
 .navbar ul {

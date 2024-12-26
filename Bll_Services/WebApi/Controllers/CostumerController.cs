@@ -1,3 +1,4 @@
+using Dal_Repository.models;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 
@@ -18,7 +19,7 @@ namespace WebApi.Controllers
             {
                 return NotFound(new { message = "Please open an account." });
             }
-
+ //{Customer.CustomerId}
             return Ok(new { message = $"Hello, {name}!" });
         }
         [HttpPost]

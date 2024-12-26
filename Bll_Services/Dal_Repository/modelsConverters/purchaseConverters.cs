@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -8,5 +8,15 @@ namespace Dal_Repository.modelsConverters
 {
   internal class purchaseConverters
   {
+    public static models.Purchase ToPurchaseModel(Dto_common_Entities.purchaseDto p)
+    {
+      models.Purchase pp =new models.Purchase();
+      pp.CustomerId = p.CustomerId;
+      pp.SumToPay = p.SumToPay;
+      pp.Comments = pp.Comments;
+      
+      return pp;
+    }
+
   }
 }

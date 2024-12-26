@@ -1,5 +1,4 @@
 <button [routerLink]="'/products'" routerLinkActive="active" class="back-button">⬅️</button>
-
 <div *ngIf="selectedProduct" class="product-details-container">
   <h2>{{ selectedProduct.name }}</h2>
   <img [src]="selectedProduct.picture" alt="{{ selectedProduct.name }}" class="product-image" />
@@ -10,3 +9,5 @@
   <p><strong>Company:</strong> {{ selectedProduct.company }}</p>
   <button [routerLink]="'/cart'" routerLinkActive="active" class="add-to-cart">🛒 Add to Cart</button>
 </div>
+
+

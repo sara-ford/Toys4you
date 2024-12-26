@@ -8,8 +8,7 @@ import { GameDetailsComponent } from './game-details/game-details.component';
 import { SingInComponent } from './sing-in/sing-in.component';
 import { CheckOutComponent } from './check-out/check-out.component'
 import { FormsModule } from '@angular/forms';
-
-
+import { FavoritesComponent } from './favorites/favorites.component';
 export const routes: Routes = [
   { path: '', redirectTo: '/home', pathMatch: 'full' },
   { path: 'products', component: ProductsComponent },
@@ -17,8 +16,9 @@ export const routes: Routes = [
   { path: 'home', component: HomePageComponent },
   { path: 'game-details', component: GameDetailsComponent },
   { path: 'check-out', component: CheckOutComponent },
-  { path: 'signIn', component: SingInComponent},
-  { path: '**', component: NotFoundComponent }
+  { path: 'signIn', component: SingInComponent}, 
+   { path: 'favorite', component: FavoritesComponent},
+  { path: '**', component: NotFoundComponent },
 ];
 
 @NgModule({

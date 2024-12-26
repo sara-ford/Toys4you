@@ -6,6 +6,7 @@ import { Router } from '@angular/router';
 import { FormsModule } from '@angular/forms';
 import { CheckboxModule } from 'primeng/checkbox';
 import { CommonModule } from '@angular/common';
+import { CartProducts } from '../models/cart-products';
 @Component({
   selector: 'app-products',
   standalone: true,
@@ -20,6 +21,7 @@ export class ProductsComponent implements OnInit {
   activeCategories: number[] = [];
   selected: string;
   filter: boolean = false
+  addTofavorite: ModelProduct[] = [];
   constructor(
     private toysService: ToysServiceService,
     private router: Router
@@ -108,7 +110,8 @@ export class ProductsComponent implements OnInit {
       }
       );
     }
-    else {debugger
+    else {
+      debugger
       this.activeCategories.splice(index);
       // this.filterProducts = []
       console.log('קטגוריות פעולות לאחר ההסרה:', this.filterProducts);
@@ -128,6 +131,25 @@ export class ProductsComponent implements OnInit {
         })
     }
   }
+
+  // favorite(event: MouseEvent, product: ModelProduct) {
+  //   // מנע את התפשטות האירוע של הלחיצה
+  //   event.stopPropagation();
+  //   console.log(product.id);
+
+
+  //   // פעולה עבור הוספת המוצר למועדפים
+  //   // console.log('מוצר מועדף:', product);
+  //   this.toysService.addToLove(product);
+  //   // הוסף את המוצר למערכת ניהול המועדפים שלך
+  // }
+
+  favorite(event: MouseEvent, product: ModelProduct | CartProducts): void {
+    event.stopPropagation();
+    this.toysService.addToLove(product);
+    
+  }
+  
 
 }
 

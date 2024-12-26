@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { ToysServiceService } from '../toys-service.service';
 
 @Component({
   selector: 'app-check-out',
@@ -8,7 +9,9 @@ import { Component } from '@angular/core';
   styleUrl: './check-out.component.css'
 })
 export class CheckOutComponent {
-
+  constructor(
+    private toysService: ToysServiceService,
+  ) { }
   ngOnInit(): void {
     // Simulate the CodePen tile preview focus on CCV
     setTimeout(() => {
@@ -63,7 +66,13 @@ export class CheckOutComponent {
     const inputElement = event.target as HTMLInputElement;
     document.querySelector('.ccv div')!.innerHTML = inputElement.value;
   }
-//   submit(){
-// console.log("הזמנה בוצעה");
-//   }
+
+
+  //  purchase(){
+  // // this.toysService.cartlist
+  // console.log("m");
+  
+  //  }
+
+
 }
