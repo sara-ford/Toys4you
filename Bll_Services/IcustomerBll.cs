@@ -8,7 +8,13 @@ namespace Bll_Services
 {
     public interface IcustomerBll
     {
-        public Task InsertCustomerAsync(Dto_common_Entities.customerDto customer);
+        public interface IcustomerBll
+        {
+            Task InsertCustomerAsync(Dto_common_Entities.customerDto customer);
+
+            List<Dto_common_Entities.customerDto> GetByPassword(string password, string name);
+        }
+
 
     }
 }
