@@ -1,4 +1,4 @@
-import { HttpClientModule } from '@angular/common/http'
+import { HttpClientModule } from '@angular/common/http';
 import { Component, OnInit } from '@angular/core';
 import { ToysServiceService } from '../toys-service.service';
 import { ModelProduct } from '../models/model-product';
@@ -6,22 +6,26 @@ import { Router } from '@angular/router';
 import { FormsModule } from '@angular/forms';
 import { CheckboxModule } from 'primeng/checkbox';
 import { CommonModule } from '@angular/common';
+import { SliderModule } from 'primeng/slider';
 import { CartProducts } from '../models/cart-products';
+
 @Component({
   selector: 'app-products',
   standalone: true,
-  imports: [CommonModule, HttpClientModule, FormsModule, CheckboxModule, CommonModule],
+  imports: [CommonModule, HttpClientModule, FormsModule, CheckboxModule, CommonModule, SliderModule],
   templateUrl: './products.component.html',
   styleUrls: ['./products.component.css']
 })
-
 export class ProductsComponent implements OnInit {
   products: ModelProduct[] = [];
   filterProducts: ModelProduct[] = [];
   activeCategories: number[] = [];
   selected: string;
-  filter: boolean = false
+  filter: boolean = false;
   addTofavorite: ModelProduct[] = [];
+  priceRange: number[] = [0, 500];
+  ages: string[] = ['Kids', 'Teens', 'Adults'];
+
   constructor(
     private toysService: ToysServiceService,
     private router: Router
@@ -39,22 +43,28 @@ export class ProductsComponent implements OnInit {
     );
   }
 
-
   onChangeofOptionsofSort(event: any): void {
-    console.log('selected=>', this.selected);
-    if (this.selected == 'byAge') {
+    if (this.selected === 'byAge') {
       this.sortByAge();
-    } else if (this.selected == 'byPrice') {
+    } else if (this.selected === 'byPrice') {
       this.sortByPrice();
     }
   }
 
-  onChangeofOptionsofFilter(event: any): void {
-    console.log('selected=>', this.selected);
-    if (this.selected == 'forKids') {
-      this.filterkids();
-    } else if (this.selected == 'forTeens') {
-      this.filterteen();
+  onPriceRangeChange(event: any): void {
+    const [minPrice, maxPrice] = this.priceRange;
+    this.filterProducts = this.products.filter(product => product.price >= minPrice && product.price <= maxPrice);
+    this.filter = true;
+  }
+
+  onAgeChange(age: string): void {
+    this.filter = true;
+    if (age === 'Kids') {
+      this.filterProducts = this.products.filter(product => product.age <= 5);
+    } else if (age === 'Teens') {
+      this.filterProducts = this.products.filter(product => product.age > 5 && product.age <= 12);
+    } else if (age === 'Adults') {
+      this.filterProducts = this.products.filter(product => product.age > 12);
     }
   }
 
@@ -66,93 +76,45 @@ export class ProductsComponent implements OnInit {
     this.products.sort((a, b) => a.price - b.price);
   }
 
-  filterkids(): void {
-    this.products = this.products.filter((product) => product.age <= 5);
-  }
-
-  filterteen(): void {
-    this.products = this.products.filter(
-      (product) => product.age <= 8 && product.age >= 5
-    );
-  }
-
   onProductClick(product: any): void {
     this.toysService.setSelectedProduct(product);
     this.router.navigate(['/game-details']);
   }
-  // selectedCategory: any; 
+
   categories: any[] = [
-    { name: 'board game', key: '1' },
-    { name: 'card game', key: '2' },
-    { name: 'family game', key: '3' }
+    { name: 'Board Game', key: '1' },
+    { name: 'Card Game', key: '2' },
+    { name: 'Family Game', key: '3' }
   ];
 
-
   onCategoryChange(category: string): void {
-    // debugger
-    this.filter = true
-
-    const index = this.activeCategories.indexOf(parseInt(category))
-    console.log(this.activeCategories.indexOf(parseInt(category)));
-
-    if (index == -1) {
+    this.filter = true;
+    const index = this.activeCategories.indexOf(parseInt(category));
+    if (index === -1) {
       this.activeCategories.push(parseInt(category));
-      console.log('קטגוריות פעולות:', this.activeCategories);
-
-      //         this.toysService.getProductByCategory(Number(category)).subscribe((data:any)=>{   
-      //         this.filterProducts = [...this.filterProducts, ...data];
-      //   })
-      // }  
       this.toysService.getProductByCategory(Number(category)).subscribe((data: any) => {
-
-        // this.filterProducts=data
         this.filterProducts = [...this.filterProducts, ...data];
-      }
-      );
-    }
-    else {
-      debugger
-      this.activeCategories.splice(index);
-      // this.filterProducts = []
-      console.log('קטגוריות פעולות לאחר ההסרה:', this.filterProducts);
-
-      // this.toysService.getProductByCategory(Number(category)).subscribe((data:any)=>{
-      // this.filterProducts = [...this.filterProducts, ...data];
-      // })
+      });
+    } else {
+      this.activeCategories.splice(index, 1); // Fixing the splice method by adding the second argument
       this.filterProducts = this.filterProducts.filter(product => product.categoryid != parseInt(category));
-      console.log(this.filterProducts);
     }
+
     if (this.activeCategories.length == 0) {
-      this.filter = false
-      this.toysService.getProductList().subscribe(
-        (data) => {
-          this.filterProducts = []
-          this.products = data;
-        })
+      this.filter = false;
+      this.toysService.getProductList().subscribe((data: any) => {
+        this.filterProducts = [];
+        this.products = data;
+      });
     }
   }
-
-  // favorite(event: MouseEvent, product: ModelProduct) {
-  //   // מנע את התפשטות האירוע של הלחיצה
-  //   event.stopPropagation();
-  //   console.log(product.id);
-
-
-  //   // פעולה עבור הוספת המוצר למועדפים
-  //   // console.log('מוצר מועדף:', product);
-  //   this.toysService.addToLove(product);
-  //   // הוסף את המוצר למערכת ניהול המועדפים שלך
-  // }
 
   favorite(event: MouseEvent, product: ModelProduct | CartProducts): void {
     event.stopPropagation();
     this.toysService.addToLove(product);
-    
   }
-  
-
+  cart(event: MouseEvent, product: ModelProduct): void {
+    event.stopPropagation();
+    this.toysService.addToCart(product);
+  }
 }
-
-
-
-

@@ -1,29 +1,31 @@
-.styled-select {
-  width: 200px;
-  padding: 10px;
-  font-size: 16px;
-  border: 1px solid #ccc;
-  border-radius: 4px;
+/* Container for the filter section and product list */
+.container {
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  gap: 20px; /* Space between filter section and product list */
+}
+
+/* Filter Section */
+.filter-section {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 20px; /* Space between filter items */
   background-color: #f9f9f9;
-  margin-bottom: 20px;
-  transition: all 0.3s ease;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 
-.styled-select:hover {
-  border-color: #007bff;
+/* Filter Item */
+.filter-item {
+  flex: 1;
+  min-width: 200px; /* Ensure items don't get too narrow */
 }
 
-.styled-select:focus {
-  outline: none;
-  box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
-}
-
-h3 {
-  color: #333;
-  font-size: 18px;
-  margin-bottom: 10px;
-}
-
+/* Product Container */
 .product-container {
   display: flex;
   flex-wrap: wrap;
@@ -32,6 +34,7 @@ h3 {
   gap: 20px;
 }
 
+/* Product Card */
 .product-card {
   border: 1px solid #e1e1e1;
   border-radius: 8px;
@@ -47,10 +50,10 @@ h3 {
   transform: scale(1.05);
 }
 
+/* Product Image */
 .product-image {
   width: 100%;
-  height: auto;
-  max-height: 250px;
+  height: 250px;
   object-fit: cover;
   margin-bottom: 16px;
   border-radius: 8px 8px 0 0;
@@ -74,10 +77,43 @@ h3 {
   color: #e74c3c;
 }
 
-.divOffilterSort {
-  height: 400px;
-  width: 300px;
-  border: 1px solid #cb2b2b;
+/* Styled Select */
+.styled-select {
+  width: 100%;
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #ccc;
   border-radius: 4px;
+  background-color: #f9f9f9;
+  margin-bottom: 20px;
+  transition: all 0.3s ease;
+}
 
+.styled-select:hover {
+  border-color: #007bff;
+}
+
+.styled-select:focus {
+  outline: none;
+  box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+}
+
+/* Heading */
+h3 {
+  color: #333;
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+/* Center the Slider */
+.slider-container {
+  display: flex;
+  justify-content: center;  /* Center horizontally */
+  align-items: center;      /* Center vertically */
+  height: 100vh;            /* Take full viewport height */
+}
+
+.slider {
+  width: 80%;               /* Adjust the width of the slider as needed */
+  max-width: 500px;         /* Optional: Limit the max width of the slider */
 }
