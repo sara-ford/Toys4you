@@ -54,7 +54,7 @@ export class ShoppingCartComponent implements OnInit {
     }
 
     const totalPrice = this.cartlist.reduce((total, product) => total + product.totalPrice, 0);
-    return `Total price: $${totalPrice}`;  
+    return `Total price: ${totalPrice}`;  
 }
 
 
@@ -83,4 +83,5 @@ submitPurchase() {
     }
   );
 }
+
 }

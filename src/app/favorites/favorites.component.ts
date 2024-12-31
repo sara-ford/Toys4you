@@ -28,7 +28,6 @@ export class FavoritesComponent {
   constructor(private toysService: ToysServiceService) { }
 
   ngOnInit(): void {
-    // משיכת המוצרים המועדפים מהשירות
     this.favoriteProducts = this.toysService.addTofavorite;
   }
 }

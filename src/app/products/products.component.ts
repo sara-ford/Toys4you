@@ -7,7 +7,7 @@ import { FormsModule } from '@angular/forms';
 import { CheckboxModule } from 'primeng/checkbox';
 import { CommonModule } from '@angular/common';
 import { SliderModule } from 'primeng/slider';
-import { CartProducts } from '../models/cart-products';
+import "primeicons/primeicons.css";
 
 @Component({
   selector: 'app-products',
@@ -25,6 +25,8 @@ export class ProductsComponent implements OnInit {
   addTofavorite: ModelProduct[] = [];
   priceRange: number[] = [0, 500];
   ages: string[] = ['Kids', 'Teens', 'Adults'];
+  isHeartClicked: { [key: number]: boolean } = {}; // Track heart clicked for each product
+  isCartClicked: { [key: number]: boolean } = {}; // Track cart click for each product
 
   constructor(
     private toysService: ToysServiceService,
@@ -35,12 +37,21 @@ export class ProductsComponent implements OnInit {
     this.toysService.getProductList().subscribe(
       (data) => {
         this.products = data;
+        this.initializeHeartState();
       },
       (error) => {
         console.error('Error fetching products:', error);
         alert('There was an error fetching the products. Please try again later.');
       }
     );
+  }
+
+  initializeHeartState(): void {
+    // Load heart state from localStorage (or any other state management)
+    const heartState = localStorage.getItem('heartState');
+    if (heartState) {
+      this.isHeartClicked = JSON.parse(heartState);
+    }
   }
 
   onChangeofOptionsofSort(event: any): void {
@@ -109,12 +120,26 @@ export class ProductsComponent implements OnInit {
     }
   }
 
-  favorite(event: MouseEvent, product: ModelProduct | CartProducts): void {
+  favorite(event: MouseEvent, product: ModelProduct): void {
     event.stopPropagation();
-    this.toysService.addToLove(product);
+        this.isHeartClicked[product.id] = !this.isHeartClicked[product.id];
+    localStorage.setItem('heartState', JSON.stringify(this.isHeartClicked));
+
+    setTimeout(() => {
+      this.toysService.addToLove(product);
+    }, 500); 
   }
+
   cart(event: MouseEvent, product: ModelProduct): void {
     event.stopPropagation();
-    this.toysService.addToCart(product);
+  
+    this.isCartClicked[product.id] = true;  // Trigger the cart animation
+  
+    // Wait for the animation to finish before performing the cart action
+    setTimeout(() => {
+      // After animation, reset the cart state for this product's ID to false
+      this.isCartClicked[product.id] = false;  // Remove the animation class after animation finishes
+      this.toysService.addToCart(product);  // Add product to cart
+    }, 500);  // Duration of the animation (0.5s)
   }
 }

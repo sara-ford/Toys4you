@@ -12,10 +12,6 @@ body {
   background: linear-gradient(50deg, #f3c680, hsla(179,54%,76%,1));
 }
 
-
-/*--------------------
-Buttons
---------------------*/
 .btn {
   display: block;
   background: hsl(86, 76%, 71%);
@@ -46,9 +42,6 @@ Buttons
 
 }
 
-/*--------------------
-Form
---------------------*/
 .form {
 
   fieldset {
@@ -163,9 +156,6 @@ Form
 
 }
 
-/*--------------------
-Checkout
---------------------*/
 .checkout {
   margin: 150px auto 30px;
   position: relative;
@@ -176,9 +166,6 @@ Checkout
   box-shadow: 0 10px 40px hsla(0, 0, 0, .1);
 }
 
-/*--------------------
-Credit Card
---------------------*/
 .credit-card-box {
   perspective: 1000;
   width: 400px;

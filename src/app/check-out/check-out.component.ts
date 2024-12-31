@@ -13,7 +13,6 @@ export class CheckOutComponent {
     private toysService: ToysServiceService,
   ) { }
   ngOnInit(): void {
-    // Simulate the CodePen tile preview focus on CCV
     setTimeout(() => {
       const ccvInput = document.getElementById('card-ccv') as HTMLInputElement;
       if (ccvInput) {

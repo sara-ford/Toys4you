@@ -117,3 +117,47 @@ h3 {
   width: 80%;               /* Adjust the width of the slider as needed */
   max-width: 500px;         /* Optional: Limit the max width of the slider */
 }
+/* Heart Icon Animations */
+.heart-animation {
+  animation: bounce 0.5s ease-in-out 2;
+}
+/* Heart Bounce Animation */
+@keyframes bounce {
+  0%, 100% {
+    transform: translateY(0); /* Start and end at the normal position */
+  }
+  25% {
+    transform: translateY(-10px); /* Move up */
+  }
+  50% {
+    transform: translateY(0); /* Back to the original position */
+  }
+  75% {
+    transform: translateY(-5px); /* Move slightly up */
+  }
+}
+
+.heart-animation {
+  animation: bounce 0.5s ease-in-out 1; /* Bounce once */
+}
+
+/* Cart Icon Forward and Back Animation */
+@keyframes cartAnimation {
+  0%, 100% {
+    transform: translateX(0); /* Start and end at the original position */
+  }
+  50% {
+    transform: translateX(10px); /* Move to the right */
+  }
+}
+
+.cart-animation {
+  animation: cartAnimation 0.5s ease-in-out 1; /* Move forward and back once */
+  color: #28a745; /* Change the color of the cart to green */
+}
+
+/* Default Cart Icon Color */
+.pi-cart {
+  color: #007bff; /* Default color */
+}
+
