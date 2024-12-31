@@ -48,6 +48,19 @@ export class ToysServiceService {
     // Store cart list in localStorage
     localStorage.setItem('cartList', JSON.stringify(this.cartlist));
   }
+    removeFromCart(product: ModelProduct): void {
+      const index = this.cartlist.findIndex(p => p.product.id === product.id);
+      if (index !== -1) {
+        const existingProduct = this.cartlist[index];
+        if (existingProduct.amount > 1) {
+          existingProduct.amount--;
+          existingProduct.totalPrice -= product.price;
+        } else {
+          this.cartlist.splice(index, 1);
+        }
+        localStorage.setItem('cartList', JSON.stringify(this.cartlist));
+      }
+    }
   
 
   addTofavorite: ModelProduct[] = [];
@@ -66,6 +79,13 @@ export class ToysServiceService {
       console.log('Product added to favorites:', product);
     } else {
       console.log('Product is already in favorites');
+    }
+  }
+  removeFromLove(product: ModelProduct): void {
+    const index = this.addTofavorite.findIndex(p => p.id === product.id);
+    if (index !== -1) {
+      this.addTofavorite.splice(index, 1);
+      console.log('Product removed from favorites:', product);
     }
   }
 

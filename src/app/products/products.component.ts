@@ -120,26 +120,28 @@ export class ProductsComponent implements OnInit {
     }
   }
 
-  favorite(event: MouseEvent, product: ModelProduct): void {
-    event.stopPropagation();
-        this.isHeartClicked[product.id] = !this.isHeartClicked[product.id];
-    localStorage.setItem('heartState', JSON.stringify(this.isHeartClicked));
+favorite(event: MouseEvent, product: ModelProduct): void {
+  event.stopPropagation();
+  this.isHeartClicked[product.id] = !this.isHeartClicked[product.id];
+  localStorage.setItem('heartState', JSON.stringify(this.isHeartClicked));
 
-    setTimeout(() => {
-      this.toysService.addToLove(product);
-    }, 500); 
+  if (this.isHeartClicked[product.id]) {
+    this.toysService.addToLove(product); // Add to favorites
+  } else {
+    this.toysService.removeFromLove(product); // Remove from favorites
   }
-
+}
   cart(event: MouseEvent, product: ModelProduct): void {
     event.stopPropagation();
   
-    this.isCartClicked[product.id] = true;  // Trigger the cart animation
+    this.isCartClicked[product.id] = !this.isCartClicked[product.id]; // Toggle the cart state
   
-    // Wait for the animation to finish before performing the cart action
     setTimeout(() => {
-      // After animation, reset the cart state for this product's ID to false
-      this.isCartClicked[product.id] = false;  // Remove the animation class after animation finishes
-      this.toysService.addToCart(product);  // Add product to cart
-    }, 500);  // Duration of the animation (0.5s)
+      if (this.isCartClicked[product.id]) {
+        this.toysService.addToCart(product); // Add product to cart
+      } else {
+        this.toysService.removeFromCart(product); // Remove product from cart
+      }
+    }, 500); // Duration of the animation (0.5s)
   }
 }

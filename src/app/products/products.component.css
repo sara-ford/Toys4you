@@ -150,14 +150,16 @@ h3 {
     transform: translateX(10px); /* Move to the right */
   }
 }
-
 .cart-animation {
   animation: cartAnimation 0.5s ease-in-out 1; /* Move forward and back once */
-  color: #28a745; /* Change the color of the cart to green */
 }
 
-/* Default Cart Icon Color */
-.pi-cart {
-  color: #007bff; /* Default color */
+/* Cart Icon Forward and Back Animation */
+@keyframes cartAnimation {
+  0%, 100% {
+    transform: translateX(0); /* Start and end at the original position */
+  }
+  50% {
+    transform: translateX(10px); /* Move to the right */
+  }
 }
-

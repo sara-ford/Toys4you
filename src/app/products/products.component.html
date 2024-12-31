@@ -17,7 +17,7 @@
 
     <!-- Price Range Slider -->
     <div class="filter-item">
-      <h3>price</h3> 
+      <h3>price</h3>
       <span>{{ priceRange[0] }} - {{ priceRange[1] }}&#x20AA;</span><br><br>
       <p-slider [(ngModel)]="priceRange" [range]="true" min="0" max="500" styleClass="w-56"
         (onChange)="onPriceRangeChange($event)"></p-slider>
@@ -57,14 +57,15 @@
         <p>companyName: {{ product.company }}</p>
 
         <!-- Heart Icon -->
-        <i class="pi" [ngClass]="{'pi-heart': !isHeartClicked[product.id], 'pi-heart-fill': isHeartClicked[product.id], 'heart-animation': isHeartClicked[product.id]}" 
-        style="color: #708090; font-size: 1.5rem"
-        (click)="favorite($event, product)">
+        <i class="pi"
+          [ngClass]="{'pi-heart': !isHeartClicked[product.id], 'pi-heart-fill': isHeartClicked[product.id], 'heart-animation': isHeartClicked[product.id]}"
+          style="color: #708090; font-size: 1.5rem" (click)="favorite($event, product)">
         </i>
 
         <!-- Cart Icon -->
         <button (click)="cart($event, product)" class="cart-btn">
-          <i class="pi pi-cart" [ngClass]="{'cart-animation': isCartClicked[product.id]}" style="font-size: 1.5rem; color: #000;"></i>
+          <i class="pi pi-cart" [ngClass]="{'cart-animation': isCartClicked[product.id]}"
+            style="font-size: 1.5rem; color: #000;"></i>
         </button>
       </div>
     </div>
@@ -78,17 +79,18 @@
         <p>id: {{ product.id }}</p>
         <p>categoryName: {{ product.category }}</p>
         <p>companyName: {{ product.company }}</p>
-        
+
         <!-- Heart Icon -->
-        <i class="pi" [ngClass]="{'pi-heart': !isHeartClicked[product.id], 'pi-heart-fill': isHeartClicked[product.id], 'heart-animation': isHeartClicked[product.id]}" 
-        style="color: #708090; font-size: 1.5rem"
-        (click)="favorite($event, product)">
+        <i class="pi"
+          [ngClass]="{'pi-heart': !isHeartClicked[product.id], 'pi-heart-fill': isHeartClicked[product.id], 'heart-animation': isHeartClicked[product.id]}"
+          style="color: #708090; font-size: 1.5rem" (click)="favorite($event, product)">
         </i>
 
-        <!-- Cart Icon -->   
-        <i class="pi" [ngClass]="{'pi-cart-plus': isCartClicked[product.id],'pi-cart-minus': isCartClicked[product.id], 'cart-animation': isCartClicked[product.id]}" 
-        style="color: #708090; font-size: 1.5rem"
-        (click)="favorite($event, product)"></i>
+        <!-- Cart Icon -->
+        <i class="pi"
+          [ngClass]="{'pi-cart': !isCartClicked[product.id], 'pi-cart-fill': isCartClicked[product.id], 'cart-animation': isCartClicked[product.id]}"
+          (click)="cart($event, product)">
+        </i>
       </div>
     </div>
   </div>
