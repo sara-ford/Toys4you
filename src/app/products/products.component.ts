@@ -128,20 +128,18 @@ favorite(event: MouseEvent, product: ModelProduct): void {
   if (this.isHeartClicked[product.id]) {
     this.toysService.addToLove(product); // Add to favorites
   } else {
-    this.toysService.removeFromLove(product); // Remove from favorites
+    this.toysService.removeFromLove(product); 
   }
 }
-  cart(event: MouseEvent, product: ModelProduct): void {
-    event.stopPropagation();
-  
-    this.isCartClicked[product.id] = !this.isCartClicked[product.id]; // Toggle the cart state
-  
-    setTimeout(() => {
-      if (this.isCartClicked[product.id]) {
-        this.toysService.addToCart(product); // Add product to cart
-      } else {
-        this.toysService.removeFromCart(product); // Remove product from cart
-      }
-    }, 500); // Duration of the animation (0.5s)
-  }
+cart(event: MouseEvent, product: ModelProduct): void {
+  event.stopPropagation();
+
+  this.isCartClicked[product.id] = !this.isCartClicked[product.id];
+
+  setTimeout(() => {
+    if (this.isCartClicked[product.id]) {
+      this.toysService.addToCart(product); 
+    } 
+  }, 500); 
+}
 }

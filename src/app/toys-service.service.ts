@@ -35,34 +35,16 @@ export class ToysServiceService {
   }
 
   cartlist: CartProducts[] = [];
-
   addToCart(product: ModelProduct): void {
     const existingProduct = this.cartlist.find(a => a.product.id === product.id);
     if (existingProduct) {
       existingProduct.amount++;
       existingProduct.totalPrice += product.price;
     } else {
-      this.cartlist.push(new CartProducts(product.amount, product, product.price * product.amount));
+      this.cartlist.push(new CartProducts(1, product, product.price));
     }
-    
-    // Store cart list in localStorage
     localStorage.setItem('cartList', JSON.stringify(this.cartlist));
   }
-    removeFromCart(product: ModelProduct): void {
-      const index = this.cartlist.findIndex(p => p.product.id === product.id);
-      if (index !== -1) {
-        const existingProduct = this.cartlist[index];
-        if (existingProduct.amount > 1) {
-          existingProduct.amount--;
-          existingProduct.totalPrice -= product.price;
-        } else {
-          this.cartlist.splice(index, 1);
-        }
-        localStorage.setItem('cartList', JSON.stringify(this.cartlist));
-      }
-    }
-  
-
   addTofavorite: ModelProduct[] = [];
 
   addToLove(cartProduct: CartProducts | ModelProduct): void {

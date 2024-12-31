@@ -86,11 +86,11 @@
           style="color: #708090; font-size: 1.5rem" (click)="favorite($event, product)">
         </i>
 
-        <!-- Cart Icon -->
-        <i class="pi"
-          [ngClass]="{'pi-cart': !isCartClicked[product.id], 'pi-cart-fill': isCartClicked[product.id], 'cart-animation': isCartClicked[product.id]}"
-          (click)="cart($event, product)">
-        </i>
+<!-- Correct Cart Icon and Animation -->
+<button (click)="cart($event, product)" class="cart-btn">
+  <i class="pi-cart" [ngClass]="{'pi-cart-plus': isCartClicked[product.id], 'cart-animation': isCartClicked[product.id]}"
+    style="font-size: 1.5rem; color: #000;"></i>
+</button>
       </div>
     </div>
   </div>
