@@ -133,13 +133,13 @@ favorite(event: MouseEvent, product: ModelProduct): void {
 }
 cart(event: MouseEvent, product: ModelProduct): void {
   event.stopPropagation();
-
   this.isCartClicked[product.id] = !this.isCartClicked[product.id];
+  localStorage.setItem('cartState', JSON.stringify(this.isCartClicked));
 
-  setTimeout(() => {
-    if (this.isCartClicked[product.id]) {
-      this.toysService.addToCart(product); 
-    } 
-  }, 500); 
+  if (this.isCartClicked[product.id]) {
+    this.toysService.addToCart(product); // Add to cart
+  } else {
+    this.toysService.removeFromCart(product); // Remove from cart
+  }
 }
 }

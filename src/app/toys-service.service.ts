@@ -37,11 +37,20 @@ export class ToysServiceService {
   cartlist: CartProducts[] = [];
   addToCart(product: ModelProduct): void {
     const existingProduct = this.cartlist.find(a => a.product.id === product.id);
-    if (existingProduct) {
-      existingProduct.amount++;
-      existingProduct.totalPrice += product.price;
-    } else {
+    if (!existingProduct) {
       this.cartlist.push(new CartProducts(1, product, product.price));
+      console.log('Product added to cart:', product);
+    } else {
+      console.log('Product is already in cart');
+    }
+    localStorage.setItem('cartList', JSON.stringify(this.cartlist));
+  }
+  
+  removeFromCart(product: ModelProduct): void {
+    const index = this.cartlist.findIndex(p => p.product.id === product.id);
+    if (index !== -1) {
+      this.cartlist.splice(index, 1);
+      console.log('Product removed from cart:', product);
     }
     localStorage.setItem('cartList', JSON.stringify(this.cartlist));
   }

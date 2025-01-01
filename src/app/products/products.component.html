@@ -61,12 +61,7 @@
           [ngClass]="{'pi-heart': !isHeartClicked[product.id], 'pi-heart-fill': isHeartClicked[product.id], 'heart-animation': isHeartClicked[product.id]}"
           style="color: #708090; font-size: 1.5rem" (click)="favorite($event, product)">
         </i>
-
-        <!-- Cart Icon -->
-        <button (click)="cart($event, product)" class="cart-btn">
-          <i class="pi pi-cart" [ngClass]="{'cart-animation': isCartClicked[product.id]}"
-            style="font-size: 1.5rem; color: #000;"></i>
-        </button>
+        <i class="pi pi-cart-plus" style="font-size: 1.5rem; color: #000;"(click)="cart($event, product)"></i>
       </div>
     </div>
     <div *ngIf="filter" class="product-container">
@@ -81,16 +76,12 @@
         <p>companyName: {{ product.company }}</p>
 
         <!-- Heart Icon -->
-        <i class="pi"
-          [ngClass]="{'pi-heart': !isHeartClicked[product.id], 'pi-heart-fill': isHeartClicked[product.id], 'heart-animation': isHeartClicked[product.id]}"
+        <i class="pi pi-heart" [ngClass]="{'pi-heart-fill': isHeartClicked, 'heart-animation': isHeartClicked}"
           style="color: #708090; font-size: 1.5rem" (click)="favorite($event, product)">
-        </i>
-
-<!-- Correct Cart Icon and Animation -->
-<button (click)="cart($event, product)" class="cart-btn">
-  <i class="pi-cart" [ngClass]="{'pi-cart-plus': isCartClicked[product.id], 'cart-animation': isCartClicked[product.id]}"
-    style="font-size: 1.5rem; color: #000;"></i>
-</button>
+         </i> <!-- Cart Icon --> <i
+          class="pi pi-cart-plus"
+          [ngClass]="{'cart-plus': isCartClicked, 'pi-cart-plus': isCartClicked, 'cart-animation': isCartClicked}"
+          style="font-size: 1.5rem; color: #000;" (click)="cart($event, product)"> </i>
       </div>
     </div>
   </div>
