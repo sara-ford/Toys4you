@@ -68,7 +68,7 @@ export class ShoppingCartComponent implements OnInit {
 //   }
      
  
-}
+
 purchase: ModelPurchase = {
   customerId: 1,
   sumToPay: 150,
@@ -86,3 +86,5 @@ submitPurchase() {
   );
 }
 
+
+}

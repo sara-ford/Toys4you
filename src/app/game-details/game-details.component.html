@@ -1,13 +1,18 @@
 <button [routerLink]="'/products'" routerLinkActive="active" class="back-button">⬅️</button>
 <div *ngIf="selectedProduct" class="product-details-container">
-  <h2>{{ selectedProduct.name }}</h2>
-  <img [src]="selectedProduct.picture" alt="{{ selectedProduct.name }}" class="product-image" />
-  <p><strong>Description:</strong> {{ selectedProduct.description }}</p>
-  <p class="price"><strong>Price:</strong> {{ selectedProduct.price }}&#x20AA;</p>
-  <p><strong>Age:</strong> {{ selectedProduct.age }}</p>
-  <p><strong>Category:</strong> {{ selectedProduct.category }}</p>
-  <p><strong>Company:</strong> {{ selectedProduct.company }}</p>
-  <button [routerLink]="'/cart'" routerLinkActive="active" class="add-to-cart">🛒 Add to Cart</button>
+  <h2>{{ selectedProduct.name }}</h2> 
+  <img [src]="selectedProduct.picture" alt="{{ selectedProduct.name }}" class="product-image" /> 
+  <p><strong>Description:</strong> {{ selectedProduct.description }}</p> 
+  <p class="price"><strong>Price:</strong> {{ selectedProduct.price }}&#x20AA;</p> 
+  <p><strong>Age:</strong> {{ selectedProduct.age }}</p> 
+  <p><strong>Category:</strong> {{ selectedProduct.categoryid }}</p> 
+  <p><strong>Company:</strong> {{ selectedProduct.companyid }}</p> 
+  
+ <div class="card flex justify-center">
+  <p-toast /> 
+  <p-splitbutton  (click)="addToCart()" label="🛒 Add to Cart" [model]="items" /> 
+</div> 
+<!-- <button (click)="addToCart()" class="add-to-cart">🛒 Add to Cart</button> -->
 </div>
 
 

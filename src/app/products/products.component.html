@@ -1,77 +1,76 @@
-<div class="container">
-  <!-- Sidebar for Filters -->
-  <div class="filter-section">
-    <!-- Sort by Dropdown -->
-    <div class="filter-item">
-      <h3>Sort by</h3>
-      <div class="filter-section">
-        <label for="sort-select">Sort by:</label>
-        <select id="sort-select" class="styled-select" [(ngModel)]="selected"
-          (ngModelChange)="onChangeofOptionsofSort($event)">
-          <option value="byPrice">Price</option>
-          <option value="byAge">Age</option>
-          <option value="byCategory">Category</option>
-        </select>
-      </div>
-    </div>
+<br><br>br
+<div class="divOffilter">
+<!-- כפתור מיון -->
+<h3>sort by price- to change!!</h3>
+<select [(ngModel)]="selected" (ngModelChange)="onChangeofOptionsofSort($event)">
+    <option value="byPrice">byPrice</option>
+    <option value="byAge">byAge</option>
+    <option value="byCategory">byCategory</option>
+</select>
+<br><br><br>
+<!-- כפתור מיון -->
+<!-- 
+<div *ngFor="let category of categories" class="flex items-center">
+    <p-checkbox [inputId]="category.key" name="group" [value]="category" [(ngModel)]="selectedCategories" />
+    <label [for]="category.key" class="ml-2"> {{ category.name }} </label>
+</div> -->
+<h3>Filter By Category</h3>
+<div *ngFor="let category of categories" class="flex items-center">
+  <p-checkbox 
+    [inputId]="category.key" 
+    name="group" 
+    [value]="category" 
+        (onChange)="onCategoryChange(category.key)"  
+  />
+  <label [for]="category.key" class="ml-2"> {{ category.name }} </label>
+  <br><br>
+</div>
 
-    <!-- Price Range Slider -->
-    <div class="filter-item">
-      <h3>price</h3> 
-      <span>{{ priceRange[0] }} - {{ priceRange[1] }}&#x20AA;</span><br><br>
-      <p-slider [(ngModel)]="priceRange" [range]="true" min="0" max="500" styleClass="w-56"
-        (onChange)="onPriceRangeChange($event)"></p-slider>
-    </div>
+<br><br>
+<!-- כפתור סינון -->
+<h3>filter by age</h3>
+<select [(ngModel)]="selected" (ngModelChange)="onChangeofOptionsofFilter($event)" aria-placeholder="filter" >
+  <option value="forKids">For Kids</option>
+  <option value="forTeens">For Teens</option>
+  <option value="forAdults">For Adults</option>
+</select>
 
-    <!-- Age Filter -->
-    <div class="filter-item">
-      <h3>Filter By Age</h3>
-      <div *ngFor="let age of ages">
-        <input type="checkbox" [id]="'age-' + age" (change)="onAgeChange(age)" />
-        <label [for]="'age-' + age">{{ age }}</label>
-      </div>
-    </div>
+</div>
+<div class="product-container">
+  <div *ngIf="!filter" class="product-container ">
 
-    <!-- Category Filter -->
-    <div class="filter-item">
-      <h3>Filter By Category</h3>
-      <div *ngFor="let category of categories" class="flex items-center">
-        <p-checkbox [inputId]="category.key" name="group" [value]="category"
-          (onChange)="onCategoryChange(category.key)"></p-checkbox>
-        <label [for]="category.key" class="ml-2">{{ category.name }}</label>
-      </div>
-    </div>
+  <div *ngFor="let product of products" class="product-card" (click)="onProductClick(product)">
+    <img class="product-image" [src]="product.picture" alt="{{ product.name }}" />
+    <h3>{{ product.name }}</h3>
+    <p>Description: {{ product.description }}</p>
+    <p class="price">Price: {{ product.price }}&#x20AA;</p>
+    <p>Age: {{ product.age }}</p>
+    <p>id: {{product.id}}</p>
+    <p>categoryName: {{product.category}}</p>
+    <p>companyName: {{product.company}}</p>
+    <button (click)="favorite($event, product)">💓</button>
   </div>
-
-  <!-- Product List -->
-  <div class="product-container">
-    <div *ngIf="!filter" class="product-container">
-      <div *ngFor="let product of products" class="product-card" (click)="onProductClick(product)">
-        <img class="product-image" [src]="product.picture" alt="{{ product.name }}" />
-        <h3>{{ product.name }}</h3>
-        <p>Description: {{ product.description }}</p>
-        <p class="price">Price: {{ product.price }}&#x20AA;</p>
-        <p>Age: {{ product.age }}</p>
-        <p>id: {{ product.id }}</p>
-        <p>categoryName: {{ product.category }}</p>
-        <p>companyName: {{ product.company }}</p>
-        <button (click)="favorite($event, product)">💓</button>
-        <button (click)="cart($event, product)">🛒</button>
-
-      </div>
-    </div>
-
-    <div *ngIf="filter" class="product-container">
-      <div *ngFor="let product of filterProducts" class="product-card" (click)="onProductClick(product)">
-        <img class="product-image" [src]="product.picture" alt="{{ product.name }}" />
-        <h3>{{ product.name }}</h3>
-        <p>Description: {{ product.description }}</p>
-        <p class="price">Price: {{ product.price }}&#x20AA;</p>
-        <p>Age: {{ product.age }}</p>
-        <p>id: {{ product.id }}</p>
-        <p>categoryName: {{ product.category }}</p>
-        <p>companyName: {{ product.company }}</p>
-      </div>
-    </div>
+ 
+  
   </div>
 </div>
+
+<div class="product-container">
+  <div *ngIf="filter" class="product-container">
+  <div *ngFor="let product of filterProducts" class="product-card" (click)="onProductClick(product)">
+    <img class="product-image" [src]="product.picture" alt="{{ product.name }}" />
+    <h3>{{ product.name }}</h3>
+    <p>Description: {{ product.description }}</p>
+    <p class="price">Price: {{ product.price }}&#x20AA;</p>
+    <p>Age: {{ product.age }}</p>
+    <p>id: {{product.id}}</p>
+    <p>categoryName: {{product.category}}</p>
+    <p>companyName: {{product.company}}</p>
+  </div>
+  </div>
+</div>
+
+
+
+  
+ 

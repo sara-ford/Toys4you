@@ -1,7 +1,9 @@
 {
   "ExpandedNodes": [
-    ""
+    "",
+    "\\Bll_Services",
+    "\\Bll_Services\\Dal_Repository"
   ],
-  "SelectedNode": "\\Bll_Services.sln",
+  "SelectedNode": "\\Bll_Services\\Dal_Repository\\customerDal.cs",
   "PreviewInSolutionExplorer": false
 }
