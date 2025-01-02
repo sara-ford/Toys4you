@@ -2,6 +2,7 @@ using Bll_Services;
 using Dal_Repository.models;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
+using System.Threading.Tasks;
 
 namespace WebApi.Controllers
 {
@@ -9,10 +10,11 @@ namespace WebApi.Controllers
     [ApiController]
     public class CostumerController : ControllerBase
     {
-        IcustomerBll c;
-        public CostumerController(IcustomerBll c)
+        private readonly IcustomerBll customerBll;
+
+        public CostumerController(IcustomerBll customerBll)
         {
-            this.c = c;
+            this.customerBll = customerBll;
         }
 
         [HttpPost]
@@ -24,17 +26,15 @@ namespace WebApi.Controllers
                 return BadRequest(new { message = "Invalid customer data." });
             }
 
-            await c.InsertCustomerAsync(cc);
+            await customerBll.InsertCustomerAsync(cc);
             return Ok(new { message = "Customer inserted successfully." });
         }
-
 
         [HttpPost]
         [Route("api/[controller]/{password}")]
         public ActionResult Get(string password, string name)
         {
-            Bll_Services.customerBll c = new Bll_Services.customerBll();
-            var customer = c.GetByPassword(password, name);
+            var customer = customerBll.GetByPassword(password, name);
 
             if (customer == null || !customer.Any())
             {

@@ -165,6 +165,7 @@ public partial class Toys4youContext : DbContext
             entity.Property(e => e.Comments)
                 .HasMaxLength(20)
                 .IsUnicode(false)
+                .HasDefaultValue("")
                 .HasColumnName("comments");
             entity.Property(e => e.CustomerId).HasColumnName("customerId");
             entity.Property(e => e.DateOfpurchase).HasColumnName("dateOfpurchase");
