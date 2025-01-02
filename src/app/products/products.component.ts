@@ -47,8 +47,8 @@ export class ProductsComponent implements OnInit {
   }
 
   initializeHeartState(): void {
-    // Load heart state from localStorage (or any other state management)
-    const heartState = localStorage.getItem('heartState');
+    // Load heart state from session storage (or any other state management)
+    const heartState = sessionStorage.getItem('heartState');
     if (heartState) {
       this.isHeartClicked = JSON.parse(heartState);
     }
@@ -120,26 +120,27 @@ export class ProductsComponent implements OnInit {
     }
   }
 
-favorite(event: MouseEvent, product: ModelProduct): void {
-  event.stopPropagation();
-  this.isHeartClicked[product.id] = !this.isHeartClicked[product.id];
-  localStorage.setItem('heartState', JSON.stringify(this.isHeartClicked));
+  favorite(event: MouseEvent, product: ModelProduct): void {
+    event.stopPropagation();
+    this.isHeartClicked[product.id] = !this.isHeartClicked[product.id];
+    sessionStorage.setItem('heartState', JSON.stringify(this.isHeartClicked));
 
-  if (this.isHeartClicked[product.id]) {
-    this.toysService.addToLove(product); // Add to favorites
-  } else {
-    this.toysService.removeFromLove(product); 
+    if (this.isHeartClicked[product.id]) {
+      this.toysService.addToLove(product); // Add to favorites
+    } else {
+      this.toysService.removeFromLove(product);
+    }
   }
-}
-cart(event: MouseEvent, product: ModelProduct): void {
-  event.stopPropagation();
-  this.isCartClicked[product.id] = !this.isCartClicked[product.id];
-  localStorage.setItem('cartState', JSON.stringify(this.isCartClicked));
 
-  if (this.isCartClicked[product.id]) {
-    this.toysService.addToCart(product); // Add to cart
-  } else {
-    this.toysService.removeFromCart(product); // Remove from cart
+  cart(event: MouseEvent, product: ModelProduct): void {
+    event.stopPropagation();
+    this.isCartClicked[product.id] = !this.isCartClicked[product.id];
+    sessionStorage.setItem('cartState', JSON.stringify(this.isCartClicked));
+
+    if (this.isCartClicked[product.id]) {
+      this.toysService.addToCart(product); // Add to cart
+    } else {
+      this.toysService.removeFromCart(product); // Remove from cart
+    }
   }
-}
 }
