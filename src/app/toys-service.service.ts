@@ -31,22 +31,9 @@ export class ToysServiceService {
 
   getCustomerByPassword(password: string, name: string): Observable<any> {
     return this.http.post<CustomerResponse>(`http://localhost:5252/api/Costumer/api/Costumer/${password}?name=${name}`, {})
-      .pipe(
-        tap((response: CustomerResponse) => {  // Specify the response type here
-          console.log(response);
-
-          if (response.customerId) {
-            console.log('Customer ID:', response.customerId);
-            sessionStorage.setItem('customerId', response.customerId.toString());
+      console.log();
+      
           }
-        })
-      );
-  }
-  
-  
-
-
-
   private selectedProduct: ModelProduct;
 
   setSelectedProduct(product: ModelProduct): void {
