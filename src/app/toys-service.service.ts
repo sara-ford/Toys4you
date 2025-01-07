@@ -26,14 +26,6 @@ export class ToysServiceService {
   // getCustomerByPassword(password: string, name: string): Observable<any> {
   //   return this.http.post<any>(`http://localhost:5252/api/Costumer/api/Costumer/${password}?name=${name}`, {});
   // }
-
- 
-
-  getCustomerByPassword(password: string, name: string): Observable<any> {
-    return this.http.post<CustomerResponse>(`http://localhost:5252/api/Costumer/api/Costumer/${password}?name=${name}`, {})
-      console.log();
-      
-          }
   private selectedProduct: ModelProduct;
 
   setSelectedProduct(product: ModelProduct): void {
