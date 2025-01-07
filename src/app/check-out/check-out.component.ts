@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
 import { ToysServiceService } from '../toys-service.service';
-
+import { ModelPurchase } from '../models/model-purchase';
 @Component({
   selector: 'app-check-out',
   standalone: true,
@@ -12,6 +12,7 @@ export class CheckOutComponent {
   constructor(
     private toysService: ToysServiceService,
   ) { }
+
   ngOnInit(): void {
     setTimeout(() => {
       const ccvInput = document.getElementById('card-ccv') as HTMLInputElement;
@@ -67,11 +68,24 @@ export class CheckOutComponent {
   }
 
 
-  //  purchase(){
-  // // this.toysService.cartlist
-  // console.log("m");
-  
-  //  }
-
-
+  submitPurchase() { 
+  const totalPrice = sessionStorage.getItem('totalPrice');
+   if (totalPrice !== null){
+   const totalPriceNumber = totalPrice;
+   console.log(typeof( totalPrice));
+    const purchase = new ModelPurchase(1,totalPrice);
+    console.log(purchase);
+    this.toysService.insertPurchase(purchase).subscribe( 
+      response => {
+        console.log('Purchase inserted successfully', response);
+      },
+      error => {
+        console.error('Error inserting purchase', error);
+      }
+    );
+  }
+  else{
+    alert("start shopping")
+  }
+}
 }

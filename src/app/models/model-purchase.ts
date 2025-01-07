@@ -1,15 +1,16 @@
 export class ModelPurchase {
-    purchaseId?:number
+    // purchaseId?:number
     customerId: number             
-    dateOfpurchase?:number
+    // dateOfpurchase?:number
     sumToPay:number
-    comments:string
+    // comments:string
 
-    constructor( purchaseId:number, customerId: number, dateOfpurchase:number,  sumToPay:number,comments:string){
-        this.purchaseId=purchaseId,
+    constructor(customerId: number, sumToPay:string){
         this.customerId=customerId,
-        this. dateOfpurchase=dateOfpurchase,
-        this.sumToPay=sumToPay
-        this.comments=comments
+        this.sumToPay = parseInt(sumToPay); 
+
+        // this.comments=comments
+        // this.purchaseId=purchaseId,
+        // this. dateOfpurchase=dateOfpurchase,
     }
 }

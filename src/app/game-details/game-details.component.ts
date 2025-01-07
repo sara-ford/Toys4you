@@ -26,7 +26,7 @@ export class GameDetailsComponent implements OnInit {
     private toysService: ToysServiceService,
     private messageService: MessageService
   ) {
-    // Defining actions for the SplitButton
+
     this.items = [
       {
         label: 'Add to Cart',
@@ -35,7 +35,7 @@ export class GameDetailsComponent implements OnInit {
         }
       }, 
       {
-        label: 'לבדוק האם זמין?',  // Check Availability button
+        label: 'לבדוק האם זמין?', 
         command: () => {
           this.checkAvailability();
         }
@@ -44,20 +44,15 @@ export class GameDetailsComponent implements OnInit {
   }
 
   ngOnInit() {
-    // Retrieving the selected product from the service
     this.selectedProduct = this.toysService.getSelectedProduct();
     console.log(this.selectedProduct);
   }
 
-  // Method to show success notification when adding to cart
   addToCart() {
-    // Displaying a success toast message for adding to cart
     this.messageService.add({ severity: 'success', summary: 'Success', detail: 'Product added to cart' });
   }
 
-  // Method to check if the product is available
   checkAvailability() {
-    // Assuming that a product has an `availability` property to check availability
    
       this.messageService.add({ severity: 'success', summary: 'Available', detail: 'The product is available for purchase' });
   

@@ -32,6 +32,7 @@ export class ProductsComponent implements OnInit {
     private toysService: ToysServiceService,
     private router: Router
   ) { }
+  selectedProduct: ModelProduct | null = null;
 
   ngOnInit(): void {
     this.toysService.getProductList().subscribe(
@@ -44,6 +45,9 @@ export class ProductsComponent implements OnInit {
         alert('There was an error fetching the products. Please try again later.');
       }
     );
+      this.selectedProduct = this.toysService.getSelectedProduct();
+      console.log(this.selectedProduct);
+    
   }
 
   initializeHeartState(): void {
@@ -136,7 +140,7 @@ export class ProductsComponent implements OnInit {
     event.stopPropagation();
     this.isCartClicked[product.id] = !this.isCartClicked[product.id];
     sessionStorage.setItem('cartState', JSON.stringify(this.isCartClicked));
-
+  
     if (this.isCartClicked[product.id]) {
       this.toysService.addToCart(product); // Add to cart
     } else {
