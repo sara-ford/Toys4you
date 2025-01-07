@@ -38,12 +38,12 @@ export class SingInComponent {
   signIn() {
     this.toysService.getCustomerByPassword(this.Password, this.Name).subscribe(
       (response) => {
-        if (response?.message) {
-          this.message = response.message;
+        
+        if (response[0] && response[0].customerId) {
+          this.toysService.customerId = response[0].customerId
+          // this.message = response.message;
           this.isMessage = true;
           sessionStorage.setItem('userName', this.Name);
-
-          // Navigate to home page and refresh
           this.router.navigate(['/home']).then(() => {
             window.location.reload();
           });

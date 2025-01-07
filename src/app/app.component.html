@@ -1,11 +1,9 @@
 <nav class="navbar">
   <ul>
-    <!-- במקרה שאין התחברות - הראה קישור להתחברות -->
     <li *ngIf="!isUserSignedIn">
       <a class="left" routerLink="/signIn" routerLinkActive="active">Log in / Sign in</a>
     </li>
 
-    <!-- במקרה שהמשתמש מחובר - הראה את השם כקישור ללא אפשרות ללחוץ -->
     <li *ngIf="isUserSignedIn">
       <a class="left" href="#" (click)="$event.preventDefault()">Hello {{ Name }}!</a>
     </li>
@@ -20,4 +18,38 @@
   </ul>
   <button></button>
 </nav>
+
+
+
 <router-outlet></router-outlet>
+  
+<p>footer works!</p>
+<footer style="background-color: #f8f9fa; padding: 20px; text-align: center; font-family: Arial, sans-serif;">
+    <div style="margin-bottom: 20px;">
+      <a href="https://www.facebook.com/YourToyStore" target="_blank" style="margin: 0 10px;">
+        <img src="https://cdn-icons-png.flaticon.com/512/733/733547.png" alt="Facebook" style="width: 30px; height: 30px;">
+      </a>
+      <a href="https://www.instagram.com/YourToyStore" target="_blank" style="margin: 0 10px;">
+        <img src="https://cdn-icons-png.flaticon.com/512/733/733558.png" alt="Instagram" style="width: 30px; height: 30px;">
+      </a>
+      <a href="https://twitter.com/YourToyStore" target="_blank" style="margin: 0 10px;">
+        <img src="https://cdn-icons-png.flaticon.com/512/733/733579.png" alt="Twitter" style="width: 30px; height: 30px;">
+      </a>
+    </div>
+    <div style="margin-bottom: 20px;">
+      <a href="/about-us" style="margin: 0 15px; color: #007bff; text-decoration: none;">אודותינו</a>
+      <a href="/contact-us" style="margin: 0 15px; color: #007bff; text-decoration: none;">צור קשר</a>
+      <a href="/shipping-info" style="margin: 0 15px; color: #007bff; text-decoration: none;">מידע על משלוחים</a>
+      <a href="/returns-policy" style="margin: 0 15px; color: #007bff; text-decoration: none;">מדיניות החזרות</a>
+    </div>
+    <div style="margin-bottom: 20px;">
+      <a href="/categories/action-figures" style="margin: 0 10px; color: #6c757d; text-decoration: none;">דמויות פעולה</a>
+      <a href="/categories/educational-toys" style="margin: 0 10px; color: #6c757d; text-decoration: none;">צעצועים חינוכיים</a>
+      <a href="/categories/board-games" style="margin: 0 10px; color: #6c757d; text-decoration: none;">משחקי קופסה</a>
+      <a href="/categories/dolls" style="margin: 0 10px; color: #6c757d; text-decoration: none;">בובות</a>
+    </div>
+    <div style="color: #6c757d;">
+      &copy; toys4you
+    </div>
+  </footer>
+  

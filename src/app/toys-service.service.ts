@@ -45,7 +45,7 @@ export class ToysServiceService {
     }
     localStorage.setItem('cartList', JSON.stringify(this.cartlist));
   }
-  
+
   removeFromCart(product: ModelProduct): void {
     const index = this.cartlist.findIndex(p => p.product.id === product.id);
     if (index !== -1) {
@@ -90,4 +90,7 @@ export class ToysServiceService {
   insertPurchase(purchase: ModelPurchase): Observable<any> {
     return this.http.post<any>(this.apiUrlPurchase, purchase);
   }
+
+  customerId: number=0;
+  totalPriceForPurchase: number = 0;
 }

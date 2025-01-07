@@ -21,7 +21,7 @@ export class ShoppingCartComponent implements OnInit {
     private toysService: ToysServiceService,
     private router: Router
   ) { }
-  ngOnInit(): void {    debugger
+  ngOnInit(): void {    
     const selectedProduct = this.toysService.getSelectedProduct();
     console.log(selectedProduct);
     this.cartlist = this.toysService.cartlist; 
@@ -48,12 +48,13 @@ export class ShoppingCartComponent implements OnInit {
   }
 
   getTotalPrice(): string {
-    // אם הסל ריק
     if (this.cartlist.length == 0) {
         return "Your cart is empty"; 
     }
 
     const totalPrice = this.cartlist.reduce((total, product) => total + product.totalPrice, 0);
+   this.toysService.totalPriceForPurchase=totalPrice
+   console.log(this.toysService.totalPriceForPurchase);
     return `Total price: ${totalPrice}`;  
 }
 
@@ -67,21 +68,21 @@ checkIfLogInBeforePyment(){
     this.router.navigate(['/sing-in']);
   }
 }
-purchase: ModelPurchase = {
-  customerId: 1,
-  sumToPay: 150,
-  comments: 'הערות על הרכישה'
-};
+// purchase: ModelPurchase = {
+//   customerId: 1,
+//   sumToPay: 150,
+//   comments: 'הערות על הרכישה'
+// };
 
-submitPurchase() {
-  this.toysService.insertPurchase(this.purchase).subscribe(
-    response => {
-      console.log('Purchase inserted successfully', response);
-    },
-    error => {
-      console.error('Error inserting purchase', error);
-    }
-  );
-}
+// submitPurchase() {
+//   this.toysService.insertPurchase(this.purchase).subscribe(
+//     response => {
+//       console.log('Purchase inserted successfully', response);
+//     },
+//     error => {
+//       console.error('Error inserting purchase', error);
+//     }
+//   );
+// }
 
 }
