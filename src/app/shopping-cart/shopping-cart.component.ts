@@ -16,12 +16,12 @@ import { ModelPurchase } from '../models/model-purchase';
 })
 export class ShoppingCartComponent implements OnInit {
   cartlist: CartProducts[] = [];  
-
+  totalPrice:number;
   constructor(
     private toysService: ToysServiceService,
     private router: Router
   ) { }
-  ngOnInit(): void {    
+  ngOnInit(): void {    debugger
     const selectedProduct = this.toysService.getSelectedProduct();
     console.log(selectedProduct);
     this.cartlist = this.toysService.cartlist; 
@@ -53,36 +53,33 @@ export class ShoppingCartComponent implements OnInit {
     }
 
     const totalPrice = this.cartlist.reduce((total, product) => total + product.totalPrice, 0);
-   this.toysService.totalPriceForPurchase=totalPrice
-   console.log(this.toysService.totalPriceForPurchase);
     return `Total price: ${totalPrice}`;  
 }
 
 
-checkIfLogInBeforePyment(){
-  //לבדוק האם הלקוח כבר נכנס לחשבון
-  if(sessionStorage.getItem('userName')!=null){
-     this.router.navigate(['/check-out']);
-  }
-  else{
-    this.router.navigate(['/sing-in']);
+checkIfLogInBeforePayment() {
+  sessionStorage.setItem('totalPrice', this.totalPrice.toString());
+  if (sessionStorage.getItem('userName') !== null) {
+    this.router.navigate(['/check-out']);
+  } else {
+    this.router.navigate(['/signIn']);
   }
 }
-// purchase: ModelPurchase = {
-//   customerId: 1,
-//   sumToPay: 150,
-//   comments: 'הערות על הרכישה'
-// };
+purchase: ModelPurchase = {
+  customerId: 1,
+  sumToPay: 150,
+  comments: 'הערות על הרכישה'
+};
 
-// submitPurchase() {
-//   this.toysService.insertPurchase(this.purchase).subscribe(
-//     response => {
-//       console.log('Purchase inserted successfully', response);
-//     },
-//     error => {
-//       console.error('Error inserting purchase', error);
-//     }
-//   );
-// }
+submitPurchase() {
+  this.toysService.insertPurchase(this.purchase).subscribe(
+    response => {
+      console.log('Purchase inserted successfully', response);
+    },
+    error => {
+      console.error('Error inserting purchase', error);
+    }
+  );
+}
 
 }

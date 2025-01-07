@@ -1,6 +1,5 @@
 import { Component } from '@angular/core';
 import { ToysServiceService } from '../toys-service.service';
-import { ModelPurchase } from '../models/model-purchase';
 
 @Component({
   selector: 'app-check-out',
@@ -68,28 +67,12 @@ export class CheckOutComponent {
     document.querySelector('.ccv div')!.innerHTML = inputElement.value;
   }
 
-  addPurchase() {
-    debugger
-    // ודא ש- customerId לא null לפני יצירת המופע
-    const customerId = this.toysService.customerId;
-    if (customerId === null) {
-      console.error('Customer ID is null');
-      return;  // עצור את הביצוע אם customerId לא זמין
-    }
 
-    const purchase = new ModelPurchase(
-      customerId,
-      this.toysService.totalPriceForPurchase,"new order!"
-    );
+  //  purchase(){
+  // // this.toysService.cartlist
+  // console.log("m");
+  
+  //  }
 
-    // שלח את המידע לשרת
-    this.toysService.insertPurchase(purchase).subscribe(
-      response => {
-        console.log('Purchase inserted successfully', response);
-      },
-      error => {
-        console.error('Error inserting purchase', error);
-      }
-    );
-  }
+
 }

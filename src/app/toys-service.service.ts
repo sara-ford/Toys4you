@@ -5,6 +5,9 @@ import { HttpClient } from '@angular/common/http';
 import { Observable } from 'rxjs';
 import { ModelCustomer } from './models/model-customer';
 import { ModelPurchase } from './models/model-purchase';
+import { CustomerResponse } from './models/customer-response.model'; 
+import { tap } from 'rxjs/operators';
+
 
 @Injectable({
   providedIn: 'root'
@@ -20,10 +23,17 @@ export class ToysServiceService {
     return this.http.get<ModelProduct[]>(`http://localhost:5252/api/Product/SortByCategory?categoryId=${categoryId}`);
   }
 
-  getCustomerByPassword(password: string, name: string): Observable<any> {
-    return this.http.post<any>(`http://localhost:5252/api/Costumer/api/Costumer/${password}?name=${name}`, {});
-  }
+  // getCustomerByPassword(password: string, name: string): Observable<any> {
+  //   return this.http.post<any>(`http://localhost:5252/api/Costumer/api/Costumer/${password}?name=${name}`, {});
+  // }
 
+ 
+
+  getCustomerByPassword(password: string, name: string): Observable<any> {
+    return this.http.post<CustomerResponse>(`http://localhost:5252/api/Costumer/api/Costumer/${password}?name=${name}`, {})
+      console.log();
+      
+          }
   private selectedProduct: ModelProduct;
 
   setSelectedProduct(product: ModelProduct): void {
@@ -44,6 +54,8 @@ export class ToysServiceService {
       console.log('Product is already in cart');
     }
     localStorage.setItem('cartList', JSON.stringify(this.cartlist));
+  this.cartlist = this.cartlist; 
+
   }
 
   removeFromCart(product: ModelProduct): void {
@@ -81,14 +93,15 @@ export class ToysServiceService {
   }
 
   private apiUrlCustomer = 'http://localhost:5252/api/Costumer/InsertCustomer';
-  private apiUrlPurchase = 'http://localhost:5252/api/purchase/InsertPurchase';
+  private apiUrlPurchase = 'http://localhost:5252/api/Purchase/InsertPurchase';
 
   insertCustomer(customer: ModelCustomer): Observable<ModelCustomer> {
     return this.http.post<ModelCustomer>(this.apiUrlCustomer, customer);
   }
 
-  insertPurchase(purchase: ModelPurchase): Observable<any> {
-    return this.http.post<any>(this.apiUrlPurchase, purchase);
+  insertPurchase(purchase: ModelPurchase): Observable<ModelPurchase>{debugger
+    console.log(purchase);
+    return this.http.post<ModelPurchase>(this.apiUrlPurchase, purchase);
   }
 
   customerId: number=0;
