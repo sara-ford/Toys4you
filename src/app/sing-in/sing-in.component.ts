@@ -38,9 +38,9 @@ export class SingInComponent {
   signIn() {
     this.toysService.getCustomerByPassword(this.Password, this.Name).subscribe(
       (response) => {
-        
+
         if (response[0] && response[0].customerId) {
-          this.toysService.customerId = response[0].customerId
+          sessionStorage.setItem('id',response[0].customerId)
           // this.message = response.message;
           this.isMessage = true;
           sessionStorage.setItem('userName', this.Name);

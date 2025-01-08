@@ -7,6 +7,7 @@ import { ModelCustomer } from './models/model-customer';
 import { ModelPurchase } from './models/model-purchase';
 import { CustomerResponse } from './models/customer-response.model'; 
 import { tap } from 'rxjs/operators';
+import { ShoppingCartComponent } from './shopping-cart/shopping-cart.component';
 
 
 @Injectable({
@@ -14,6 +15,8 @@ import { tap } from 'rxjs/operators';
 })
 export class ToysServiceService {
   constructor(private http: HttpClient) { }
+  private shoppingcart: ShoppingCartComponent
+
 
   getProductList(): Observable<ModelProduct[]> {
     return this.http.get<ModelProduct[]>('http://localhost:5252/api/Product');
@@ -23,9 +26,9 @@ export class ToysServiceService {
     return this.http.get<ModelProduct[]>(`http://localhost:5252/api/Product/SortByCategory?categoryId=${categoryId}`);
   }
 
-  // getCustomerByPassword(password: string, name: string): Observable<any> {
-  //   return this.http.post<any>(`http://localhost:5252/api/Costumer/api/Costumer/${password}?name=${name}`, {});
-  // }
+  getCustomerByPassword(password: string, name: string): Observable<any> {
+    return this.http.post<any>(`http://localhost:5252/api/Costumer/api/Costumer/${password}?name=${name}`, {});
+  }
   private selectedProduct: ModelProduct;
 
   setSelectedProduct(product: ModelProduct): void {
@@ -40,10 +43,12 @@ export class ToysServiceService {
   addToCart(product: ModelProduct): void {
     const existingProduct = this.cartlist.find(a => a.product.id === product.id);
     if (!existingProduct) {
-      this.cartlist.push(new CartProducts(1, product, product.price));
+      const cartProduct=new CartProducts(1, product, product.price)
+      this.cartlist.push(cartProduct);
       console.log('Product added to cart:', product);
     } else {
       console.log('Product is already in cart');
+      this.shoppingcart.increaseAmount(existingProduct)
     }
     localStorage.setItem('cartList', JSON.stringify(this.cartlist));
   this.cartlist = this.cartlist; 
@@ -95,7 +100,5 @@ export class ToysServiceService {
     console.log(purchase);
     return this.http.post<ModelPurchase>(this.apiUrlPurchase, purchase);
   }
-
-  customerId: number=0;
-  totalPriceForPurchase: number = 0;
+  totalPriceForPurchase: number;
 }

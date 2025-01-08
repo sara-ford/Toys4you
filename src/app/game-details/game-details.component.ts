@@ -3,8 +3,6 @@ import { ToysServiceService } from '../toys-service.service';
 import { RouterLink, RouterLinkActive, RouterOutlet } from '@angular/router'; 
 import { ModelProduct } from '../models/model-product';
 import { CommonModule } from '@angular/common'; 
-
-// Importing PrimeNG components for the SplitButton and Toast
 import { MenuItem, MessageService } from 'primeng/api';
 import { SplitButton } from 'primeng/splitbutton';
 import { ToastModule } from 'primeng/toast';

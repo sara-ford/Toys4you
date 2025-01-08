@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
 import { ToysServiceService } from '../toys-service.service';
-
+import { ModelPurchase } from '../models/model-purchase';
 @Component({
   selector: 'app-check-out',
   standalone: true,
@@ -12,6 +12,8 @@ export class CheckOutComponent {
   constructor(
     private toysService: ToysServiceService,
   ) { }
+  
+  public customerId: number;
 
   ngOnInit(): void {
     setTimeout(() => {
@@ -67,12 +69,28 @@ export class CheckOutComponent {
     document.querySelector('.ccv div')!.innerHTML = inputElement.value;
   }
 
+  addPurchase() {
+    
+    // ודא ש- customerId לא null לפני יצירת המופע
+    const id = Number(sessionStorage.getItem('id'))
+    if (id === null) {
+      console.error('Customer ID is null');
+      return;  // עצור את הביצוע אם customerId לא זמין
+    }
 
-  //  purchase(){
-  // // this.toysService.cartlist
-  // console.log("m");
-  
-  //  }
+    const purchase = new ModelPurchase(
+      id,
+      this.toysService.totalPriceForPurchase
+    );
 
-
+    // שלח את המידע לשרת
+    this.toysService.insertPurchase(purchase).subscribe(
+      response => {
+        console.log('Purchase inserted successfully', response);
+      },
+      error => {
+        console.error('Error inserting purchase', error);
+      }
+    );
+  }
 }

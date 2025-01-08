@@ -7,6 +7,8 @@ import { FormsModule } from '@angular/forms';
 import { CheckboxModule } from 'primeng/checkbox';
 import { CommonModule } from '@angular/common';
 import { SliderModule } from 'primeng/slider';
+import { GameDetailsComponent } from '../game-details/game-details.component';
+import { MenuItem, MessageService } from 'primeng/api';
 import "primeicons/primeicons.css";
 
 @Component({
@@ -30,7 +32,8 @@ export class ProductsComponent implements OnInit {
 
   constructor(
     private toysService: ToysServiceService,
-    private router: Router
+    private messageService: MessageService,
+    private router: Router,
   ) { }
   selectedProduct: ModelProduct | null = null;
 
@@ -136,15 +139,18 @@ export class ProductsComponent implements OnInit {
     }
   }
 
-  cart(event: MouseEvent, product: ModelProduct): void {
+  cart(event: MouseEvent, product: ModelProduct): void {debugger
     event.stopPropagation();
     this.isCartClicked[product.id] = !this.isCartClicked[product.id];
     sessionStorage.setItem('cartState', JSON.stringify(this.isCartClicked));
   
     if (this.isCartClicked[product.id]) {
-      this.toysService.addToCart(product); // Add to cart
+      this.toysService.addToCart(product); 
     } else {
-      this.toysService.removeFromCart(product); // Remove from cart
+      this.toysService.removeFromCart(product); 
     }
   }
+addToCart() {
+  this.messageService.add({ severity: 'success', summary: 'Success', detail: 'Product added to cart' });
+}
 }
