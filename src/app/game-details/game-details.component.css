@@ -52,3 +52,28 @@
 .add-to-cart:hover {
   background-color: #2980b9;
 }
+.add-to-cart-btn {
+  background-color: #4CAF50; /* Green background */
+  color: white;
+  font-size: 1.1em;
+  font-weight: bold;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  margin-top: 10px;
+}
+
+.add-to-cart-btn:hover {
+  background-color: #45a049; /* Darker green on hover */
+}
+
+.add-to-cart-btn:focus {
+  outline: none; /* Remove outline */
+}
+
+.add-to-cart-btn:disabled {
+  background-color: #ccc; /* Greyed out when disabled */
+  cursor: not-allowed;
+}

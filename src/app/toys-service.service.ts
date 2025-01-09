@@ -7,7 +7,6 @@ import { ModelCustomer } from './models/model-customer';
 import { ModelPurchase } from './models/model-purchase';
 import { CustomerResponse } from './models/customer-response.model'; 
 import { tap } from 'rxjs/operators';
-import { ShoppingCartComponent } from './shopping-cart/shopping-cart.component';
 
 
 @Injectable({
@@ -15,7 +14,6 @@ import { ShoppingCartComponent } from './shopping-cart/shopping-cart.component';
 })
 export class ToysServiceService {
   constructor(private http: HttpClient) { }
-  private shoppingcart: ShoppingCartComponent
 
 
   getProductList(): Observable<ModelProduct[]> {
@@ -48,7 +46,6 @@ export class ToysServiceService {
       console.log('Product added to cart:', product);
     } else {
       console.log('Product is already in cart');
-      this.shoppingcart.increaseAmount(existingProduct)
     }
     localStorage.setItem('cartList', JSON.stringify(this.cartlist));
   this.cartlist = this.cartlist; 

@@ -61,7 +61,8 @@
           [ngClass]="{'pi-heart': !isHeartClicked[product.id], 'pi-heart-fill': isHeartClicked[product.id], 'heart-animation': isHeartClicked[product.id]}"
           style="color: #708090; font-size: 1.5rem" (click)="favorite($event, product)">
         </i>
-        <i class="pi pi-cart-plus" style="font-size: 1.5rem; color: #000;"(click)="cart($event, product)"></i>
+        <!-- Cart Icon -->
+        <i class="pi pi-cart-plus" style="font-size: 1.5rem; color: #000;" (click)="cartAndToast($event, product)"></i>
       </div>
     </div>
     <div *ngIf="filter" class="product-container">
@@ -76,13 +77,17 @@
         <p>companyName: {{ product.company }}</p>
 
         <!-- Heart Icon -->
-        <i class="pi pi-heart" [ngClass]="{'pi-heart-fill': isHeartClicked, 'heart-animation': isHeartClicked}"
+        <i class="pi pi-heart" [ngClass]="{'pi-heart-fill': isHeartClicked[product.id], 'heart-animation': isHeartClicked[product.id]}"
           style="color: #708090; font-size: 1.5rem" (click)="favorite($event, product)">
-         </i> <!-- Cart Icon --> <i
-          class="pi pi-cart-plus"
-          [ngClass]="{'cart-plus': isCartClicked, 'pi-cart-plus': isCartClicked, 'cart-animation': isCartClicked}"
-          style="font-size: 1.5rem; color: #000;" (click)="cart($event, product)"> </i>
+        </i>
+        <!-- Cart Icon -->
+        <div class="card flex justify-center">
+          <i class="pi pi-cart-plus" style="font-size: 1.5rem; color: #000;" (click)="cartAndToast($event, product)"></i>
+        </div>
       </div>
     </div>
   </div>
 </div>
+
+<!-- Toast Component for displaying messages -->
+<p-toast></p-toast> <!-- Make sure this is added -->

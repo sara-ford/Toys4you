@@ -7,16 +7,17 @@ import { FormsModule } from '@angular/forms';
 import { CheckboxModule } from 'primeng/checkbox';
 import { CommonModule } from '@angular/common';
 import { SliderModule } from 'primeng/slider';
-import { GameDetailsComponent } from '../game-details/game-details.component';
+import { ToastModule } from 'primeng/toast';
 import { MenuItem, MessageService } from 'primeng/api';
 import "primeicons/primeicons.css";
 
 @Component({
   selector: 'app-products',
   standalone: true,
-  imports: [CommonModule, HttpClientModule, FormsModule, CheckboxModule, CommonModule, SliderModule],
+  imports: [CommonModule, HttpClientModule, FormsModule, CheckboxModule, SliderModule, ToastModule],  // Make sure ToastModule is included here
   templateUrl: './products.component.html',
-  styleUrls: ['./products.component.css']
+  styleUrls: ['./products.component.css'],
+  providers: [MessageService]  // Inject MessageService here
 })
 export class ProductsComponent implements OnInit {
   products: ModelProduct[] = [];
@@ -32,9 +33,10 @@ export class ProductsComponent implements OnInit {
 
   constructor(
     private toysService: ToysServiceService,
-    private messageService: MessageService,
+    private messageService: MessageService,  // Inject MessageService
     private router: Router,
   ) { }
+
   selectedProduct: ModelProduct | null = null;
 
   ngOnInit(): void {
@@ -48,9 +50,8 @@ export class ProductsComponent implements OnInit {
         alert('There was an error fetching the products. Please try again later.');
       }
     );
-      this.selectedProduct = this.toysService.getSelectedProduct();
-      console.log(this.selectedProduct);
-    
+    this.selectedProduct = this.toysService.getSelectedProduct();
+    console.log(this.selectedProduct);
   }
 
   initializeHeartState(): void {
@@ -114,7 +115,7 @@ export class ProductsComponent implements OnInit {
         this.filterProducts = [...this.filterProducts, ...data];
       });
     } else {
-      this.activeCategories.splice(index, 1); // Fixing the splice method by adding the second argument
+      this.activeCategories.splice(index, 1); 
       this.filterProducts = this.filterProducts.filter(product => product.categoryid != parseInt(category));
     }
 
@@ -139,18 +140,17 @@ export class ProductsComponent implements OnInit {
     }
   }
 
-  cart(event: MouseEvent, product: ModelProduct): void {debugger
+  cartAndToast(event: MouseEvent, product: ModelProduct): void {
     event.stopPropagation();
     this.isCartClicked[product.id] = !this.isCartClicked[product.id];
     sessionStorage.setItem('cartState', JSON.stringify(this.isCartClicked));
-  
+
     if (this.isCartClicked[product.id]) {
-      this.toysService.addToCart(product); 
+      this.toysService.addToCart(product);
+      this.messageService.add({ severity: 'success', summary: 'Success', detail: 'Product added to cart' });
+      console.log("Toast message should appear now"); 
     } else {
-      this.toysService.removeFromCart(product); 
+      this.toysService.removeFromCart(product);
     }
   }
-addToCart() {
-  this.messageService.add({ severity: 'success', summary: 'Success', detail: 'Product added to cart' });
-}
 }
