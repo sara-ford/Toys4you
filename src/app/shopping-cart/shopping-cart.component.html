@@ -1,9 +1,43 @@
-<p>shopping-cart works!</p>
-<div class="cart-container">
-    <div *ngIf="cartlist.length == 0" class="empty-cart-message">
-    Your cart is empty
+<br><br><br><br><br>
+<div class="cart-summary">
+  <h3>
+    <i class="pi pi-shopping-cart"></i>
+    Total Items in Cart: {{ getTotalItems() }}
+  </h3>
+</div>
+  <div class="delivery-form">
+    <h4>Enter Delivery Details</h4>
+    <form (submit)="findBestDelivery()">
+      <div class="form-group">
+        <label for="destination">Destination:</label>
+        <input
+          type="text"
+          id="destination"
+          [(ngModel)]="destination"
+          name="destination"
+          required
+          placeholder="Enter your address"
+        />
+
+
+      </div>
+      <button type="submit" class="delivery-btn">Find Best Delivery</button>
+    </form>
+    <div *ngIf="deliveryTime" class="delivery-time">
+      <h4>Estimated Delivery Time: {{ deliveryTime }}</h4>
+    </div>
   </div>
-  
+
+
+<div class="cart-container">
+  <div *ngIf="cartlist.length == 0" class="empty-cart-message">
+    <h2>Your cart is empty</h2>
+    <p>Browse our collection and add some items to your cart!</p>
+    <button [routerLink]="'/products'" routerLinkActive="active" class="back-button">
+      ⬅️ to Products
+    </button>
+  </div>
+
   <div *ngFor="let product of cartlist" class="cart-item">
     <img class="product-image" [src]="product.product.picture" alt="{{ product.product.name }}" />
     <div class="product-details">
@@ -13,24 +47,28 @@
       <p>Age: {{ product.product.age }}</p>
       <p>id: {{ product.product.id }}</p>
       <p>Total Price: {{ product.totalPrice }}&#x20AA;</p>
-      <p>Amount: 
+      <p>Amount:</p>
+      <div class="amount-container">
         <button (click)="decreaseAmount(product)">-</button>
-        {{ product.amount }}
+        <span class="amount">{{ product.amount }}</span>
         <button (click)="increaseAmount(product)">+</button>
-      </p>
-      <p>Date Last Update: {{ product.product.dateLastUpdate | date:'dd-MM-yyyy' }}</p>
+      </div>
     </div>
     <button class="delete-btn" (click)="removeProduct(product)">🗑️</button>
   </div>
+
   <div class="total-price-box">
-    <h2>{{getTotalPrice() }}&#x20AA;</h2>
+    <h2>{{ getTotalPrice() }}&#x20AA;</h2>
   </div>
+
   <div class="checkout-btn-container">
-    <button (click)="checkIfLogInBeforePyment()" class="checkout-btn" routerLink="/check-out" routerLinkActive="active">for payment</button>   <!-- ניסוי -->
-    <div>
-      <button>הגש רכישה</button>
-      
-    </div>
-    
+    <button
+      (click)="checkIfLogInBeforePayment()"
+      class="checkout-btn"
+      routerLink="/check-out"
+      routerLinkActive="active"
+    >
+      Proceed to Payment
+    </button>
   </div>
 </div>

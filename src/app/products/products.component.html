@@ -1,9 +1,10 @@
+<br><br><br>
+
 <div class="container">
-  <!-- Sidebar for Filters -->
   <div class="filter-section">
-    <!-- Sort by Dropdown -->
+    <!-- Sort By -->
     <div class="filter-item">
-      <h3>Sort by</h3>
+      <h3><i class="pi pi-sort-alt"></i> Sort by</h3>
       <div class="filter-section">
         <label for="sort-select">Sort by:</label>
         <select id="sort-select" class="styled-select" [(ngModel)]="selected"
@@ -17,7 +18,7 @@
 
     <!-- Price Range Slider -->
     <div class="filter-item">
-      <h3>price</h3>
+      <h3><i class="pi pi-tag"></i> Price</h3>
       <span>{{ priceRange[0] }} - {{ priceRange[1] }}&#x20AA;</span><br><br>
       <p-slider [(ngModel)]="priceRange" [range]="true" min="0" max="500" styleClass="w-56"
         (onChange)="onPriceRangeChange($event)"></p-slider>
@@ -25,7 +26,7 @@
 
     <!-- Age Filter -->
     <div class="filter-item">
-      <h3>Filter By Age</h3>
+      <h3><i class="pi pi-calendar"></i> Filter By Age</h3>
       <div *ngFor="let age of ages">
         <input type="checkbox" [id]="'age-' + age" (change)="onAgeChange(age)" />
         <label [for]="'age-' + age">{{ age }}</label>
@@ -34,7 +35,7 @@
 
     <!-- Category Filter -->
     <div class="filter-item">
-      <h3>Filter By Category</h3>
+      <h3><i class="pi pi-th-large"></i> Filter By Category</h3>
       <div *ngFor="let category of categories" class="flex items-center">
         <p-checkbox [inputId]="category.key" name="group" [value]="category"
           (onChange)="onCategoryChange(category.key)"></p-checkbox>
@@ -45,44 +46,80 @@
 
   <!-- Product List -->
   <div class="product-container">
+    <!-- Unfiltered Products -->
     <div *ngIf="!filter" class="product-container">
       <div *ngFor="let product of products" class="product-card" (click)="onProductClick(product)">
         <img class="product-image" [src]="product.picture" alt="{{ product.name }}" />
-        <h3>{{ product.name }}</h3>
-        <p>Description: {{ product.description }}</p>
-        <p class="price">Price: {{ product.price }}&#x20AA;</p>
-        <p>Age: {{ product.age }}</p>
-        <p>id: {{ product.id }}</p>
-        <p>categoryName: {{ product.category }}</p>
-        <p>companyName: {{ product.company }}</p>
+        <h3>
+          <i class="pi pi-box" style="margin-right: 5px;"></i>{{ product.name }}
+        </h3>
+        <p>
+          <i class="pi pi-info-circle" style="margin-right: 5px;"></i>Description: {{ product.description }}
+        </p>
+        <p class="price">
+          <i class="pi pi-dollar" style="margin-right: 5px;"></i>Price: {{ product.price }}&#x20AA;
+        </p>
+        <p>
+          <i class="pi pi-calendar" style="margin-right: 5px;"></i>Age: {{ product.age }}
+        </p>
+        <p>
+          <i class="pi pi-id-card" style="margin-right: 5px;"></i>id: {{ product.id }}
+        </p>
+        <p>
+          <i class="pi pi-tags" style="margin-right: 5px;"></i>Category: {{ product.category }}
+        </p>
+        <p>
+          <i class="pi pi-building" style="margin-right: 5px;"></i>Company: {{ product.company }}
+        </p>
 
         <!-- Heart Icon -->
         <i class="pi"
           [ngClass]="{'pi-heart': !isHeartClicked[product.id], 'pi-heart-fill': isHeartClicked[product.id], 'heart-animation': isHeartClicked[product.id]}"
           style="color: #708090; font-size: 1.5rem" (click)="favorite($event, product)">
         </i>
-        <i class="pi pi-cart-plus" style="font-size: 1.5rem; color: #000;"(click)="cart($event, product)"></i>
+
+        <!-- Cart Icon -->
+        <i class="pi pi-cart-plus" style="font-size: 1.5rem; color: #000;" (click)="cart($event, product)"></i>
       </div>
     </div>
+
+    <!-- Filtered Products -->
+    <!-- Filtered Products -->
     <div *ngIf="filter" class="product-container">
       <div *ngFor="let product of filterProducts" class="product-card" (click)="onProductClick(product)">
         <img class="product-image" [src]="product.picture" alt="{{ product.name }}" />
-        <h3>{{ product.name }}</h3>
-        <p>Description: {{ product.description }}</p>
-        <p class="price">Price: {{ product.price }}&#x20AA;</p>
-        <p>Age: {{ product.age }}</p>
-        <p>id: {{ product.id }}</p>
-        <p>categoryName: {{ product.category }}</p>
-        <p>companyName: {{ product.company }}</p>
+        <h3>
+          <i class="pi pi-box" style="margin-right: 5px;"></i>{{ product.name }}
+        </h3>
+        <p>
+          <i class="pi pi-info-circle" style="margin-right: 5px;"></i>Description: {{ product.description }}
+        </p>
+        <p class="price">
+          <i class="pi pi-dollar" style="margin-right: 5px;"></i>Price: {{ product.price }}&#x20AA;
+        </p>
+        <p>
+          <i class="pi pi-calendar" style="margin-right: 5px;"></i>Age: {{ product.age }}
+        </p>
+        <p>
+          <i class="pi pi-id-card" style="margin-right: 5px;"></i>id: {{ product.id }}
+        </p>
+        <p>
+          <i class="pi pi-tags" style="margin-right: 5px;"></i>Category: {{ product.category }}
+        </p>
+        <p>
+          <i class="pi pi-building" style="margin-right: 5px;"></i>Company: {{ product.company }}
+        </p>
 
         <!-- Heart Icon -->
-        <i class="pi pi-heart" [ngClass]="{'pi-heart-fill': isHeartClicked, 'heart-animation': isHeartClicked}"
+        <i class="pi"
+          [ngClass]="{'pi-heart': !isHeartClicked[product.id], 'pi-heart-fill': isHeartClicked[product.id], 'heart-animation': isHeartClicked[product.id]}"
           style="color: #708090; font-size: 1.5rem" (click)="favorite($event, product)">
-         </i> <!-- Cart Icon --> <i
-          class="pi pi-cart-plus"
-          [ngClass]="{'cart-plus': isCartClicked, 'pi-cart-plus': isCartClicked, 'cart-animation': isCartClicked}"
-          style="font-size: 1.5rem; color: #000;" (click)="cart($event, product)"> </i>
+        </i>
+
+        <!-- Cart Icon -->
+        <i class="pi pi-cart-plus" style="font-size: 1.5rem; color: #000;" (click)="cart($event, product)"></i>
       </div>
     </div>
+
   </div>
 </div>

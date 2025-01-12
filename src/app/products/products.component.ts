@@ -51,7 +51,6 @@ export class ProductsComponent implements OnInit {
   }
 
   initializeHeartState(): void {
-    // Load heart state from session storage (or any other state management)
     const heartState = sessionStorage.getItem('heartState');
     if (heartState) {
       this.isHeartClicked = JSON.parse(heartState);
@@ -147,4 +146,5 @@ export class ProductsComponent implements OnInit {
       this.toysService.removeFromCart(product); // Remove from cart
     }
   }
+  
 }

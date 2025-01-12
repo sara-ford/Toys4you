@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Fredoka:wght@400;600&display=swap');
+
 .navbar {
   background-color: #333; /* Dark background color */
   padding: 10px;
@@ -42,4 +44,52 @@
 .navbar ul li a.active,
 .navbar ul li a:hover {
   color: #ffcc00; /* Color for active or hovered links */
+}
+/* ייבוא פונט מ-Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Fredoka:wght@400;600&display=swap');
+
+/* הגדרת הפונט לכל האתר */
+body {
+  font-family: 'Fredoka', Arial, sans-serif; /* פונט עגול ונעים */
+  color: #333; /* צבע טקסט כללי */
+  line-height: 1.5; /* שיפור הקריאות */
+}
+
+/* עיצוב כותרות */
+h3 {
+  font-family: 'Fredoka', Arial, sans-serif;
+  font-weight: 600; /* משקל כבד יותר לכותרות */
+  font-size: 20px; /* גודל גדול יותר לכותרות */
+  color: #ff6347; /* צבע חם שמתאים לחנות צעצועים */
+  text-transform: uppercase; /* כותרות באותיות גדולות */
+}
+
+/* עיצוב טקסט רגיל */
+p {
+  font-family: 'Fredoka', Arial, sans-serif;
+  font-size: 16px; /* גודל סטנדרטי */
+  color: #555; /* גוון בינוני לקריאות */
+}
+
+/* עיצוב מחירים */
+.price {
+  font-family: 'Fredoka', Arial, sans-serif;
+  font-size: 18px;
+  font-weight: bold;
+  color: #e74c3c; /* צבע בולט למחירים */
+}
+
+/* עיצוב הכפתורים */
+button, select, input {
+  font-family: 'Fredoka', Arial, sans-serif;
+  font-size: 16px;
+}
+
+/* עיצוב הכותרת הראשית */
+h1, h2 {
+  font-family: 'Fredoka', Arial, sans-serif;
+  font-weight: 700; /* הדגשה מיוחדת לכותרת הראשית */
+  color: #ff4500; /* צבע חם ושמח */
+  text-align: center;
+  margin-bottom: 20px;
 }

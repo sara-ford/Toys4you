@@ -57,4 +57,5 @@ export class GameDetailsComponent implements OnInit {
       this.messageService.add({ severity: 'success', summary: 'Available', detail: 'The product is available for purchase' });
   
 }
+
 }

@@ -104,6 +104,5 @@ export class ToysServiceService {
     return this.http.post<ModelPurchase>(this.apiUrlPurchase, purchase);
   }
 
-  customerId: number=0;
-  totalPriceForPurchase: number = 0;
+  totalPriceForPurchase: number
 }

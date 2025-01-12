@@ -1,54 +1,96 @@
 .product-details-container {
   display: flex;
   flex-direction: column;
-  align-items: flex-start; /* Ensure items align to the start */
+  align-items: flex-start;
   padding: 20px;
   border: 1px solid #e1e1e1;
   border-radius: 8px;
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-  background-color: #fff;
-  margin-bottom: 50px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  background-color: #ffffff;
+  max-width: 800px;
+  margin: 20px auto;
+  font-family: 'Arial', sans-serif;
 }
 
 .product-image {
-  max-width: 450px;
+  max-width: 100%;
   height: auto;
-  border-radius: 8px;
+  border-radius: 10px;
   margin-bottom: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
 .product-details-container h2 {
-  font-size: 35px;
-  margin-bottom: 10px;
-  color: #333;
+  font-size: 32px;
+  font-weight: bold;
+  color: #2c3e50;
+  margin-bottom: 15px;
 }
 
 .product-details-container p {
-  font-size: 16px;
-  margin: 5px 0;
-  color: #666;
+  font-size: 18px;
+  line-height: 1.6;
+  margin: 8px 0;
+  color: #7f8c8d;
+}
+
+.product-details-container p i {
+  color: #3498db;
 }
 
 .product-details-container .price {
-  font-size: 18px;
+  font-size: 22px;
   font-weight: bold;
   color: #e74c3c;
+  margin-top: 10px;
+}
+
+.card {
+  display: flex;
+  justify-content: flex-start;
+  width: 100%;
+  margin-top: 20px;
 }
 
 .back-button,
 .add-to-cart {
   margin-top: 20px;
-  padding: 10px 20px;
-  font-size: 16px;
-  color: #fff;
+  padding: 12px 24px;
+  font-size: 18px;
+  font-weight: bold;
+  color: #ffffff;
   background-color: #3498db;
   border: none;
-  border-radius: 5px;
+  border-radius: 25px;
   cursor: pointer;
-  transition: background-color 0.3s ease-in-out;
+  transition: all 0.3s ease;
+  text-align: center;
+  text-decoration: none;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
 .back-button:hover,
 .add-to-cart:hover {
   background-color: #2980b9;
+  transform: translateY(-2px);
+}
+
+.p-splitbutton {
+  display: inline-block;
+  margin-right: 10px;
+}
+
+.p-toast {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  z-index: 1000;
+}
+
+.product-details-container p i {
+  margin-right: 5px;
+}
+
+.product-details-container .pi {
+  font-size: 20px;
 }

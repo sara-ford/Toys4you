@@ -17,11 +17,13 @@ import { ModelPurchase } from '../models/model-purchase';
 export class ShoppingCartComponent implements OnInit {
   cartlist: CartProducts[] = [];  
   totalPrice:number;
+  destination: string = '';
+  deliveryTime: string | null = null;
   constructor(
     private toysService: ToysServiceService,
     private router: Router
   ) { }
-  ngOnInit(): void {    debugger
+  ngOnInit(): void {    
     const selectedProduct = this.toysService.getSelectedProduct();
     console.log(selectedProduct);
     this.cartlist = this.toysService.cartlist; 
@@ -53,6 +55,8 @@ export class ShoppingCartComponent implements OnInit {
     }
 
     const totalPrice = this.cartlist.reduce((total, product) => total + product.totalPrice, 0);
+   this.toysService.totalPriceForPurchase=totalPrice
+   console.log(this.toysService.totalPriceForPurchase);
     return `Total price: ${totalPrice}`;  
 }
 
@@ -65,21 +69,34 @@ checkIfLogInBeforePayment() {
     this.router.navigate(['/signIn']);
   }
 }
-purchase: ModelPurchase = {
-  customerId: 1,
-  sumToPay: 150,
-  comments: 'הערות על הרכישה'
-};
+// purchase: ModelPurchase = {
+//   customerId: 1,
+//   sumToPay: 150,
+//   comments: 'הערות על הרכישה'
+// };
 
-submitPurchase() {
-  this.toysService.insertPurchase(this.purchase).subscribe(
-    response => {
-      console.log('Purchase inserted successfully', response);
-    },
-    error => {
-      console.error('Error inserting purchase', error);
-    }
-  );
+// submitPurchase() {
+//   this.toysService.insertPurchase(this.purchase).subscribe(
+//     response => {
+//       console.log('Purchase inserted successfully', response);
+//     },
+//     error => {
+//       console.error('Error inserting purchase', error);
+//     }
+//   );
+// }
+getTotalItems(): number {
+  return this.cartlist.reduce((total, product) => total + product.amount, 0);
+}
+findBestDelivery(): void {
+  if (!this.destination.trim()) {
+    alert('Please enter a valid destination');
+    return;
+  }
+
+  // סימולציה למציאת זמן משלוח משוער
+  const simulatedDeliveryTime = Math.floor(Math.random() * 5) + 1; // זמן בין 1 ל-5 ימים
+  this.deliveryTime = `${simulatedDeliveryTime} days`;
 }
 
 }

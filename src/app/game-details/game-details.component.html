@@ -1,16 +1,37 @@
-<button [routerLink]="'/products'" routerLinkActive="active" class="back-button">⬅️</button>
+<button [routerLink]="'/products'" routerLinkActive="active" class="back-button">
+  ⬅️ Back to Products
+</button>
+
 <div *ngIf="selectedProduct" class="product-details-container">
-  <h2>{{ selectedProduct.name }}</h2> 
-  <img [src]="selectedProduct.picture" alt="{{ selectedProduct.name }}" class="product-image" /> 
-  <p><strong>Description:</strong> {{ selectedProduct.description }}</p> 
-  <p class="price"><strong>Price:</strong> {{ selectedProduct.price }}&#x20AA;</p> 
-  <p><strong>Age:</strong> {{ selectedProduct.age }}</p> 
-  <p><strong>Category:</strong> {{ selectedProduct.categoryid }}</p> 
-  <p><strong>Company:</strong> {{ selectedProduct.companyid }}</p> 
+  <h2>
+  {{ selectedProduct.name }}
+  </h2>
+  <img [src]="selectedProduct.picture" alt="{{ selectedProduct.name }}" class="product-image" />
   
- <div class="card flex justify-center">
-  <p-toast /> 
-  <p-splitbutton  (click)="addToCart()" label="🛒 Add to Cart" [model]="items" /> 
-</div> 
-<!-- <button (click)="addToCart()" class="add-to-cart">🛒 Add to Cart</button> -->
+  <p>
+    <i class="pi pi-info-circle" style="margin-right: 5px;"></i><strong>Description:</strong> {{ selectedProduct.description }}
+  </p>
+  <p class="price">
+    <i class="pi pi-dollar" style="margin-right: 5px;"></i><strong>Price:</strong> {{ selectedProduct.price }}&#x20AA;
+  </p>
+  <p>
+    <i class="pi pi-calendar" style="margin-right: 5px;"></i><strong>Age:</strong> {{ selectedProduct.age }}
+  </p>
+  <p>
+    <i class="pi pi-tags" style="margin-right: 5px;"></i>Category: {{ selectedProduct.category }}
+  </p>
+  <p>
+    <i class="pi pi-building" style="margin-right: 5px;"></i>Company: {{ selectedProduct.company }}
+  </p>
+
+  <!-- Add to Cart Button -->
+  <div class="card flex justify-center">
+    <p-toast></p-toast>
+    <p-splitbutton 
+      (click)="addToCart()" 
+      label="🛒 Add to Cart" 
+      [model]="items">
+      <i class="pi pi-cart-plus" style="margin-right: 5px;"></i>
+    </p-splitbutton>
+  </div>
 </div>
