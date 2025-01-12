@@ -15,6 +15,7 @@ import { tap } from 'rxjs/operators';
 export class ToysServiceService {
   constructor(private http: HttpClient) { }
 
+
   getProductList(): Observable<ModelProduct[]> {
     return this.http.get<ModelProduct[]>('http://localhost:5252/api/Product');
   }
@@ -23,17 +24,9 @@ export class ToysServiceService {
     return this.http.get<ModelProduct[]>(`http://localhost:5252/api/Product/SortByCategory?categoryId=${categoryId}`);
   }
 
-  // getCustomerByPassword(password: string, name: string): Observable<any> {
-  //   return this.http.post<any>(`http://localhost:5252/api/Costumer/api/Costumer/${password}?name=${name}`, {});
-  // }
-
- 
-
   getCustomerByPassword(password: string, name: string): Observable<any> {
-    return this.http.post<CustomerResponse>(`http://localhost:5252/api/Costumer/api/Costumer/${password}?name=${name}`, {})
-      console.log();
-      
-          }
+    return this.http.post<any>(`http://localhost:5252/api/Costumer/api/Costumer/${password}?name=${name}`, {});
+  }
   private selectedProduct: ModelProduct;
 
   setSelectedProduct(product: ModelProduct): void {
@@ -48,7 +41,8 @@ export class ToysServiceService {
   addToCart(product: ModelProduct): void {
     const existingProduct = this.cartlist.find(a => a.product.id === product.id);
     if (!existingProduct) {
-      this.cartlist.push(new CartProducts(1, product, product.price));
+      const cartProduct=new CartProducts(1, product, product.price)
+      this.cartlist.push(cartProduct);
       console.log('Product added to cart:', product);
     } else {
       console.log('Product is already in cart');
