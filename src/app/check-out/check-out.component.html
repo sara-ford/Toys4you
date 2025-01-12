@@ -1,83 +1,119 @@
 <div class="checkout">
+  <h2>Checkout</h2>
+  <form class="form" (ngSubmit)="onSubmit()">
+    <!-- Card Number Inputs -->
+    <fieldset class="fieldset-cc">
+      <label for="card-number">Card Number</label>
+      <div>
+        <input
+          type="tel"
+          class="input-cart-number"
+          maxlength="4"
+          [(ngModel)]="cardNumber[0]"
+          name="cardNumber1"
+          (input)="onCardNumberChange()"
+          required
+        />
+        <input
+          type="tel"
+          class="input-cart-number"
+          maxlength="4"
+          [(ngModel)]="cardNumber[1]"
+          name="cardNumber2"
+          (input)="onCardNumberChange()"
+          required
+        />
+        <input
+          type="tel"
+          class="input-cart-number"
+          maxlength="4"
+          [(ngModel)]="cardNumber[2]"
+          name="cardNumber3"
+          (input)="onCardNumberChange()"
+          required
+        />
+        <input
+          type="tel"
+          class="input-cart-number"
+          maxlength="4"
+          [(ngModel)]="cardNumber[3]"
+          name="cardNumber4"
+          (input)="onCardNumberChange()"
+          required
+        />
+      </div>
+      <div *ngIf="cardNumberError" class="error">{{ cardNumberError }}</div>
+    </fieldset>
+
+    <!-- Card Holder Name -->
+    <fieldset class="fieldset-card-holder">
+      <label for="card-holder">Card Holder Name</label>
+      <input
+        type="text"
+        class="input-card-holder"
+        [(ngModel)]="cardHolder"
+        name="cardHolder"
+        (input)="onCardHolderChange($event)"
+        required
+      />
+      <div *ngIf="cardHolderError" class="error">{{ cardHolderError }}</div>
+    </fieldset>
+
+    <!-- Expiration Date -->
+    <fieldset class="fieldset-expiration">
+      <label for="expiration-month">Expiration Date</label>
+      <select
+        class="select"
+        [(ngModel)]="expirationMonth"
+        name="expirationMonth"
+        required
+      >
+        <option *ngFor="let month of months" [value]="month">{{ month }}</option>
+      </select>
+      <select
+        class="select"
+        [(ngModel)]="expirationYear"
+        name="expirationYear"
+        required
+      >
+        <option *ngFor="let year of years" [value]="year">{{ year }}</option>
+      </select>
+      <div *ngIf="expirationError" class="error">{{ expirationError }}</div>
+    </fieldset>
+
+    <!-- CCV -->
+    <fieldset class="fieldset-ccv">
+      <label for="ccv">CCV</label>
+      <input
+        type="tel"
+        class="input-cart-number"
+        maxlength="3"
+        [(ngModel)]="ccv"
+        name="ccv"
+        (focus)="onCcvFocus()"
+        (blur)="onCcvBlur()"
+        required
+      />
+      <div *ngIf="ccvError" class="error">{{ ccvError }}</div>
+    </fieldset>
+
+    <!-- Submit Button -->
+    <button class="btn" type="submit">Pay Now</button>
+  </form>
+
+  <!-- Credit Card Display -->
   <div class="credit-card-box">
     <div class="flip">
       <div class="front">
         <div class="chip"></div>
-        <div class="logo">
-          <!-- SVG Logo here -->
-        </div>
-        <div class="number"></div>
-        <div class="card-holder">
-          <label>Card holder</label>
-          <div></div>
-        </div>
-        <div class="card-expiration-date">
-          <label>Expires</label>
-          <div></div>
-        </div>
+        <div class="strip"></div>
+        <div class="number">{{ cardNumber.join(' ') }}</div>
+        <div class="card-holder">{{ cardHolder }}</div>
+        <div class="card-expiration-date">{{ expirationMonth }}/{{ expirationYear | slice:2:4 }}</div>
       </div>
       <div class="back">
-        <div class="strip"></div>
-        <div class="logo">
-          <!-- SVG Logo here -->
-        </div>
-        <div class="ccv">
-          <label>CCV</label>
-          <div></div>
-        </div>
+        <div class="ccv">{{ ccv }}</div>
       </div>
     </div>
   </div>
-  <form class="form" autocomplete="off" novalidate>
-    <fieldset>
-      <label for="card-number">Card Number</label>
-      <input type="num" class="input-cart-number" maxlength="4" (keyup)="onCardNumberChange($event)" (change)="onCardNumberChange($event)" />
-      <input type="num" class="input-cart-number" maxlength="4" (keyup)="onCardNumberChange($event)" (change)="onCardNumberChange($event)" />
-      <input type="num" class="input-cart-number" maxlength="4" (keyup)="onCardNumberChange($event)" (change)="onCardNumberChange($event)" />
-      <input type="num" class="input-cart-number" maxlength="4" (keyup)="onCardNumberChange($event)" (change)="onCardNumberChange($event)" />
-    </fieldset>
-    <fieldset>
-      <label for="card-holder">Card holder</label>
-      <input type="text" id="card-holder" (keyup)="onCardHolderChange($event)" (change)="onCardHolderChange($event)" />
-    </fieldset>
-    <fieldset class="fieldset-expiration">
-      <label for="card-expiration-month">Expiration date</label>
-      <div class="select">
-        <select id="card-expiration-month" (change)="onCardExpirationChange()">
-          <option></option>
-          <option>01</option>
-          <option>02</option>
-          <option>03</option>
-          <option>04</option>
-          <option>05</option>
-          <option>06</option>
-          <option>07</option>
-          <option>08</option>
-          <option>09</option>
-          <option>10</option>
-          <option>11</option>
-          <option>12</option>
-        </select>
-      </div>
-      <div class="select">
-        <select id="card-expiration-year" (change)="onCardExpirationChange()">
-          <option></option>
-          <option>2023</option>
-          <option>2024</option>
-          <option>2025</option>
-          <option>2026</option>
-          <option>2027</option>
-          <option>2028</option>
-          <option>2029</option>
-          <option>2030</option>
-          <option>2031</option>
-        </select>
-      </div>
-    </fieldset>
-    <fieldset class="fieldset-ccv">
-      <label for="card-ccv">CCV</label>
-      <input type="text" id="card-ccv" maxlength="3" (focus)="onCcvFocus()" (blur)="onCcvBlur()" (keyup)="onCcvChange($event)" (change)="onCcvChange($event)" />
-    </fieldset>
-    <button (click)="addPurchase()" class="btn"><i class="fa fa-lock"></i>submit</button>
-  </form>
 </div>

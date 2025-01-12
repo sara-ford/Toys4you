@@ -59,8 +59,8 @@ export class ShoppingCartComponent implements OnInit {
 }
 
 
-checkIfLogInBeforePayment() {
-  sessionStorage.setItem('totalPrice', this.totalPrice.toString());
+checkIfLogInBeforePayment() {debugger
+  // sessionStorage.setItem('totalPrice', this.totalPrice.toString());
   if (sessionStorage.getItem('userName') !== null) {
     this.router.navigate(['/check-out']);
   } else {
